@@ -1,0 +1,19 @@
+\chapter{Method}
+
+\section{Data Generation}
+
+The evolution of the condensate phase was simulated using code written in C++. This defined the codensate as a square lattice consisting of $N^2$ points, where $N$ is the linear size of the lattice, and each point restricted to be between $[0, 2 \pi]$. Initially, the angle of each point was random, the system therefore being in the disordered phase. The simulation updated each lattice point according to the compactified and discretised equation:
+\[
+\begin{split}
+\theta_{i,j}(t +\dd{t}) = \theta_{i,j}(t) &- D_x ( \cos(\theta_{i,j} - \theta_{i+1,j}) + \cos( \theta_{i,j} - \theta_{i-1,j}) - 2)\\
+ 					&- D_y(\cos(\theta_{i,j} - \theta_{i,j-1}) + \cos(\theta_{i,j} - \theta_{i,j+1}) - 2) \\
+					& -\frac{\lambda_x}{2}(\sin(\theta_{i,j} - \theta_{i+1,j}) + \sin( \theta_{i,j} - \theta_{i-1,j}) ) \\ 
+					& -\frac{\lambda_y}{2}(\sin(\theta_{i,j} - \theta_{i,j-1}) + \sin(\theta_{i,j} - \theta_{i,j+1})) \\
+					& +2\pi c_L \times \sqrt{\dd{t}} \times \xi 
+\end{split}
+\]
+where $\theta_{i,j}(t)$ is the value of the condensate at points $i,j$ of the lattice and $\dd{t}$ is the timestep used. Periodic boundary conditions were used. The final term is the stochastic term where $\xi$ is a uniformaly distributed random number (restricted to $[-0.5, 0.5]$) that was also added at each timestep. 
+
+This timestep was initilially chosen to be $\dd{t}= 0.05$ but (something about plot from this data being bad) so this was swiftly altered. First the timestep was altered to $\dd{t}=0.01$ and this was the value used to generate the significant data. However, other values were experimented with: namely, $\dd{t} = 0.02$ and $\dd{t} = 0.001$ with system size 32. Fig XX comes the Binder cumulant for this system size for the three values of $\dd{t}$. The evolution for $\dd{t}=0.02$  did not follow that of $\dd{t}=0.01$, implying that $\dd{t}=0.02$ was too large of a timestep, whereas the behaviour of $\dd{t}=0.01$ matched that of $\dd{t}=0.001$, demonstrating that $\dd{t}=0.01$ was an appropriate timestep for the simulation, and a smaller one was computationally unnecessary. 
+
+Next, values noise ($c_L$) values were chosen to determine the value at which the phase transition occurs. Figure XX shows the number of vortices at $t=400$ for a system size of 64 at various values of $c_L$. A value of $c_L = 0.2$ was then chosen for the remainder of project, although other values below the transition were also tested. Naively, after determining that $c_L=0.2$ resulted in the Binder cumulant evolving from zero to near one in the linear evolution, $c_L=0.1$ was also tested with the expectation that the convergence would occur faster  
