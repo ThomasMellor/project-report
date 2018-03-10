@@ -1,19 +1,125 @@
-\chapter{Method}
-
+\chapter{Method} 
 \section{Data Generation}
 
 The evolution of the condensate phase was simulated using code written in C++. This defined the codensate as a square lattice consisting of $N^2$ points, where $N$ is the linear size of the lattice, and each point restricted to be between $[0, 2 \pi]$. Initially, the angle of each point was random, the system therefore being in the disordered phase. The simulation updated each lattice point according to the compactified and discretised equation:
 \[
 \begin{split}
-\theta_{i,j}(t +\dd{t}) = \theta_{i,j}(t) &- D_x ( \cos(\theta_{i,j} - \theta_{i+1,j}) + \cos( \theta_{i,j} - \theta_{i-1,j}) - 2)\\
+\theta_{i,j}(t +\dd{t}) = \theta_{i,j}(t) +  \dd{t}[&- D_x ( \cos(\theta_{i,j} - \theta_{i+1,j}) + \cos( \theta_{i,j} - \theta_{i-1,j}) - 2)\\
  					&- D_y(\cos(\theta_{i,j} - \theta_{i,j-1}) + \cos(\theta_{i,j} - \theta_{i,j+1}) - 2) \\
 					& -\frac{\lambda_x}{2}(\sin(\theta_{i,j} - \theta_{i+1,j}) + \sin( \theta_{i,j} - \theta_{i-1,j}) ) \\ 
-					& -\frac{\lambda_y}{2}(\sin(\theta_{i,j} - \theta_{i,j-1}) + \sin(\theta_{i,j} - \theta_{i,j+1})) \\
+					& -\frac{\lambda_y}{2}(\sin(\theta_{i,j} - \theta_{i,j-1}) + \sin(\theta_{i,j} - \theta_{i,j+1}))] \\
 					& +2\pi c_L \times \sqrt{\dd{t}} \times \xi 
 \end{split}
 \]
 where $\theta_{i,j}(t)$ is the value of the condensate at points $i,j$ of the lattice and $\dd{t}$ is the timestep used. Periodic boundary conditions were used. The final term is the stochastic term where $\xi$ is a uniformaly distributed random number (restricted to $[-0.5, 0.5]$) that was also added at each timestep. 
 
-This timestep was initilially chosen to be $\dd{t}= 0.05$ but (something about plot from this data being bad) so this was swiftly altered. First the timestep was altered to $\dd{t}=0.01$ and this was the value used to generate the significant data. However, other values were experimented with: namely, $\dd{t} = 0.02$ and $\dd{t} = 0.001$ with system size 32. Fig XX comes the Binder cumulant for this system size for the three values of $\dd{t}$. The evolution for $\dd{t}=0.02$  did not follow that of $\dd{t}=0.01$, implying that $\dd{t}=0.02$ was too large of a timestep, whereas the behaviour of $\dd{t}=0.01$ matched that of $\dd{t}=0.001$, demonstrating that $\dd{t}=0.01$ was an appropriate timestep for the simulation, and a smaller one was computationally unnecessary. 
+The timestep was initially chosen to be $\dd{t}=0.01$ and this was the value used to generate the significant data. However, other values were considered with: namely, $\dd{t} = 0.02$ and $\dd{t} = 0.001$ with system size 32. \fig{\ref{fig:binder_different_cL}} comes the Binder cumulant for this system size for the three values of $\dd{t}$. The evolution for $\dd{t}=0.02$  did not follow that of $\dd{t}=0.01$, implying that $\dd{t}=0.02$ was potentially too large of a timestep, whereas the behaviour of $\dd{t}=0.01$ reasonably matched that of $\dd{t}=0.001$, demonstrating that $\dd{t}=0.01$ was an appropriate timestep for the simulation, and a smaller one was computationally unnecessary. 
 
-Next, values noise ($c_L$) values were chosen to determine the value at which the phase transition occurs. Figure XX shows the number of vortices at $t=400$ for a system size of 64 at various values of $c_L$. A value of $c_L = 0.2$ was then chosen for the remainder of project, although other values below the transition were also tested. Naively, after determining that $c_L=0.2$ resulted in the Binder cumulant evolving from zero to near one in the linear evolution, $c_L=0.1$ was also tested with the expectation that the convergence would occur faster  
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel=$t$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/binder_cumulant/N=32/dt=0.01/Lx=0Ly=0/N_32num_sim_200cL_0.2iter=122880.txt};
+\addlegendentry{$\dd{t}$=0.01, 200 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/binder_cumulant/N=32/dt=0.02/Lx=0Ly=0/N_32num_sim_200cL_0.2iter=61440.txt};
+\addlegendentry{$\dd{t}$=0.02, 200 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/binder_cumulant/N=32/dt=0.001/Lx=0Ly=0/N_32num_sim_100cL_0.2iter=1228800.txt};
+\addlegendentry{$\dd{t}$=0.001, 100 runs.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The Binder cumulant convergence for $L=32$ at different values of $\dd{t}$. The convergence of $\dd{t}=0.001$ compared to $\dd{t}=0.01$ suggests that a timestep of $\dd{t}=0.001$ was unnecessary, while the behaviour of $\dd{t}=0.02$ although qualitatively correct, deviated from that $\dd{t}=0.02$ significantly to be considered trustworthy.}
+\label{fig:binder_different_cL}
+\end{figure}
+
+The value of $c_L$ at which the phase transition occurs was determined. \fig{\ref{fig:vor_vs_cL}} shows the number of vortices $t=400$ for a system size of 64 at various values of $c_L$. The value $c_L = 0.2$ was then chosen for the remainder of project. Naively, after determining that $c_L=0.2$ resulted in the Binder cumulant evolving from zero to near one in the linear evolution, $c_L=0.1$ was also tested with the expectation that the convergence would occur faster. In fact, for $L=128$, the Binder cumulant did not approach one at all, as shown in \fig{\ref{fig:binder_cL_0.1}}. This can be explained by the existence of vortices, which are higher in \fig{\ref{fig:vor_vs_cL}} for $c_L=0.1$ than higher values below the transition.    
+
+\begin{figure}[htbp!]
+\centering
+\begin{subfigure}{0.4\textwidth}
+	\begin{tikzpicture}[scale=0.7]
+		\begin{axis}[legend pos=outer north east,
+		xlabel=$c_L$,
+		ylabel={Number of vortices},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks]
+	table{../project_code/vor_vs_cL.txt};
+	\end{axis}
+\end{tikzpicture}
+\end{subfigure} %
+\begin{subfigure}{0.4\textwidth}
+	\begin{tikzpicture}[scale=0.7]
+		\begin{axis}[legend pos=outer north east,
+		xlabel=$c_L$,
+		ylabel={Number of vortices},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks]
+	table{../project_code/vor_vs_cL2.txt};
+	\end{axis}
+\end{tikzpicture}
+\end{subfigure}
+\caption{The number of vortices at the end of a simulation ($t=400$) as a function of $c_L$ for $L=64$ with 20 runs.}
+\label{fig:vor_vs_cL}
+\end{figure}
+ 
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel=$t$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_100cL_0.1iter_1280000.txt};
+	\end{axis}
+\end{tikzpicture}
+\caption{The Binder cumulant for $L=128$ and $c_L=0.1$. Despite being in the ordered phase, the Binder cumulant does not converge to near one due to the vortices.}
+\label{fig:binder_cL_0.1}
+\end{figure}
+
+\section{Data Extraction}
+
+Using the generated data, the Binder cumulant was calculated as follows: for each timestep of a simulation, the magnetisation $\myvec{M}$, defined by 
+\[
+\myvec{M} = \frac{1}{N^2}\sum_{i,j} (\cos( \theta_{i,j}), \sin ( \theta_{i,j})),
+\]
+ where the sum is over all lattice points, was calculated. The averages (over all the realisations) $ \left < \myvec{M}^2 \right >$ and $\left < {(\myvec{M}^2)}^2 \right> $ were then used in the Binder cumulant given by 
+\[
+g = 2 - \frac{\left < (\myvec{M}^2)^2 \right >}{\left < \myvec{M}^2 \right>^2}    
+\]
+
+To estimate the error, the Binder cumulant was considered to be a function of the variables $ \myvec{M}^2 >$, i.e.
+\[
+g = 2 - N \frac{\sum_i (\myvec{M}^2_i)^2}{\left ( \sum_i \myvec{M}^2_i\right)^2}
+\]
+where the sum is over every realisation and $N$ is the number of realisations. These variables are indentical and independent, so the error of each is the same and is approximated by 
+\[
+\sigma^2_{\myvec{M}^2} = \frac{1}{N-1} \sum_i (\myvec{M}^2_i - \left < \myvec{M}^2 \right>)^2 = \frac{N}{N-1} (\left< (\myvec{M}^2)^2 \right > - \left < \myvec{M}^2\right>^2).
+\] 
+Using error propagation, the error on the Binder cumulant is 
+\[
+\begin{split}
+\sigma_g^2 &= 4N^2 \sum_k \left( \frac{\myvec{M}^2_k}{\left ( -\sum_i \myvec{M}^2_i  \right )^2} + \frac{\sum_i (\myvec{M}^2_i)^2}{\left(\sum_i \myvec{M}^2_i \right)^3} \right)^2 \sigma_{\myvec{M}^2} \\
+	   &= \frac{4N^3}{N-1}\left(\left <(\myvec{M}^2)^2 \right >   - \left<\myvec{M}^2\right>^2 \right) \sum_k
+\end{split}
+\] 
+
+
+

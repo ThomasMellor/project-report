@@ -12,6 +12,7 @@
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Method}{1}{chapter.18}
 \contentsline {section}{\numberline {1.1}Data Generation}{1}{section.19}
+\contentsline {section}{\numberline {1.2}Data Extraction}{3}{section.23}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}An Appendix}{3}{appendix.20}
+\contentsline {chapter}{\numberline {A}An Appendix}{5}{appendix.24}
 \vspace {2em}
