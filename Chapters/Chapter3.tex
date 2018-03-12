@@ -11,7 +11,7 @@ The evolution of the condensate phase was simulated using code written in C++. T
 					& +2\pi c_L \times \sqrt{\dd{t}} \times \xi 
 \end{split}
 \]
-where $\theta_{i,j}(t)$ is the value of the condensate at points $i,j$ of the lattice and $\dd{t}$ is the timestep used. Periodic boundary conditions were used. The final term is the stochastic term where $\xi$ is a uniformaly distributed random number (restricted to $[-0.5, 0.5]$) that was also added at each timestep. 
+where $\theta_{i,j}(t)$ is the value of the condensate at points $i,j$ of the lattice and $\dd{t}$ is the timestep used. Periodic boundary conditions were used. The final term is the stochastic term where $\xi$ is a uniformaly distributed random number (restricted to $[-0.5, 0.5]$) that was also added at each timestep. Finally, for all simulations $D_x$ and $D_y$ were set to 1 as the coordinates can always be rescaled to ensure this.  
 
 The timestep was initially chosen to be $\dd{t}=0.01$ and this was the value used to generate the significant data. However, other values were considered with: namely, $\dd{t} = 0.02$ and $\dd{t} = 0.001$ with system size 32. \fig{\ref{fig:binder_different_cL}} comes the Binder cumulant for this system size for the three values of $\dd{t}$. The evolution for $\dd{t}=0.02$  did not follow that of $\dd{t}=0.01$, implying that $\dd{t}=0.02$ was potentially too large of a timestep, whereas the behaviour of $\dd{t}=0.01$ reasonably matched that of $\dd{t}=0.001$, demonstrating that $\dd{t}=0.01$ was an appropriate timestep for the simulation, and a smaller one was computationally unnecessary. 
 
@@ -116,10 +116,24 @@ where the sum is over every realisation and $N$ is the number of realisations. T
 Using error propagation, the error on the Binder cumulant is 
 \[
 \begin{split}
-\sigma_g^2 &= 4N^2 \sum_k \left( \frac{\myvec{M}^2_k}{\left ( -\sum_i \myvec{M}^2_i  \right )^2} + \frac{\sum_i (\myvec{M}^2_i)^2}{\left(\sum_i \myvec{M}^2_i \right)^3} \right)^2 \sigma_{\myvec{M}^2} \\
-	   &= \frac{4N^3}{N-1}\left(\left <(\myvec{M}^2)^2 \right >   - \left<\myvec{M}^2\right>^2 \right) \sum_k
+\sigma_g^2 &= 4N^2 \sum_k \left( -\frac{\myvec{M}^2_k}{\left ( \sum_i \myvec{M}^2_i  \right )^2} + \frac{\sum_i (\myvec{M}^2_i)^2}{\left(\sum_i \myvec{M}^2_i \right)^3} \right)^2 \sigma_{\myvec{M}^2} \\
+	   &= \frac{4N^3}{N-1}\left(\left <(\myvec{M}^2)^2 \right >   - \left<\myvec{M}^2\right>^2 \right) \sum_k \left(\frac{(\myvec{M}_k^2)^2}{\left(\sum_i \myvec{M}_i^2 \right)^4} + -2\dfrac{\myvec{M}_k^2 \sum_i (\myvec{M}_i^2)^2}{\left(\sum_i \myvec{M}_i^2\right)^5} + \dfrac{\left(\sum_i(\myvec{M}_i^2)^2\right)^2}{\left(\sum_i \myvec{M}_i^2 \right)^6}\right) \\
+	&= \frac{4N^3}{N-1} \left(\left <(\myvec{M}^2)^2 \right >   - \left<\myvec{M}^2\right>^2 \right) \left(\frac{N \left<(\myvec{M}^2)^2 \right>}{N^4 \left<\myvec{M}^2 \right>^4} - 2\frac{N^2 \left< \myvec{M}^2 \right> \left< (\myvec{M}^2)^2 \right>}{N^5 \left<\myvec{M}^2 \right>^5} + \frac{N^3\left<(\myvec{M}^2)^2\right>^2}{N^6\left<\myvec{M}^2\right>^6} \right) \\
+	&= 
+	\frac{4}{N-1} \left(\left <(\myvec{M}^2)^2 \right >   - \left<\myvec{M}^2\right>^2 \right)^2 \frac{\left<(\myvec{M}^2)^2 \right>}{\left < \myvec{M}^2\right>^6}
 \end{split}
-\] 
+\]
+which is proporiotnal to $1/N$, as expected. 
+
+To calculate the number of vortices or anti-vortices, we use a discretised version of their defining equation. The `loop', starting at a point $\theta_{i,j}$, is the path
+\[
+\theta_{i,j} \to \theta_{i+1,j} \to \theta_{i+1,j+1} \to \theta_{i,j+1} \to \theta_{i,j}
+\]
+and the value of one angle minus the value of the previous angle is calculated and all such differences are summed. If the total is greater than or equal to $2 \pi$, there is a vortex, whereas if the total is less than or equal to $-2 \pi$, there is an antivortex. 
+
+
+
+ 
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  9 MAR 2018 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  11 MAR 2018 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2053,34 +2053,186 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--77
 ------------------------------------------------------------------------------
 [11
 
-] (./Chapters/Chapter3.tex
+] (./Chapters/Chapter4.tex
 Chapter 1.
 ------------------------------------------------------------------------------
- 1 Method
+ 1 Results
 ------------------------------------------------------------------------------
+PGFPlots: reading {../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0Ly_0/
+N_48num_sim_1300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0Ly_0/
+N_40num_sim_1100cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0Ly_0
+/N_104num_sim_625cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0Ly_0/
+N_64num_sim_900cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0Ly_0/
+N_72num_sim_800cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0Ly_0
+/N_128num_sim_450cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0Ly_0/
+N_80num_sim_550cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0Ly_0/N_48num_sim_130
+0cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0Ly_0/N_40num_sim_110
+0cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0Ly_0/N_104num_sim_6
+25cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900
+cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0Ly_0/N_72num_sim_800
+cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_4
+50cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0Ly_0/N_80num_sim_550
+cL_0.2iter_500000.txt}
+PGFPlots: reading {./gL_run/N_40/dt_0.01/Lx_0Ly_0/N_40cL_0.2iter_125000.txt}
+PGFPlots: reading {./gL_run/N_48/dt_0.01/Lx_0Ly_0/N_48cL_0.2iter_180000.txt}
+PGFPlots: reading {./gL_run/N_64/dt_0.01/Lx_0Ly_0/N_64cL_0.2iter_320000.txt}
+PGFPlots: reading {./gL_run/N_72/dt_0.01/Lx_0Ly_0/N_72cL_0.2iter_405000.txt}
+PGFPlots: reading {./gL_run/N_80/dt_0.01/Lx_0Ly_0/N_80cL_0.2iter_500000.txt}
+PGFPlots: reading {./gL_run/N_104/dt_0.01/Lx_0Ly_0/N_104cL_0.2iter_845000.txt}
+PGFPlots: reading {./gL_run/N_128/dt_0.01/Lx_0Ly_0/N_128cL_0.2iter_1280000.txt}
+
 [1
 
 
 
 ]
-PGFPlots: reading {../project_code/binder_cumulant/N=32/dt=0.01/Lx=0Ly=0/N_32nu
-m_sim_200cL_0.2iter=122880.txt}
-PGFPlots: reading {../project_code/binder_cumulant/N=32/dt=0.02/Lx=0Ly=0/N_32nu
-m_sim_200cL_0.2iter=61440.txt}
-PGFPlots: reading {../project_code/binder_cumulant/N=32/dt=0.001/Lx=0Ly=0/N_32n
-um_sim_100cL_0.2iter=1228800.txt}
-PGFPlots: reading {../project_code/vor_vs_cL.txt}
-PGFPlots: reading {../project_code/vor_vs_cL2.txt}
-PGFPlots: reading {../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0Ly_0
-/N_128num_sim_100cL_0.1iter_1280000.txt}
- [2] [3]) (./Appendices/AppendixA.tex [4]
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48num_si
+m_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40num_si
+m_1000cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104num_
+sim_425cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64num_si
+m_500cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72num_si
+m_500cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128num_
+sim_310cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80num_si
+m_600cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0.2Ly_
+-0.2/N_48num_sim_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0.2Ly_
+-0.2/N_40num_sim_1000cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0.2Ly
+_-0.2/N_104num_sim_425cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0.2Ly_
+-0.2/N_64num_sim_500cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0.2Ly_
+-0.2/N_72num_sim_500cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0.2Ly
+_-0.2/N_128num_sim_310cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0.2Ly_
+-0.2/N_80num_sim_600cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48num_si
+m_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40num_si
+m_800cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104num_
+sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64num_si
+m_450cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72num_si
+m_400cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128num_
+sim_240cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80num_si
+m_600cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0.4Ly_
+-0.4/N_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0.4Ly_
+-0.4/N_40num_sim_800cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0.4Ly
+_-0.4/N_104num_sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0.4Ly_
+-0.4/N_64num_sim_450cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0.4Ly_
+-0.4/N_72num_sim_400cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0.4Ly
+_-0.4/N_128num_sim_240cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0.4Ly_
+-0.4/N_80num_sim_600cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48num_si
+m_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40num_si
+m_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104num_
+sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64num_si
+m_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72num_si
+m_250cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.6Ly_-0.6/N_128num_
+sim_260cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80num_si
+m_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0.6Ly_
+-0.6/N_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0.6Ly_
+-0.6/N_40num_sim_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0.6Ly
+_-0.6/N_104num_sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0.6Ly_
+-0.6/N_64num_sim_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0.6Ly_
+-0.6/N_72num_sim_250cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0.6Ly
+_-0.6/N_128num_sim_260cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0.6Ly_
+-0.6/N_80num_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48num_si
+m_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40num_si
+m_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104num_
+sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64num_si
+m_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72num_si
+m_260cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.8Ly_-0.8/N_128num_
+sim_230cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80num_si
+m_400cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0.8Ly_
+-0.8/N_48num_sim_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0.8Ly_
+-0.8/N_40num_sim_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0.8Ly
+_-0.8/N_104num_sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0.8Ly_
+-0.8/N_64num_sim_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0.8Ly_
+-0.8/N_72num_sim_260cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0.8Ly
+_-0.8/N_128num_sim_230cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0.8Ly_
+-0.8/N_80num_sim_400cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_1Ly_-1/N_48num_sim_30
+0cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_1Ly_-1/N_40num_sim_30
+0cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_1Ly_-1/N_104num_sim_
+375cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_1Ly_-1/N_64num_sim_45
+0cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_1Ly_-1/N_72num_sim_20
+0cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_
+250cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_20
+0cL_0.2iter_500000.txt}
+) (./Appendices/AppendixA.tex [2] [3] [4] [5] [6]
 Appendix A.
 ------------------------------------------------------------------------------
  A An Appendix
 ------------------------------------------------------------------------------
-[5
+[7
 
-]) [6]
+]) [8]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -2091,40 +2243,41 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 085BA1663B263188762DA2A20FBB7FBE;1447.
+(rerunfilecheck)             Checksum: 13EB5B0BB0448C5064F5CA2906A97823;1432.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 39679 strings out of 493029
- 863072 string characters out of 6136234
- 1182637 words of memory out of 5000000
- 42611 multiletter control sequences out of 15000+600000
- 16824 words of font info for 62 fonts, out of 8000000 for 9000
+ 40026 strings out of 493029
+ 880148 string characters out of 6136234
+ 1614793 words of memory out of 5000000
+ 42810 multiletter control sequences out of 15000+600000
+ 14362 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,22n,77p,10505b,2114s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,19n,83p,10505b,2423s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Thesis.pdf (18 pages, 246686 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on Thesis.pdf (20 pages, 343799 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
