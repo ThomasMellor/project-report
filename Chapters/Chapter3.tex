@@ -40,7 +40,7 @@ The timestep was initially chosen to be $\dd{t}=0.01$ and this was the value use
 \label{fig:binder_different_cL}
 \end{figure}
 
-The value of $c_L$ at which the phase transition occurs was determined. \fig{\ref{fig:vor_vs_cL}} shows the number of vortices $t=400$ for a system size of 64 at various values of $c_L$. The value $c_L = 0.2$ was then chosen for the remainder of project. Naively, after determining that $c_L=0.2$ resulted in the Binder cumulant evolving from zero to near one in the linear evolution, $c_L=0.1$ was also tested with the expectation that the convergence would occur faster. In fact, for $L=128$, the Binder cumulant did not approach one at all, as shown in \fig{\ref{fig:binder_cL_0.1}}. This can be explained by the existence of vortices, which are higher in \fig{\ref{fig:vor_vs_cL}} for $c_L=0.1$ than higher values below the transition.    
+The value of $c_L$ at which the phase transition occurs was determined. \fig{\ref{fig:vor_vs_cL}} shows the number of vortices $t=400$ for a system size of 64 at various values of $c_L$. The value $c_L = 0.2$ was then chosen for the remainder of project. For the value of $c_L=0.1$ the Binder cumulant did not approach one at all in the case of $L=128$, as shown in \fig{\ref{fig:binder_cL_0.1}}. This is likely a numerical artefact and can be explained by the existence of vortices stuck to lattice sites and not able to anihilate due to the low noise. The number of vortices is higher in \fig{\ref{fig:vor_vs_cL}} for $c_L=0.1$ than higher values below the transition. XX shows a snapshat of the system for one realisation to illustrate this. This issue was also mentioned in XX.     
 
 \begin{figure}[htbp!]
 \centering

@@ -1,0 +1,351 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{pgfplots}
+%\pgfplotsset{compat=1.13}
+%\maxdeadcycles=200
+\begin{document}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0Ly_0/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0Ly_0/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0Ly_0/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0Ly_0/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0Ly_0/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0Ly_0/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.2Ly_0.2/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.2Ly_0.2/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.2Ly_0.2/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.2Ly_0.2/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.2Ly_0.2/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.2Ly_0.2/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\clearpage
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\clearpage
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.6Ly_0.6/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.6Ly_0.6/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.6Ly_0.6/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.6Ly_0.6/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.6Ly_0.6/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.6Ly_0.6/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.8Ly_0.8/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.8Ly_0.8/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.8Ly_0.8/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.8Ly_0.8/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.8Ly_0.8/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.8Ly_0.8/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\clearpage
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_1Ly_1/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_1Ly_1/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_1Ly_1/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_1Ly_1/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_1Ly_1/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_1Ly_1/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_1Ly_-1/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_1Ly_-1/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_1Ly_-1/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_1Ly_-1/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_1Ly_-1/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_1Ly_-1/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\end{document}
