@@ -1,0 +1,205 @@
+\section{$XY$ model and the BKT transition}
+
+The 2D $XY$ model consists of a finite lattice of unit length spins that can rotate along the plane of the lattice. The Hamiltonian describing the system is given by 
+\[
+\mathcal{H} = -J\sum_{\left <i,j \right>} \sum_{\{x,y\}} \myvec{s}_{i,j} \cdot \myvec{s}_{i+x,j+y} =
+    -J\sum_{(i,j)} \sum_{\{x,y\}}  \cos( \theta_{i,j} - \theta_{i+x,j+y}) 
+\]
+ where $i, j$ signifies point $(i,j)$ and $\{x,y\}$ are the pairs $\{0,1\} \{0,1\}$, i.e. nearest neighbours, and $J$ is a constant. Periodic boundary conditions have been employed. We can form the continuum long wavelength (slowly varying) version of this equation by expanding in a Taylor series to obtain and keeping only terms to second order (as higher order terms will have Fourier transformed components greater than $k^2$ and we are ignoring those)
+ \[
+ -J\sum_{(i,j)} \sum_{\{x,y\}} \left ( 1 - \frac{a^2}{2} \frac{( \theta_{i,j} - \theta_{i+x,j+y})^2}{a^2} \right).
+ \]
+ The first term is a constant that can be ignored in what follows. Taking $a \to 0$, we have that $\sum_{(i,j)} a^2 \to \int \dd{x}\dd{y}$ and the terms in brackets become partial derivative, i.e. we obtain
+ \[
+ \frac{J}{2} \int \dd{x} \dd{y} (\nabla \theta)^2
+ \]
+ where now $\theta$ is a continuous variable. The Hamiltonian under consideration is invariant under global SO(2) transformation, i.e. in the replacement of $\theta \to \theta + \delta \theta$ as the change in cancelled in the $\cos$ terms. Because the system is two dimensional and interacting, it is impossible for the symmetry to be spontaneously broken, that is, the system cannot occupy a state in which all the spins point in the same direction. To demonstrate this, we note that the probability of a configuration is given by 
+ \[
+  \mathcal{P}[\theta(\myvec{r})] =   \exp \left [   -\beta J/2 \int \dd[2]{\myvec{r}} (\nabla \theta)^2 \right ]
+ \] 
+ If we instead we decompose  $\theta$ into its Fourier decomposition $\theta(\myvec{r}) = \sum_{\myvec{k}} \theta_{\myvec{k}} e^{i \myvec{k}\cdot \myvec{r}}$ where the sum is over the Brillouin zone, we then obtain for the probability of $\theta(\myvec{k})$
+ \[
+ \mathcal{P}[\theta_{\myvec{k}}] = \exp \left[-\beta J L^2/2 k^2 |\theta_{\myvec{k}}|^2 \right]
+ \]
+ where $L^2$ denotes the system size and we use $\theta_{\myvec{k}} = \theta_{\myvec{-k}}^*$. Now $|\theta_{\myvec{k}}|^2 = (\Re \theta_{\myvec{k}})^2 + (\Im \theta_{\myvec{k}})^2$ and we can write the probability of a configuration as 
+ \[
+ \begin{split}
+ \mathcal{P}[\{\theta_{\myvec{k}}\}] &= \prod_{\myvec{k}} \exp \left[-\beta J L^2/2 k^2 |\theta_{\myvec{k}}|^2 \right] \\ &=\prod_{\myvec{k}, k_x > 0} \exp \left[-2\beta J L^2/2 k^2((\Re \theta_{\myvec{k}})^2 + (\Im \theta_{\myvec{k}})^2) \right]
+ \end{split}
+ \]
+ where in the second we restrict ourselves to the positive $x$ and thus obtain completely decoupled Gaussian variables with variance $1/\beta J L^2$. Then the variances of $\theta_{\myvec{k}}$ are given by 
+ \[
+ \mean{\theta_{\myvec{k}} \theta_{\myvec{k}'}} = \mean{\Re \theta_{\myvec{k}} \Re \theta_{\myvec{k}'}} + \mean{\Im \theta_{\myvec{k}} \Im \theta_{\myvec{k}'}} = \delta_{\myvec{k}, \myvec{-k'}}/\beta J L^2 
+ \]
+ Now to calculate the average magnetisation we require to know 
+ \[
+ \mean{\theta(\myvec{r})\theta(\myvec{r}')} = \sum_{\myvec{k}, \myvec{k'}} e^{i \myvec{k} \cdot \myvec{r} + i \myvec{k}' \cdot \myvec{r}'} \mean{\theta_{\myvec{k}} \theta_{\myvec{k}'}} = \frac{1}{\beta JL^2}\sum_{\myvec{k}} \frac{e^{i \myvec{k} \cdot( \myvec{r} - \myvec{r}')}}{k^2}
+ \]
+ which can be replaced by an integral by $1/L^2 \sum_{\myvec{k}} \to \int \dd[2]{\myvec{k}}/(2\pi)^2 $ so that we obtain
+ \[
+ \frac{1}{\beta J} \int \frac{\dd[2]{\myvec{k}}}{(2 \pi)^2} \frac{e^{i \myvec{k} \cdot( \myvec{r} - \myvec{r}')}}{k^2}
+ \]
+ The negative of the integral is the Green's function of $\nabla^2$:
+ \[
+ -\int  \frac{\dd[2]{\myvec{k}}}{(2 \pi)^2} \nabla^2 \frac{e^{i \myvec{k}.(\myvec{r} - \myvec{r}')}}{k^2} = \int  \frac{\dd[2]{\myvec{k}}}{(2 \pi)^2} k^2 \frac{e^{i \myvec{k}.(\myvec{r} - \myvec{r}')}}{k^2} = \delta^2(\myvec{r}-\myvec{r}')
+ \]
+ Assuming a solution $V$ that depends only on $|\myvec{r}|$, which we expect for a mean in the $XY$ model, we can find a solution with the divergence thoerem:
+ \[
+ \int \nabla \cdot \nabla V\dd[2]{\myvec{r}} \int r \nabla V \dd{\Omega} = 2 \pi r \nabla V  = 1. 
+ \]
+ With $\nabla V = \pdv*{V}{r}$  this is $V(r) = \ln(r/a)/2\pi$ where the constant $a$ is of the order of the lattice spacing. Finally, we need to use 
+ \[
+ \mean{e^{A}} = e^{\left(\mean{A} + \tfrac12 \mean{A^2}\right)}
+ \]
+ for any linear combination $A$ of Gaussian distributed variables. The mean value of the magnetisation is given by
+ \[
+ \left < \cos \theta( \myvec{r}) \right>  = \Re \mean{e^{i\theta(\myvec{r})}} = \Re e^{\left(i\mean{\theta(\myvec{r})} - \tfrac12 \mean{\theta(\myvec{r})^2}\right)}
+ \]
+ Now $\mean{\theta(\myvec{r})}=0$ as it is the sum of the Gaussian distributed variables. The second term in the exponential, as we have just found, is $\tfrac12 \log(0)$. We thus have
+ \[
+ \mean{\cos \theta(\myvec{r})} = 0
+ \]
+ and have therefore shown there is no spontaneous symmetry breaking. For free, we can calculate the spin correlations in space $\mean{\cos \theta(\myvec{r} - \myvec{r}')}.$ Using the same method as before, the term in the exponential $\mean{(\theta(\myvec{r}) - \theta(\myvec{r}'))^2}$ = 
+ \[
+ 2\mean{\theta(\myvec{r})^2} - 2\mean{\theta(\myvec{r})\theta(\myvec{r}')} =  \frac{\log(|\myvec{r} - \myvec{r}'|/a)}{\beta J  \pi}
+ \]
+ Thus, the correlations in space are of the form
+\[
+\mean{\cos \theta (\myvec{r} - \myvec{r}')} \propto \frac{1}{|\myvec{r}- \myvec{r}'|^{\eta}}
+\]
+for an exponent $\eta$. We then see that while there is no spontaneous symmetry breaking, there still exists a phase with `algebraic' decay of correlations. Since in making the continuum assumption we only retained the leading order term in the Taylor expansion, we are implicitly assuming assuming large $J$ that penalises large fluctuations of the spins. This is the low temperature phase. Assuming $J$ small, we may expand the exponential of the original Hamiltonian in powers of $J$ so that the partition function approximately: 
+\[
+\mathcal{Z} = \int  \prod_{\myvec{r}} \dd{\theta(\myvec{r})} \prod_{\myvec{r}'} [1 + \beta J \cos(\theta(\myvec{r}) - \theta_(\myvec{r}')) + \mathcal{O}(J^2
+)]\]
+In determining the correlations in this regime, we note that any integral of the form 
+\[
+\int_{0}^{2\pi} \dd{\theta_k} \cos(\theta_i -\theta_j) 
+\]
+is zero whereas
+\[
+\int_{0}^{2\pi} \dd{\theta_k} \cos(\theta_i -\theta_j)\cos(\theta_j - \theta_k)= \pi \cos(\theta_i - \theta_k)
+\]
+Thus for the correlation we have 
+\[
+\mean{\cos(\theta(\myvec{r})- \theta(\myvec{0}))} \propto (\pi J)^{|\myvec{r}|}
+\]
+as there an order $|\myvec{r}|$ of cosine terms in the product that are required to `connect' $\myvec{0}$ to $\myvec{r}$. 
+We may rewrite this expression as $\exp[-|\myvec{r}|/\xi]$ where $\xi^{-1} = 1/\pi J$ and is the `correlation length' of the system. It quantifies the distance that the spins are correlated. This intuitive approach has revealed that the, in high temperature phase, correlations decay exponentially. The two types of decay -- algebraic and exponential -- are hallmarks of two phases in 2D systems, and the transition between the two is known as the BKT transition. More rigorous analysis reveals that the correlation length diverges at the critical point of the transition, and tends to zero as one moves away in either direction. 
+
+What differentiates the two phases? The essential insight is that the system enables the existence of topoligcal defects known as `vortices'. This means that we cannot continuously deform a state with vortices into one without them, and thus it cannot be obtained through perturbation theory. To see their origin, note that the phase at each point is restricted to $[0, 2\pi]$,  i.e. it is compact, and so the circulation, defined by 
+\[
+\int \nabla \theta \cdot \dd{\myvec{l}} = 2\pi n
+\]
+must be restricted to $2 \pi n$ where $n$ is an integer so that the phase angle is not multiple valued. Now by the gradient theorem we know that if the gradient is everywhere defined inside the loop then this loop integral should be zero, already signaling that there must be a singularity for vortices to exist. Phase transitions are manifested by singularities in various quantities, and it is indeed it is in the absence or presence of vortices that is indicative of the phase the system occupies. 
+
+To obtain a better intuition for the subject, let us consider an isotropic solution $\nabla \theta = \frac{n}{r} \myvec{\hat{r}}$. The integer $n$ is known as the charge of the vortex, as then the solution is $\theta(\myvec{r}) = \log(r)$ which describes a Coulombic charge in two dimensions. This provides a revealing picture for the system: in the low temperature phase the `charges' are bound, but increasing the temperature beyond the transition is marked by an unbinding and proliferation of these vortices. Since the free energy $F = U - TS$ is minimised at a given temperature and volume, the proliferation at the critical point must mean the entropy increase is more favourable than the energy increase. 
+
+To estimate both, imagine that we have one vortex in the system. We use our expression for the energy
+\[
+\int \dd[2]{\myvec{r}} | \nabla \theta |^2 \propto \log(L)
+\]
+where $L$ is the system size. The number of places to put the vortex is proportional to $L^2$, so the entropy $k \log \Omega$ must also be proportional to $\log L$. As both have this proportionality, it is then clear that, at the critical point, $U - T_cS$ makes vortex proliferation favourable. All these points will come into play in a modified form in the study of polariton condensates.
+
+After considering equilibrium issues, what of dynamics? We describe \cite{2016PhRvB..94j4521S} the evolution of $\theta_{i,j}$ according the Langevin equation 
+\[
+\partial_t \theta_{i,j} = -\Gamma \frac{\delta \mathcal{H}}{\delta \theta_{i,j}} + \eta=-\Gamma \pdv{\mathcal{H}}{\theta_{i,j}} + \eta
+\]
+where $\eta$ is a Guassian white noise term $\mean{\eta(\myvec{r},t), \eta(\myvec{r}',t')} = 2 \Delta \delta(t-t')\delta(\myvec{r}-\myvec{r}')$. In the discrete version this is
+\[
+\partial_t \theta_{i,j} = +\Gamma J \sum_{\{x,y\}} \sin(\theta_{i,j} -\theta_{i+x,j+y})
+\]
+where $\{x,y\}$ are as before. The continuum version of this equation requires $\delta \mathcal{H} / \delta \theta$ which is 
+\[
+\frac{\delta \mathcal{H}}{\delta \theta} = \frac{J}{2} \int \dd[2]{\myvec{r}}  2 (\nabla \theta)(\nabla \delta \theta).
+\]
+Intgerating by parts we find that the integrand is zero for $J\nabla^2 \theta$ so the equation is 
+\[
+\partial_t \theta = -\Gamma J \nabla^2 \theta + \eta.
+\]
+
+We will see that this is the equation of our equation describing the long wavelength behaviour of the condensate phase when we are in a certain regime.
+
+\section{$XY$ model scaling violations}
+
+To understand the approach taken in the project, we describe the approach taken in \cite{PhysRevLett.84.1503} to determine dynamical evolution of the correlation length $\xi$ as the system $XY$ system is quenched from the disordered (high temperature) phase to the ordered (low temperature) phase. Using renormalisation group methods \cite{Janssen1989}, the dynamical exponent $z$ is predicted to be 2 so that the correlation length grows as $\xi(t) = t^{1/2}.$ 
+To test this prediction, for various system sizes a plot of the time dependent Binder cumulant defined by 
+\[
+g_L(t) = 2 - \frac{\mean{\myvec{M}^2}^2}{\mean{\myvec{M}^4}}
+\]
+was plotted where $\myvec{M}(t)$ is the magnetisation (the average of $(\cos \theta_{i,j},\sin\theta_{i,j})$ on the lattice. The mean of $\myvec{M}$ is over independent Monte Carlo runs. In a disordered condition where each spin is random, each component magnetisation is the sum of independent uniformly distributed numbers, and so by the central limit theorem are approximately Gaussian distributed. Then $\mean{\myvec{M}^2}^2/\mean{\myvec{M}^4}$ is 2, so $g_L$ is 0. In an ordered state where all spins are aligned, the ratio is one, and $g_L$ is 1. The Binder cumulant is thus a convenient quantity to act as an ordered parameter.
+
+Crucially, it is dimensionless. Therefore, for different system sizes, plotting the Binder cumulant as a function of another dimensionless quantity should result in all the curves `collapsing' into one. Since we are varying the system size $L$, the ratio $\xi^2/L^2 = t/L^2$ is appropriate. 
+
+This was done in two cases: first in the quench from a completely ordered phase to one below the critical temperature, where $z=2$ provided a good collapse. In the quench from the random initial condition to the ordered phase, however, a much higher exponent $z=2.35$ was required to achieve the same quality in collapse. The disparity was explained by the requirement of vortex-antivortex binding necessary when queching from the disordered initial condition, which slows the approach to equilibrium. Indeed, a modification of the functional form of $\xi$ was found to be necessary, and was $\xi(t) = (t/\log(t/t_0))^{1/2}$.
+
+The physical origin of this was in the friction and attracted experienced by the vortices. For the attraction, we determined earlier that the vortices behave as 2D Coulombic charges, and thus the force between them is proportional to $1/R$ where $R$ is the vortex distance. The friction was determined from the evolution equation (without noise, or $T=0$), i.e. $\partial_ \theta = -\delta H/ \delta 
+\theta$ (the prefactors being set to 1). If $\theta(x,y,t)= \theta_v(x-vt,y)$ is the vortex motion is now
+\[
+\dv{E}{t} = \int \dd[2]{\myvec{r}} \frac{\delta E}{\delta \theta}\pdv{\theta}{t} = - \int \dd[2]{\myvec{r}} \left(\pdv{\theta}{t}  \right)^2 = -v^2 \int \dd[2]{\myvec{r}} \left( \pdv{\theta_v}{x}\right)^2
+\]
+Now for a frictional force $-\gamma \dot{x}$ we see that the last integral must be the friction constant. Using the equilibrium vortex configuration we found earlier, which is isotropic, and hence we replace the derivative by $x$ with the gradient, we see that the zero velocity vortex friction is the equilibrium energy, and thus scales like $\log R$, the vortex distance. 
+
+Taking the correlation length as the vortex distance, the velocity of the vortices is $\dv{\xi}{t} \sim F/\gamma \sim 1/(\xi \log \xi)$ so that $\xi \sim (t/\log t)^{1/2}$. 
+
+\section{Mapping to the KPZ Equation}
+
+We now in what way our polariton condensate relates to the $XY$ model. Previously we discussed two pumping regimes for the microcavity: incoherent and the OPO regimes. The long wavelength dynamics of the phase in both cases is governed by the compact anisotropic KPZ equation
+\[
+\partial_t \theta = D_x \pdv[2]{\theta}{x} + D_y \pdv[2]{\theta}{y} + \lambda_x \left(\pdv{\theta}{x}\right)^2  + \lambda_y\left( \pdv{\theta}{y}\right)^2 + \eta
+\]
+where $\eta$ is the Gaussian white noise term as before. We see that if the $\lambda$s are set to zero (the $D$s can always be set to one by rescaling the coordinates) we reobtain the equation for the $XY$ model evolution.
+
+However, the physical origin and the interpretation of $\theta$ is different in both cases, which will be discussed. First, as we described earlier polariton system can form a condensate by adjusting the drive parameters appropriately, and hence we can describe the condensate by a macroscopic wave function $\rho(\myvec{r})e^{i \theta(\myvec{r})}$. Since the phase angle is compact, by the same arguments as before, vortices are allowed to exist. 
+
+In the incoherent pump regime the dynamics of the condensate can be phenomenologically described by the dissipative Gross-Pitaevskii equation 
+\[
+\partial_t \psi(\myvec{r}, t) = - \frac{\delta H_d}{\delta \psi^*} + i\frac{\delta H_c}{\delta \psi^*} + \eta
+\]
+where $H_d$ and $H_c$ are responsible for the coherent and dissipative dynamics and are given by 
+\[
+H_l = \int r_l |\psi|^2 + K_l^x|\partial_x \psi|^2 + K_l^y|\partial_y \psi|^2 + \tfrac12 u_l |\psi|^4
+\]
+where $l=\{c, d\}$. The last term is a complex Gaussian white noise. The equation then reads
+\[
+\partial_t \psi = -r_\text{eff}\psi +K^x_{\text{eff}}\partial_x^2\psi +K^y_{\text{eff}}\partial_y^2\psi -u_{\text{eff}}|\psi|^2\psi + \eta
+\]
+where $A_{\text{eff}} = A_d -iA_c.$ To simplify this equation, and in particular to determine an equation only dependent on $\theta$, the condensate is expanded about a mean $(M_0 + \chi)e^{i\theta}$ where $M_0$ is set to be a static and uniform solution when $\eta = 0$ and $\theta=0$. This gives $r_{\text{eff}}M_0 = -u_{\text{eff}}M_0^3$. The coeffient $r_c$ is arbitrary and can be set by a local and time dependent transformation $\psi' = \psi e^{i \omega t}$, and this freedom is used to set $r_c = -u_cM_0^2$ and $r_d = -u_dM_0^2$. The physical origin of the other terms is as follows: $r_d$ is the particle loss rate less the pump rate. Clearly the loss rate depends on the density of polaritons, and in the incoherent regimes a sufficient density is required for polariton creation. The $K_c$ terms are the momentum coefficents in the $x$ and $y$ directions, inversely proportional to $m_x$ and $m_y$, while $K_d$ are diffusion-like terms. Finally, the $u_c$ term describes a two polariton interaction, and $u_d$ is also a loss term but is non linear. The latter ensures that the polariton density does not grow without bound. 
+
+Substituting the mean expansion and linearising the $\chi$ fluctuation (also ignoring terms like $\partial_x \chi \partial_x \theta$), gives
+\[
+\partial_t \chi = -2u_d M_0^2 \chi - K_c^x M_0 \partial_x^2 \theta -K_c^y M_0 \partial_y^2 \theta - K_d^x M_0(\partial_x \theta)^2 -K_d^y M_0(\partial_y \theta)^2 + \Re \eta
+\]
+\[
+M_0\partial_t \theta = -2u_c M_0^2 \chi + K_d^x M_0 \partial_x^2 \theta +K_d^y M_0 \partial_y^2 \theta - K_c^x M_0(\partial_x \theta)^2 -K_c^y M_0(\partial_y \theta)^2 + \Im \eta
+\]
+where the real and imaginary parts were equated. In the low frequency limit, the left hand side is negligible compared to the first term on the right as as it has a time derivative, therefore can be ignored. The first equation can be then be solved for $\chi$ and substituted into the second, from which the KPZ equation is obtained. That the long wavelength limit results in only $\theta$ dependence is as expected as the U(1) symmetry (clear from the Hamiltonian) means that the excitation about small $k$ is `gapless' in that the energy of the excitation tends to zero (since a slowly varying rotation in space can be made to require arbitrarily small energy). In contrast, excitations of the other variables are `gapped' and the dispersion does not tend to zero at low $k$ but some finite value as there is no corresponding symmetry. Thus we need only retain $\theta$ dependence.
+
+For the coherent pump regime, purportedly the same dynamics is followed. However, here an ab initio rather than phenomlogical model is possible, and the meaning of $\theta$ is different: $\theta = \theta_s - \theta_i$ where $s$ and $i$ stand for the signal and idler modes. There again exists a U(1) symmetry as now polariton scattering is described by terms such as $\psi_s\psi_i{\psi_p^*}^2 + \text{h.c.}$ which are invariant under a transformation $\psi_s \to \psi_se^{i\alpha}$, $\psi_i \to \psi_ie^{-i\alpha}$, and $\psi_p$ kept the same. This symmetry
+results in a gapless excitation and the KPZ equation is obtained with the modified $\theta$.
+
+To obtain the discretised version of this equation, the linear terms are transformed as before in the $XY$ model, i.e. by 
+\[
+\partial_x^2 \theta_{i,j}  = -\sum_{x=\{-1,1\}} \sin(\theta_{i,j} - \theta_{i+x,j})
+\]
+and analogously for the $y$ direction. The nonlinear terms are the second order coefficients in the expansion of $\cos$, so the prescription for these is
+\[
+(\partial_x \theta_{i,j})^2  = -\sum_{x=\{-1,1\}} (\cos(\theta_{i,j} - \theta_{i+x,j})- 1)
+\]
+and analogously for the $y$ direction. There is no factor of 2 as we are summing two such $\cos$ terms in each case. 
+
+\section{Polariton Condensate Regimes}
+
+Using the KPZ equation parameters, the regimes of the condensate are parametrised by the scaled nonlinearity \[
+g \equiv \lambda_x^2/D_x^2\sqrt{D_xD_y}
+\]
+and the scaled anistropy
+\[
+\Gamma = \lambda_y D_x/\lambda_x D_y.
+\]
+For the KPZ equation to be stable, the $D$s must be positive. The sign of the anistropy therefore depends on the signs of the $\lambda$s, and their relative sign matters.. The cases $\Gamma > 0$ and $\Gamma <0$ are called the weak and strong anistropy phases, respectively. 
+
+To determine the long range behaviour in the absense of vortices, rernormalisation group (RG) analysis has been peformed. The essential idea is as follows: over small length scale the system is course grained so is in a sense averaged. A microscropic length scale of the system (such as lattice spacing) is then obtained by shrinking the course grained length scale down to the lattice spacing. This process results in a new description of the system with the parameters adjusted. After repeated application of this procedure, a `flow' of the parameter values is obtained (essentially a phase portrait) and the terms that are non zero at the fixed points, which correspond to points where the correlation length is zero, it shrinking after each iteration, are the terms that are important. 
+Two cases are important. For the weak anisotropic regime all flow lines tend to $g=\inf$ and $\Gamma=1$. In the strongly anisotropic regime there is a fixed point at $g=0$ and $\Gamma=-1$. This is the $XY$ model regime where $\lambda=0$ and one expects BKT physics. 
+
+In practice, only the weakly anisotropic regime is accesible in the case of incoherent pumping, whereas for the OPO pumping it is experimentally viable to traverse different regimes by the adjustment of the pump strength. We shall now describe the various possible 
+

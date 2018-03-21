@@ -1,0 +1,67 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global}
+    \entry{PhysRevLett.84.1503}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cbd17823a9f29d0d61bcccc93572cf43}{%
+           family={Bray},
+           family_i={B\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           given_i={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c3badccfdb5c64e8bad36888a35c0eed}{%
+           family={Briant},
+           family_i={B\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           given_i={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=6b1621f5783d0256956b04762950f5a4}{%
+           family={Jervis},
+           family_i={J\bibinitperiod},
+           given={D.\bibnamedelimi K.},
+           given_i={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{dda7fd98cdde0bfdd8601ca438b88f79}
+      \strng{fullhash}{dda7fd98cdde0bfdd8601ca438b88f79}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{7}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{02}
+      \field{title}{Breakdown of Scaling in the Nonequilibrium Critical Dynamics of the Two-Dimensional $\mathit{XY}$ Model}
+      \field{volume}{84}
+      \field{year}{2000}
+      \field{pages}{1503\bibrangedash 1506}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.84.1503
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.84.1503
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

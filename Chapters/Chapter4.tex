@@ -4,50 +4,18 @@ Simulations were peformed on system sizes $L=40, 48, 64, 80, 104, 128$ with the 
 
 \section{Linear Case}
 
-\fig{\ref{fig:binder_t_00}} overlays the Binder cumulant evolution for different sizes in the linear ($\lambda_x = \lambda_y = 0$) case which corresponds to the XY model. \fig{\ref{fig:binder_logt_00}} does the same but plotted with respect to $t/L^2 \log t$ where the collapse is expected. As is clear, this reobtains the result from XX while using Stochastic evolution rather than Monte Carlo and provides confidence in the results for the non-linear cases. The collapse is not perfect: in Figures \ref{fig:error_00} and \ref{fig:error_00_2}, which shows the Binder cumulant as a function of the number of realisations for all the system sizes at two different points, shows how far apart the curves are. For the first case, the uncertainties of the points do not all cross, although none are isolated. In the second case, the collapse is weaker and $L=40$ is consistently isolated, as can be seen from the graph of the collapse. This also occurs for $L=64$ earlier on in the simulation. For $L=48$ this could be an underestimation of the error, and there is a slight downward decrease in its value as the number of realisations is increased. Ideally one would perform further simulations to ensure this, but this was not possible in the time constraints of the project. 
-
-With those caveats in mind, we may be assured that the result has been obtained, and this is further corroborated by the plots of $\log n_v$, where $n_v$ is the number of vortices, as a function of $\log (t / \log t)$, shown in XX to XX for each system size. For the linear case, it is expected that $\log n_v = -\log (t / \log t)$. This can be explained as follows: using the result in XX that the distance between vortices $R$ is approximately proportional to $ (t / \log t)^{1/2}$, we have that the vortex density is then $1/R^2$, and the number of vortices $n_v \approx L^2/R^2$, and therefore $\log n_v \approx -  \log R^2 = -\log(t/\log t)$ up to some additive constants. As the figures show, the gradient wasobtained to good accuracy for all system sizes. Due to the finite size of the system, the approximation breaks down at large times once the majrotiy of the vortices have annihilated, and therefore a time scale must be chosen with which to calculate the gradient. In practice, the time scale maximised but chosen to be prior to the finite size behaviour of the system. Therefore it is sensible not to read the values literally, but take them as indicative of the XY model behaviour for the linear case.                
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel=$t$,
-		ylabel={Binder cumulant},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[mark=none, color= green]
-	table{../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0Ly_0/N_48num_sim_1700cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$, 1700 realisations.}
-		\addplot[mark=none, color= red]
-	table{../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0Ly_0/N_40num_sim_1100cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$, 1100 realisations.}
-		\addplot[mark=none, color= black]
-	table{../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0Ly_0/N_104num_sim_625cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$, 625 realisations.}
-		\addplot[mark=none, color= blue]
-	table{../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$, 900 realisations.}
-		\addplot[mark=none, color= gray]
-	table{../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0Ly_0/N_72num_sim_800cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$, 800 realisations.}
-		\addplot[mark=none, color= orange]
-	table{../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_450cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$, 450 realisations.}
-		\addplot[mark=none, color= purple]
-	table{../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0Ly_0/N_80num_sim_550cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$, 550 realisations.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The Binder cumulant for different sizes with $\lambda_x = \lambda_y = 0.$}
-\label{fig:binder_t_00}
-\end{figure}
+\fig{\ref{fig:binder_t_00}} overlays the Binder cumulant evolution for different sizes in the linear ($\lambda_x = \lambda_y = 0$) case which corresponds to the XY model. \fig{\ref{fig:binder_logt_00}} does the same but plotted with respect to $t/L^2 \log t$ where the collapse is expected. 
+As is clear, this reobtains the result from \cite{PhysRevLett.84.1503} while using Stochastic evolution rather than Monte Carlo and provides confidence in the results for the non-linear cases. 
+The collapse is not perfect: Figures \ref{fig:error_00} and \ref{fig:error_00_2}, which display the Binder cumulant as a function of the number of realisations for all the system sizes, show how far apart the curves are. A value of $t /L^2 \log t$ was calculated for $L=40$ for two points in the simulation, namely, midway through and three quarters of the way thourgh, and the corresponding $t$ was chosen for all other system sizes that was closest to this value. In this report we call these the midway and three quarters graph for brevity. 
+For the first case, the uncertainties of the points do not all cross, although none are isolated. 
+In the second case, the collapse is weaker and $L=48$ is consistently isolated, as can be seen from the graph of the collapse. 
+This also occurs for $L=64$ earlier on in the simulation. 
+For $L=48$ there could be an underestimation of the error, and there is a slight downward decrease in its value as the number of realisations is increased. 
+Ideally one would perform further simulations to ensure this, but this was not possible in the time constraints of the project. 
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
 		xlabel=$t/L^2 \log t$,
 		ylabel={Binder cumulant},
@@ -89,7 +57,7 @@ With those caveats in mind, we may be assured that the result has been obtained,
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
 y tick label style={
         /pgf/number format/.cd,
@@ -133,7 +101,7 @@ y tick label style={
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
 y tick label style={
         /pgf/number format/.cd,
@@ -172,16 +140,25 @@ y tick label style={
 	\end{axis}
 \end{tikzpicture}
 \caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y 0.$ There is no value for $128.$} 
-\label{fig:error_cL_2}
+\label{fig:error_00_2}
 \end{figure} 
 
+With those caveats in mind, we may be assured that the result has been obtained, and this is further corroborated by the plots of $\log n_v$, where $n_v$ is the number of vortices, as a function of $\log (t / \log t)$, shown in  \ref{fig:nv_anistroptic_40} to\ref{fig:nv_anistropic_128}  for each system size. 
+For the linear case, it is expected that $\log n_v = -\log (t / \log t)$. 
+This can be explained as follows: using the result in \cite{PhysRevLett.84.1503} that the distance between vortices $R$ is approximately proportional to $ (t / \log t)^{1/2}$, we have that the vortex density is then $1/R^2$, and the number of vortices $n_v \sim L^2/R^2$, and therefore $\log n_v \sim -  \log R^2 = -\log(t/\log t)$ up to some additive constants. For brevity, we shall call this the `vortex gradient.'
+As the figures show, the gradient was obtained to good accuracy for all system sizes: taking an average for all sizes, we obtain the value $-1.001 \pm 0.003$. Due to the finite size of the system, the approximation breaks down at large times once the majority of the vortices have annihilated, and therefore a time scale must be chosen with which to calculate the gradient. 
+In practice, the time scale maximised but chosen to be prior to the finite size behaviour of the system. 
+Therefore it is sensible not to read the values too literally, but take them as indicative of the behaviour of the linear case.                
+
+
+
 \section{Anistropic Case} 
-For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the same result as the XY model. Figures \ref{fig:binder_logt_0.2s0.2} to \ref{fig:binder_t_1-1} show the Binder cumulant plotted as a function of $t$ and also $t/ L^2 \log t$ for several values of increasing $\lambda_x$. Although the collapse is not as tight as for the linear case, it clearly still occurs to an extent, confirming the expectation. Due to the errors on the Binder cumulant, which are shown in Figures XX to XX, is not clear whether further realisations are necessary to tighten the collapse further, or if the dynamical exponent growth rate $(t/\log t)^{1/2}$ is simply not as good an approximation as in the linear case.  There are clear differences here, however, as the convergence to near one occurs more rapidly on increasing $\lambda$. This is corroborated by fig XX which shows that the gradient in $\log n_v$ where $n_v$ is then number of vortex pairs as a function of $\log (t / \log t)$ decreases on increasing $\lambda$, indicating a faster transition to the ordered phase.   
+For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the same result as the linear case. Figures \ref{fig:binder_logt_0.2_-0.2} to \ref{fig:binder_t_1-1} show the Binder cumulant plotted as a function of $t$ and also $t/ L^2 \log t$ for several values of increasing $\lambda_x$. Although the collapse is not as tight as for the linear case, it clearly still occurs to an extent, confirming the expectation. For the case $\lambda_x = 0.2$, the curves do not cross each other as closely as in the linear case at the mid-point of the simulation, however looking at the uncertainties shows that only the $L=80$ size deviates from the others. All other points are within each other when considering the uncertainties. These conclusions also apply after three quarters of the simulation has completed. This is corroborated by the grandient in vortex gradient which is averaged to be $-1.001 \pm 0.003$, demonstarted linear behaviour.
 
 \begin{figure}[htbp!] \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
+		xlabel=$ t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
@@ -221,51 +198,86 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
-		ylabel={Binder cumulant},
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
 		ymajorgrids=true,
 		xmajorgrids=true,
-		ticklabel style={
-            	/pgf/number format/fixed,
-            	/pgf/number format/precision=2,
-            	/pgf/number format/fixed zerofill
-        	},
 		grid style = dashed,
 		]
-		\addplot[mark=none, color= green]
-	table{../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48num_sim_400cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$, 400 realisations.}
-		\addplot[mark=none, color= red]
-	table{../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40num_sim_1000cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$, 1000 realisations.}
-		\addplot[mark=none, color= black]
-	table{../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104num_sim_425cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$, 425 realisations.}
-		\addplot[mark=none, color= blue]
-	table{../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64num_sim_500cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$, 500 realisations.}
-		\addplot[mark=none, color= gray]
-	table{../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72num_sim_500cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$, 500 realisations.}
-		\addplot[mark=none, color= orange]
-	table{../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128num_sim_310cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$, 310 realisations.}
-		\addplot[mark=none, color= purple]
-	table{../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80num_sim_600cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$, 600 realisations.}
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The Binder cumulant for different sizes with $\lambda_x = -\lambda_y = 0.2.$}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.2$.}
 \end{figure}
-
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = -\lambda_y = 0.2.$ There is no value for $128.$}
+\end{figure}
+
+
+For $\lambda_x =0.4$ there are similar conclusions to be made. $L=80$ also deviates, while the mid point uncertainties in the Binder cumulant are within each other for other system sizes. Due to these errors on the Binder cumulant, it would appear that it is undetermined whether further realisations are necessary to tighten the collapse further, or if the dynamical exponent growth rate $(t/\log t)^{1/2}$ is simply not as good an approximation as in the linear case. On the other hand, the vortex gradient does show deviation in its calculated average of $-1.013 \pm 0.003$. As these decrease for higher values of $\lambda$ monotonically it is clear that the effects of higher values of $\lambda$ are beginning to be felt. In particular, the convergence of the Binder cumulant becomes faster as $\lambda$ increases, indicating a faster transition to the ordered phase. 
+
+To test how this effects the collapse of the Binder cumulant, we can reverse the process which determined the gradient from the correlation length. Therefore the Binder cumulant should be plotted as a function of $(t/log t)^{\alpha/2}$ where $\alpha$ is the gradient of the vortex plot. Similarly to how \cite{PhysRevLett.84.1503} plotted the collapse with an effective exponent $z=2.35$, the purpose of this plot does not have a physical origin but to demonstrate that the $t/\log t$ must be modified. It should be again noted that \cite{PhysRevB.94.104520} only has calculations for the first and second order (in $\lambda$) terms for the force between vortices in the weakly isotropic case, where the terms were repulsive at large distances. In the following they appear to be attractive. 
+
+
+For $\lambda_x=0.4$, the plot of the Binder cumulant as a function of $(t/\log t)^1.013/L^2$ is shown in XX. The collapse is only slightly tighter. The gradient, however, has not significantly deviated from the linear case, so this is not unexpected. In both cases the collapse is still weaker than the linear case. Noting the previous comments on the uncertainties, further simulations are indeed necessary, but there are also are differences to the linear case. 
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east,
+		xlabel=$ t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
@@ -304,9 +316,78 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.4$.}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y -0.4$ There is no value for $128.$}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel=$( t/\log t)^{1.013}/L^2$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
@@ -318,37 +399,38 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 		grid style = dashed,
 		]
 		\addplot[mark=none, color= green]
-	table{../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48num_sim_300cL_0.2iter_180000.txt};
+	table{../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48num_sim_300cL_0.2iter_180000.txt};
 \addlegendentry{$L=48$, 300 realisations.}
 		\addplot[mark=none, color= red]
-	table{../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40num_sim_800cL_0.2iter_125000.txt};
+	table{../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40num_sim_800cL_0.2iter_125000.txt};
 \addlegendentry{$L=40$, 800 realisations.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80num_sim_600cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 600 realisations.}
 		\addplot[mark=none, color= black]
-	table{../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104num_sim_250cL_0.2iter_845000.txt};
+	table{../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104num_sim_250cL_0.2iter_845000.txt};
 \addlegendentry{$L=104$, 250 realisations.}
 		\addplot[mark=none, color= blue]
-	table{../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64num_sim_450cL_0.2iter_320000.txt};
+	table{../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64num_sim_450cL_0.2iter_320000.txt};
 \addlegendentry{$L=64$, 450 realisations.}
 		\addplot[mark=none, color= gray]
-	table{../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72num_sim_400cL_0.2iter_405000.txt};
+	table{../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72num_sim_400cL_0.2iter_405000.txt};
 \addlegendentry{$L=72$, 400 realisations.}
 		\addplot[mark=none, color= orange]
-	table{../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128num_sim_240cL_0.2iter_1280000.txt};
+	table{../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128num_sim_240cL_0.2iter_1280000.txt};
 \addlegendentry{$L=128$, 240 realisations.}
-		\addplot[mark=none, color= purple]
-	table{../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80num_sim_600cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$, 600 realisations.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The Binder cumulant as a function for different sizes with $\lambda_x = -\lambda_y = 0.4.$}
+\caption{The Binder cumulant as a function of $(t/\log t)^{1.013}/L^2$ for different sizes with $\lambda_x = -\lambda_y = 0.4.$}
 \end{figure}
 
+For the remaining values of $\lambda$, we compare both the collapse with an exponent $\alpha = 1$ and one calculated from the gradient. As one increases $\lambda$ the collapse becomes weaker with a linear exponent but does not appear to degrade in any linear fashion with the modified exponent. In fact, a subjective glance seems to indicate it actually improves, with $\lambda=1.5$ showing the strongest collapse besides the linear case. 
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
+		xlabel=$ t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
@@ -387,9 +469,9 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
+		xlabel=$ (t/\log t)^{1.062}/L^2$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
@@ -401,37 +483,36 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 		grid style = dashed,
 		]
 		\addplot[mark=none, color= green]
-	table{../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48num_sim_300cL_0.2iter_180000.txt};
+	table{../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48num_sim_300cL_0.2iter_180000.txt};
 \addlegendentry{$L=48$, 300 realisations.}
 		\addplot[mark=none, color= red]
-	table{../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40num_sim_1600cL_0.2iter_125000.txt};
+	table{../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40num_sim_1600cL_0.2iter_125000.txt};
 \addlegendentry{$L=40$, 1600 realisations.}
 		\addplot[mark=none, color= black]
-	table{../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104num_sim_250cL_0.2iter_845000.txt};
+	table{../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104num_sim_250cL_0.2iter_845000.txt};
 \addlegendentry{$L=104$, 250 realisations.}
 		\addplot[mark=none, color= blue]
-	table{../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64num_sim_400cL_0.2iter_320000.txt};
+	table{../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64num_sim_400cL_0.2iter_320000.txt};
 \addlegendentry{$L=64$, 400 realisations.}
 		\addplot[mark=none, color= gray]
-	table{../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72num_sim_250cL_0.2iter_405000.txt};
+	table{../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72num_sim_250cL_0.2iter_405000.txt};
 \addlegendentry{$L=72$, 250 realisations.}
 		\addplot[mark=none, color= orange]
-	table{../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0.6Ly_-0.6/N_128num_sim_260cL_0.2iter_1280000.txt};
+	table{../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.6Ly_-0.6/N_128num_sim_260cL_0.2iter_1280000.txt};
 \addlegendentry{$L=128$, 260 realisations.}
 		\addplot[mark=none, color= purple]
-	table{../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80num_sim_200cL_0.2iter_500000.txt};
+	table{../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80num_sim_200cL_0.2iter_500000.txt};
 \addlegendentry{$L=80$, 200 realisations.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The Binder cumulant for different sizes with $\lambda_x = -\lambda_y = 0.6.$}
+\caption{The Binder cumulant as a function of $(t/ \log t)^{1.062}/L^2$ for different sizes with $\lambda_x = -\lambda_y = 0.6.$}
 \end{figure}
-
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
+		xlabel=$ t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
@@ -469,11 +550,11 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 \end{figure}
 
 
-\begin{figure}[htbp!]
+\begin{figure}
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
+		xlabel=$(t/\log t)^{1.123}/L^2$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
@@ -485,36 +566,38 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 		grid style = dashed,
 		]
 		\addplot[mark=none, color= green]
-	table{../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48num_sim_400cL_0.2iter_180000.txt};
+	table{../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48num_sim_400cL_0.2iter_180000.txt};
 \addlegendentry{$L=48$, 400 realisations.}
 		\addplot[mark=none, color= red]
-	table{../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40num_sim_1600cL_0.2iter_125000.txt};
+	table{../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40num_sim_1600cL_0.2iter_125000.txt};
 \addlegendentry{$L=40$, 1600 realisations.}
 		\addplot[mark=none, color= black]
-	table{../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104num_sim_400cL_0.2iter_845000.txt};
+	table{../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104num_sim_400cL_0.2iter_845000.txt};
 \addlegendentry{$L=104$, 400 realisations.}
 		\addplot[mark=none, color= blue]
-	table{../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64num_sim_400cL_0.2iter_320000.txt};
+	table{../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64num_sim_400cL_0.2iter_320000.txt};
 \addlegendentry{$L=64$, 400 realisations.}
 		\addplot[mark=none, color= gray]
-	table{../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72num_sim_260cL_0.2iter_405000.txt};
+	table{../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72num_sim_260cL_0.2iter_405000.txt};
 \addlegendentry{$L=72$, 260 realisations.}
 		\addplot[mark=none, color= orange]
-	table{../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0.8Ly_-0.8/N_128num_sim_230cL_0.2iter_1280000.txt};
+	table{../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.8Ly_-0.8/N_128num_sim_230cL_0.2iter_1280000.txt};
 \addlegendentry{$L=128$, 230 realisations.}
 		\addplot[mark=none, color= purple]
-	table{../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80num_sim_400cL_0.2iter_500000.txt};
+	table{../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80num_sim_400cL_0.2iter_500000.txt};
 \addlegendentry{$L=80$, 400 realisations.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The Binder cumulant for different sizes with $\lambda_x = -\lambda_y = 0.8.$}
+\caption{The Binder cumulant as a function of $(t/ \log t)^{1.123}/L^2$ for different sizes with $\lambda_x = -\lambda_y = 0.8.$}
 \end{figure}
+
+
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
-		xlabel=$\log t/L^2\log t$,
+		xlabel=$t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
@@ -552,10 +635,440 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 \end{figure}
 
 
+
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
+		xlabel=$(t/\log t)^{1.166}/L^2$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log_modified/N_48/dt_0.01/Lx_1Ly_-1/N_48num_sim_300cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 300 realisations.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log_modified/N_40/dt_0.01/Lx_1Ly_-1/N_40num_sim_300cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 300 realisations.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log_modified/N_104/dt_0.01/Lx_1Ly_-1/N_104num_sim_375cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 375 realisations.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log_modified/N_64/dt_0.01/Lx_1Ly_-1/N_64num_sim_450cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 450 realisations.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log_modified/N_72/dt_0.01/Lx_1Ly_-1/N_72num_sim_200cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 200 realisations.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log_modified/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_300cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 3[0 realisations.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log_modified/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 realisations.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The Binder cumulant as a function of $(t/ \log t)^{1.166}/L^2$ for different sizes with $\lambda_x = -\lambda_y = 1.$}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel=$t/L^2\log t$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log/N_48/dt_0.01/Lx_1.5Ly_-1.5/N_48num_sim_500cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 500 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log/N_40/dt_0.01/Lx_1.5Ly_-1.5/N_40num_sim_900cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 900 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log/N_104/dt_0.01/Lx_1.5Ly_-1.5/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log/N_64/dt_0.01/Lx_1.5Ly_-1.5/N_64num_sim_300cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 300 runs.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log/N_72/dt_0.01/Lx_1.5Ly_-1.5/N_72num_sim_300cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 300 runs.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log/N_128/dt_0.01/Lx_1.5Ly_-1.5/N_128num_sim_120cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 120 runs.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log/N_80/dt_0.01/Lx_1.5Ly_-1.5/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 runs.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The Binder cumulant as a function of $t/L^2 \log t$ for different sizes with $\lambda_x = -\lambda_y = 1.5.$}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel=$ (t/\log t)^{1.217}/L^2$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log_modified/N_48/dt_0.01/Lx_1.5Ly_-1.5/N_48num_sim_500cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 500 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log_modified/N_40/dt_0.01/Lx_1.5Ly_-1.5/N_40num_sim_900cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 900 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log_modified/N_104/dt_0.01/Lx_1.5Ly_-1.5/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log_modified/N_64/dt_0.01/Lx_1.5Ly_-1.5/N_64num_sim_300cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 300 runs.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log_modified/N_72/dt_0.01/Lx_1.5Ly_-1.5/N_72num_sim_300cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 300 runs.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log_modified/N_128/dt_0.01/Lx_1.5Ly_-1.5/N_128num_sim_120cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 120 runs.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log_modified/N_80/dt_0.01/Lx_1.5Ly_-1.5/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 runs.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The Binder cumulant as a function of $(t/ \log t)^{1.217}$ for different sizes with $\lambda_x = -\lambda_y = 1.5.$}
+\end{figure}
+
+To check if this is perhaps a finite size effect, although there is no immediate indication that this should be the case, with the calculations in \cite{PhysRevX.7.041006} showing that spatial correlations are algebraic as in the $XY$ model below the BKT transitions, the gradient was check for system sizes of $L=512$. This was for $\dd{t}=0.05$ and a much lower number of realisations, so not directly comparable, but at least the behaviour of decreasing gradient with increasing $\lambda$ also follows. Further study into these areas is clearly necessary.  
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $512$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_512/dt_0.01/Lx_1Ly_-1/N_512num_sim_30cL_0.2iter_80000exp_-1.135err_0.008.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-1.135\pm0.008$,\\ realisations = 30}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_512/dt_0.01/Lx_0Ly_0/N_512num_sim_30cL_0.2iter_80000exp_-0.932err_0.004.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.932\pm0.004$,\\ realisations = 30}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_512/dt_0.01/Lx_1.5Ly_-1.5/N_512num_sim_40cL_0.2iter_80000exp_-1.152err_0.006.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-1.152\pm0.006$,\\ realisations = 40}
+		\addplot[mark=none, color= yellow]
+	table{../project_code/nv_log/N_512/dt_0.01/Lx_2Ly_-2/N_512num_sim_40cL_0.2iter_80000exp_-1.179err_0.005.txt};
+\addlegendentry{$\lambda_x = 2$, exp $=-1.179\pm0.005$,\\ realisations = 40}
+	\end{axis}
+\end{tikzpicture}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=512$ in the anistropic case.} 
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_1Ly_-1/N_40num_sim_300cL_0.2iter_125000exp_-1.229err_0.01.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-1.229\pm0.01$,\\ realisations = 300}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40num_sim_1600cL_0.2iter_125000exp_-1.09err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-1.09\pm0.01$,\\ realisations = 1600}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0Ly_0/N_40num_sim_1100cL_0.2iter_125000exp_-1.056err_0.01.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-1.056\pm0.01$,\\ realisations = 1100}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_1.5Ly_-1.5/N_40num_sim_900cL_0.2iter_125000exp_-1.255err_0.012.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-1.255\pm0.012$,\\ realisations = 900}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40num_sim_1000cL_0.2iter_125000exp_-1.053err_0.014.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-1.053\pm0.014$,\\ realisations = 1000}
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40num_sim_800cL_0.2iter_125000exp_-1.056err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-1.056\pm0.01$,\\ realisations = 800}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40num_sim_1600cL_0.2iter_125000exp_-1.144err_0.009.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-1.144\pm0.009$,\\ realisations = 1600}
+	\end{axis}
+\end{tikzpicture}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=40$ in the anistropic case.} 
+\ref{fig:nv_anistropic_40}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $48$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_1Ly_-1/N_48num_sim_300cL_0.2iter_180000exp_-1.203err_0.01.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-1.203\pm0.01$,\\ realisations = 300}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48num_sim_300cL_0.2iter_180000exp_-1.104err_0.012.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-1.104\pm0.012$,\\ realisations = 300}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0Ly_0/N_48num_sim_1700cL_0.2iter_180000exp_-1.03err_0.012.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-1.03\pm0.012$,\\ realisations = 1700}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_1.5Ly_-1.5/N_48num_sim_500cL_0.2iter_180000exp_-1.264err_0.012.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-1.264\pm0.012$,\\ realisations = 500}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48num_sim_500cL_0.2iter_180000exp_-1.042err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-1.042\pm0.01$,\\ realisations = 500}
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48num_sim_300cL_0.2iter_180000exp_-1.082err_0.008.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-1.082\pm0.008$,\\ realisations = 300}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48num_sim_400cL_0.2iter_180000exp_-1.118err_0.007.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-1.118\pm0.007$,\\ realisations = 400}
+	\end{axis}
+\end{tikzpicture}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=48$ in the anistropic case.} 
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $64$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_1Ly_-1/N_64num_sim_450cL_0.2iter_320000exp_-1.095err_0.009.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-1.095\pm0.009$,\\ realisations = 450}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64num_sim_400cL_0.2iter_320000exp_-1.083err_0.008.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-1.083\pm0.008$,\\ realisations = 400}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900cL_0.2iter_320000exp_-0.999err_0.004.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.999\pm0.004$,\\ realisations = 900}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_1.5Ly_-1.5/N_64num_sim_300cL_0.2iter_320000exp_-1.165err_0.008.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-1.165\pm0.008$,\\ realisations = 300}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64num_sim_500cL_0.2iter_320000exp_-0.98err_0.005.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.98\pm0.005$,\\ realisations = 500}
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64num_sim_450cL_0.2iter_320000exp_-1.007err_0.006.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-1.007\pm0.006$,\\ realisations = 450}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64num_sim_400cL_0.2iter_320000exp_-1.123err_0.006.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-1.123\pm0.006$,\\ realisations = 400}
+	\end{axis}
+\end{tikzpicture}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=64$ in the anistropic case.} 
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $72$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_1Ly_-1/N_72num_sim_200cL_0.2iter_405000exp_-1.077err_0.007.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-1.077\pm0.007$,\\ realisations = 200}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72num_sim_250cL_0.2iter_405000exp_-1.089err_0.007.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-1.089\pm0.007$,\\ realisations = 250}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0Ly_0/N_72num_sim_800cL_0.2iter_405000exp_-0.978err_0.005.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.978\pm0.005$,\\ realisations = 800}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_1.5Ly_-1.5/N_72num_sim_300cL_0.2iter_405000exp_-1.212err_0.007.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-1.212\pm0.007$,\\ realisations = 300}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72num_sim_500cL_0.2iter_405000exp_-0.982err_0.004.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.982\pm0.004$,\\ realisations = 500}
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72num_sim_400cL_0.2iter_405000exp_-1.024err_0.009.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-1.024\pm0.009$,\\ realisations = 400}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72num_sim_260cL_0.2iter_405000exp_-1.109err_0.008.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-1.109\pm0.008$,\\ realisations = 260}
+	\end{axis}
+\end{tikzpicture}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=72$ in the anistropic case.} 
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $80$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_200cL_0.2iter_500000exp_-1.134err_0.01.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-1.134\pm0.01$,\\ realisations = 200}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80num_sim_200cL_0.2iter_500000exp_-1.031err_0.006.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-1.031\pm0.006$,\\ realisations = 200}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0Ly_0/N_80num_sim_550cL_0.2iter_500000exp_-0.991err_0.006.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.991\pm0.006$,\\ realisations = 550}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_1.5Ly_-1.5/N_80num_sim_200cL_0.2iter_500000exp_-1.185err_0.009.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-1.185\pm0.009$,\\ realisations = 200}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80num_sim_600cL_0.2iter_500000exp_-1.003err_0.005.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-1.003\pm0.005$,\\ realisations = 600}
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80num_sim_600cL_0.2iter_500000exp_-1.035err_0.004.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-1.035\pm0.004$,\\ realisations = 600}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80num_sim_400cL_0.2iter_500000exp_-1.085err_0.009.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-1.085\pm0.009$,\\ realisations = 400}
+	\end{axis}
+\end{tikzpicture}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=80$ in the anistropic case.} 
+\end{figure}
+
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $104$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_1Ly_-1/N_104num_sim_375cL_0.2iter_845000exp_-1.19err_0.02.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-1.19\pm0.02$,\\ realisations = 375}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104num_sim_250cL_0.2iter_845000exp_-1.037err_0.015.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-1.037\pm0.015$,\\ realisations = 250}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0Ly_0/N_104num_sim_625cL_0.2iter_845000exp_-0.957err_0.006.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.957\pm0.006$,\\ realisations = 625}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_1.5Ly_-1.5/N_104num_sim_125cL_0.2iter_845000exp_-1.295err_0.049.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-1.295\pm0.049$,\\ realisations = 125}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104num_sim_425cL_0.2iter_845000exp_-0.98err_0.005.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.98\pm0.005$,\\ realisations = 425}
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104num_sim_250cL_0.2iter_845000exp_-0.981err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.981\pm0.01$,\\ realisations = 250}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104num_sim_400cL_0.2iter_845000exp_-1.162err_0.017.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-1.162\pm0.017$,\\ realisations = 400}
+	\end{axis}
+\end{tikzpicture}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=104$ in the anistropic case.} 
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $128$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_300cL_0.2iter_1280000exp_-1.162err_0.016.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-1.162\pm0.016$,\\ realisations = 300}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.6Ly_-0.6/N_128num_sim_260cL_0.2iter_1280000exp_-1.001err_0.007.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-1.001\pm0.007$,\\ realisations = 260}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_450cL_0.2iter_1280000exp_-0.995err_0.01.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.995\pm0.01$,\\ realisations = 450}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_1.5Ly_-1.5/N_128num_sim_120cL_0.2iter_1280000exp_-1.146err_0.023.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-1.146\pm0.023$,\\ realisations = 120}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128num_sim_310cL_0.2iter_1280000exp_-0.968err_0.005.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.968\pm0.005$,\\ realisations = 310}
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128num_sim_240cL_0.2iter_1280000exp_-0.974err_0.015.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.974\pm0.015$,\\ realisations = 240}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.8Ly_-0.8/N_128num_sim_230cL_0.2iter_1280000exp_-1.153err_0.028.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-1.153\pm0.028$,\\ realisations = 230}
+	\end{axis}
+\end{tikzpicture}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=128$ in the anistropic case.} 
+\label{fig:nv_anistropic_128}
+\end{figure}
+
+
+
+
+\section{Isotrpic case}
+
+In the isotropic case, due to the non-linearity, we expect a repulsive contribution of the vortex force at large calculated in \cite{PhysRevB.94.104520} with the second order result, the first order being a force perpendicular to the line joining the vortices, of 
+\[
+\myvec{f}(\myvec{R}) = \frac18 \left( \frac{\lambda}{2D}\right)^2 + \frac{1}{\epsilon} \frac{\myvec{R}}{R^2}(8\log(R/a)^2 + 4\log(R/a)-1)
+\]
+where $R$ is the vortex separation, $\epsilon$ the dielectric constant, and $a$ the lattice spacing. Thus, beyond a certain length scale vortex unbinding should occur--the vortex dominated phase--although this is not the same as the entropic unbinding in the $XY$ case, estimated from equlibrium thermodynamics. Also in the paper the estimate for distance at which this correction term dominates and is given by 
+\[
+L_v = ae^{\frac{2D}{\lambda}}.
+\]
+
+These conclusions are matched by the results. \fig{\ref{fig:binder_log_t_cL_0.20.2}} shows the collapse for $\lambda_x=0.2$ and the quality is comparable to the anisotropic case. This is as anticipated as we do not expect drastic change in the qualitative behaviour away from a critical point, and provides further confidence in the obtained results. Although the points in the uncertainty graph appear to all cross each other when including the errors, the uncertainties are much larger. The average vortex gradient is $-0.953 \pm 0.005$, so has already altered unlike in the anisotropic case. This is in the direction we expect, where the the vortex recombination occurs at a slower rate due to their reduced attractions. In brief, the behaviour is slighty but not significantly different from the linear case. 
+ 
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Binder cumulant for $\lambda_x$= 0.2, $\lambda_y$=0.2, $c_L$=0.2.},
 		xlabel=$\log t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
@@ -568,222 +1081,36 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 		grid style = dashed,
 		]
 		\addplot[mark=none, color= green]
-	table{../project_code/final_binder_cumulant/N_48/dt_0.01/Lx_1Ly_-1/N_48num_sim_300cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$, 300 realisations.}
+	table{../project_code/gL_log/N_48/dt_0.01/Lx_0.2Ly_0.2/N_48num_sim_500cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 500 runs.}
 		\addplot[mark=none, color= red]
-	table{../project_code/final_binder_cumulant/N_40/dt_0.01/Lx_1Ly_-1/N_40num_sim_300cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$, 300 realisations.}
+	table{../project_code/gL_log/N_40/dt_0.01/Lx_0.2Ly_0.2/N_40num_sim_700cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 700 runs.}
 		\addplot[mark=none, color= black]
-	table{../project_code/final_binder_cumulant/N_104/dt_0.01/Lx_1Ly_-1/N_104num_sim_375cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$, 375 realisations.}
+	table{../project_code/gL_log/N_104/dt_0.01/Lx_0.2Ly_0.2/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
 		\addplot[mark=none, color= blue]
-	table{../project_code/final_binder_cumulant/N_64/dt_0.01/Lx_1Ly_-1/N_64num_sim_450cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$, 450 realisations.}
+	table{../project_code/gL_log/N_64/dt_0.01/Lx_0.2Ly_0.2/N_64num_sim_600cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 600 runs.}
 		\addplot[mark=none, color= gray]
-	table{../project_code/final_binder_cumulant/N_72/dt_0.01/Lx_1Ly_-1/N_72num_sim_200cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$, 200 realisations.}
+	table{../project_code/gL_log/N_72/dt_0.01/Lx_0.2Ly_0.2/N_72num_sim_260cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 260 runs.}
 		\addplot[mark=none, color= orange]
-	table{../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_300cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$, 300 realisations.}
+	table{../project_code/gL_log/N_128/dt_0.01/Lx_0.2Ly_0.2/N_128num_sim_375cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 375 runs.}
 		\addplot[mark=none, color= purple]
-	table{../project_code/final_binder_cumulant/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_200cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$, 200 realisations.}
+	table{../project_code/gL_log/N_80/dt_0.01/Lx_0.2Ly_0.2/N_80num_sim_510cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 510 runs.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The Binder cumulant for different sizes with $\lambda_x = -\lambda_y = 1.$}
-\label{fig:binder_t_1-1}
+
+\label{fig:binder_log_t_cL_0.20.2}
 \end{figure}
 
-
-
+Figures XX and XX show the uncertainties for $\lambda_x = 0.2$. 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.2$.}
-\end{figure}
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.4$.}
-\end{figure}
-\clearpage
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.6Ly_-0.6/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.6$.}
-\end{figure}
-
-
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.8Ly_-0.8/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.8$.}
-\end{figure}
-
-
-
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_1Ly_-1/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_1Ly_-1/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_1Ly_-1/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_1Ly_-1/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_1Ly_-1/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_1Ly_-1/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_1Ly_-1/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$. $\lambda_x = -\lambda_y = 1$.}
-\end{figure}
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
 		xlabel={Number of realisations},
 		ylabel={$g_L$},
@@ -819,569 +1146,7 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.4Ly_0.4/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = \lambda_y = 0.4$.}
-\end{figure}
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.6Ly_0.6/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.6Ly_0.6/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.6Ly_0.6/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.6Ly_0.6/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.6Ly_0.6/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.6Ly_0.6/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.6Ly_0.6/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = \lambda_y = 0.6$.}
-\end{figure}
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.8Ly_0.8/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.8Ly_0.8/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.8Ly_0.8/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.8Ly_0.8/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.8Ly_0.8/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.8Ly_0.8/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.8Ly_0.8/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = \lambda_y = 0.8$.}
-\end{figure}
-
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_1Ly_1/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_1Ly_1/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_1Ly_1/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_1Ly_1/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_1Ly_1/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_1Ly_1/N_128cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_1Ly_1/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = \lambda_y = 1$.}
-\end{figure}
-
-\clearpage
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = -\lambda_y = 0.2.$ There is no value for $128.$}
-\end{figure}
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y -0.4$ There is no value for $128.$}
-\end{figure}
-\clearpage
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = -\lambda_y =0.6$ There is no value for $128.$}
-\end{figure}
-
-
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = -\lambda_y= 0.8.$ There is no value for $128.$}
-\end{figure}
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_1Ly_-1/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_1Ly_-1/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_1Ly_-1/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_1Ly_-1/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_1Ly_-1/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_1Ly_-1/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = -\lambda_y =1.$ There is no value for $128.$}
-\end{figure}
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $40$.},
-		xlabel={$\log (t/ \log t)$},
-		ylabel={$\log n_v$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[mark=none, color= black]
-	table{../project_code/nv_log/N_40/dt_0.01/Lx_1Ly_-1/N_40num_sim_300cL_0.2iter_125000exp_-1.229err_0.01.txt};
-\addlegendentry{$\lambda_x = 1$, exp $=-1.229\pm0.01$,\\ realisations = 300}
-		\addplot[mark=none, color= orange]
-	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40num_sim_1600cL_0.2iter_125000exp_-1.09err_0.01.txt};
-\addlegendentry{$\lambda_x = 0.6$, exp $=-1.09\pm0.01$,\\ realisations = 1600}
-		\addplot[mark=none, color= red]
-	table{../project_code/nv_log/N_40/dt_0.01/Lx_0Ly_0/N_40num_sim_1100cL_0.2iter_125000exp_-1.056err_0.01.txt};
-\addlegendentry{$\lambda_x = 0$, exp $=-1.056\pm0.01$,\\ realisations = 1100}
-		\addplot[mark=none, color= purple]
-	table{../project_code/nv_log/N_40/dt_0.01/Lx_1.5Ly_-1.5/N_40num_sim_900cL_0.2iter_125000exp_-1.255err_0.012.txt};
-\addlegendentry{$\lambda_x = 1.5$, exp $=-1.255\pm0.012$,\\ realisations = 900}
-		\addplot[mark=none, color= blue]
-	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40num_sim_1000cL_0.2iter_125000exp_-1.053err_0.014.txt};
-\addlegendentry{$\lambda_x = 0.2$, exp $=-1.053\pm0.014$,\\ realisations = 1000}
-		\addplot[mark=none, color= green]
-	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40num_sim_800cL_0.2iter_125000exp_-1.056err_0.01.txt};
-\addlegendentry{$\lambda_x = 0.4$, exp $=-1.056\pm0.01$,\\ realisations = 800}
-		\addplot[mark=none, color= gray]
-	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40num_sim_1600cL_0.2iter_125000exp_-1.144err_0.009.txt};
-\addlegendentry{$\lambda_x = 0.8$, exp $=-1.144\pm0.009$,\\ realisations = 1600}
-	\end{axis}
-\end{tikzpicture}
-\end{figure}
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $48$.},
-		xlabel={$\log (t/ \log t)$},
-		ylabel={$\log n_v$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[mark=none, color= black]
-	table{../project_code/nv_log/N_48/dt_0.01/Lx_1Ly_-1/N_48num_sim_300cL_0.2iter_180000exp_-1.203err_0.01.txt};
-\addlegendentry{$\lambda_x = 1$, exp $=-1.203\pm0.01$,\\ realisations = 300}
-		\addplot[mark=none, color= orange]
-	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48num_sim_300cL_0.2iter_180000exp_-1.104err_0.012.txt};
-\addlegendentry{$\lambda_x = 0.6$, exp $=-1.104\pm0.012$,\\ realisations = 300}
-		\addplot[mark=none, color= red]
-	table{../project_code/nv_log/N_48/dt_0.01/Lx_0Ly_0/N_48num_sim_1700cL_0.2iter_180000exp_-1.03err_0.012.txt};
-\addlegendentry{$\lambda_x = 0$, exp $=-1.03\pm0.012$,\\ realisations = 1700}
-		\addplot[mark=none, color= purple]
-	table{../project_code/nv_log/N_48/dt_0.01/Lx_1.5Ly_-1.5/N_48num_sim_500cL_0.2iter_180000exp_-1.264err_0.012.txt};
-\addlegendentry{$\lambda_x = 1.5$, exp $=-1.264\pm0.012$,\\ realisations = 500}
-		\addplot[mark=none, color= blue]
-	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48num_sim_500cL_0.2iter_180000exp_-1.042err_0.01.txt};
-\addlegendentry{$\lambda_x = 0.2$, exp $=-1.042\pm0.01$,\\ realisations = 500}
-		\addplot[mark=none, color= green]
-	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48num_sim_300cL_0.2iter_180000exp_-1.082err_0.008.txt};
-\addlegendentry{$\lambda_x = 0.4$, exp $=-1.082\pm0.008$,\\ realisations = 300}
-		\addplot[mark=none, color= gray]
-	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48num_sim_400cL_0.2iter_180000exp_-1.118err_0.007.txt};
-\addlegendentry{$\lambda_x = 0.8$, exp $=-1.118\pm0.007$,\\ realisations = 400}
-	\end{axis}
-\end{tikzpicture}
-\end{figure}
-\clearpage
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $64$.},
-		xlabel={$\log (t/ \log t)$},
-		ylabel={$\log n_v$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[mark=none, color= black]
-	table{../project_code/nv_log/N_64/dt_0.01/Lx_1Ly_-1/N_64num_sim_450cL_0.2iter_320000exp_-1.095err_0.009.txt};
-\addlegendentry{$\lambda_x = 1$, exp $=-1.095\pm0.009$,\\ realisations = 450}
-		\addplot[mark=none, color= orange]
-	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64num_sim_400cL_0.2iter_320000exp_-1.083err_0.008.txt};
-\addlegendentry{$\lambda_x = 0.6$, exp $=-1.083\pm0.008$,\\ realisations = 400}
-		\addplot[mark=none, color= red]
-	table{../project_code/nv_log/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900cL_0.2iter_320000exp_-0.999err_0.004.txt};
-\addlegendentry{$\lambda_x = 0$, exp $=-0.999\pm0.004$,\\ realisations = 900}
-		\addplot[mark=none, color= purple]
-	table{../project_code/nv_log/N_64/dt_0.01/Lx_1.5Ly_-1.5/N_64num_sim_300cL_0.2iter_320000exp_-1.165err_0.008.txt};
-\addlegendentry{$\lambda_x = 1.5$, exp $=-1.165\pm0.008$,\\ realisations = 300}
-		\addplot[mark=none, color= blue]
-	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64num_sim_500cL_0.2iter_320000exp_-0.98err_0.005.txt};
-\addlegendentry{$\lambda_x = 0.2$, exp $=-0.98\pm0.005$,\\ realisations = 500}
-		\addplot[mark=none, color= green]
-	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64num_sim_450cL_0.2iter_320000exp_-1.007err_0.006.txt};
-\addlegendentry{$\lambda_x = 0.4$, exp $=-1.007\pm0.006$,\\ realisations = 450}
-		\addplot[mark=none, color= gray]
-	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64num_sim_400cL_0.2iter_320000exp_-1.123err_0.006.txt};
-\addlegendentry{$\lambda_x = 0.8$, exp $=-1.123\pm0.006$,\\ realisations = 400}
-	\end{axis}
-\end{tikzpicture}
-\end{figure}
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $128$.},
-		xlabel={$\log (t/ \log t)$},
-		ylabel={$\log n_v$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[mark=none, color= black]
-	table{../project_code/nv_log/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_300cL_0.2iter_1280000exp_-1.162err_0.016.txt};
-\addlegendentry{$\lambda_x = 1$, exp $=-1.162\pm0.016$,\\ realisations = 300}
-		\addplot[mark=none, color= orange]
-	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.6Ly_-0.6/N_128num_sim_260cL_0.2iter_1280000exp_-1.001err_0.007.txt};
-\addlegendentry{$\lambda_x = 0.6$, exp $=-1.001\pm0.007$,\\ realisations = 260}
-		\addplot[mark=none, color= red]
-	table{../project_code/nv_log/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_450cL_0.2iter_1280000exp_-0.995err_0.01.txt};
-\addlegendentry{$\lambda_x = 0$, exp $=-0.995\pm0.01$,\\ realisations = 450}
-		\addplot[mark=none, color= purple]
-	table{../project_code/nv_log/N_128/dt_0.01/Lx_1.5Ly_-1.5/N_128num_sim_120cL_0.2iter_1280000exp_-1.146err_0.023.txt};
-\addlegendentry{$\lambda_x = 1.5$, exp $=-1.146\pm0.023$,\\ realisations = 120}
-		\addplot[mark=none, color= blue]
-	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128num_sim_310cL_0.2iter_1280000exp_-0.968err_0.005.txt};
-\addlegendentry{$\lambda_x = 0.2$, exp $=-0.968\pm0.005$,\\ realisations = 310}
-		\addplot[mark=none, color= green]
-	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128num_sim_240cL_0.2iter_1280000exp_-0.974err_0.015.txt};
-\addlegendentry{$\lambda_x = 0.4$, exp $=-0.974\pm0.015$,\\ realisations = 240}
-		\addplot[mark=none, color= gray]
-	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.8Ly_-0.8/N_128num_sim_230cL_0.2iter_1280000exp_-1.153err_0.028.txt};
-\addlegendentry{$\lambda_x = 0.8$, exp $=-1.153\pm0.028$,\\ realisations = 230}
-	\end{axis}
-\end{tikzpicture}
-\end{figure}
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $104$.},
-		xlabel={$\log (t/ \log t)$},
-		ylabel={$\log n_v$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[mark=none, color= black]
-	table{../project_code/nv_log/N_104/dt_0.01/Lx_1Ly_-1/N_104num_sim_375cL_0.2iter_845000exp_-1.19err_0.02.txt};
-\addlegendentry{$\lambda_x = 1$, exp $=-1.19\pm0.02$,\\ realisations = 375}
-		\addplot[mark=none, color= orange]
-	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104num_sim_250cL_0.2iter_845000exp_-1.037err_0.015.txt};
-\addlegendentry{$\lambda_x = 0.6$, exp $=-1.037\pm0.015$,\\ realisations = 250}
-		\addplot[mark=none, color= red]
-	table{../project_code/nv_log/N_104/dt_0.01/Lx_0Ly_0/N_104num_sim_625cL_0.2iter_845000exp_-0.957err_0.006.txt};
-\addlegendentry{$\lambda_x = 0$, exp $=-0.957\pm0.006$,\\ realisations = 625}
-		\addplot[mark=none, color= purple]
-	table{../project_code/nv_log/N_104/dt_0.01/Lx_1.5Ly_-1.5/N_104num_sim_125cL_0.2iter_845000exp_-1.295err_0.049.txt};
-\addlegendentry{$\lambda_x = 1.5$, exp $=-1.295\pm0.049$,\\ realisations = 125}
-		\addplot[mark=none, color= blue]
-	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104num_sim_425cL_0.2iter_845000exp_-0.98err_0.005.txt};
-\addlegendentry{$\lambda_x = 0.2$, exp $=-0.98\pm0.005$,\\ realisations = 425}
-		\addplot[mark=none, color= green]
-	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104num_sim_250cL_0.2iter_845000exp_-0.981err_0.01.txt};
-\addlegendentry{$\lambda_x = 0.4$, exp $=-0.981\pm0.01$,\\ realisations = 250}
-		\addplot[mark=none, color= gray]
-	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104num_sim_400cL_0.2iter_845000exp_-1.162err_0.017.txt};
-\addlegendentry{$\lambda_x = 0.8$, exp $=-1.162\pm0.017$,\\ realisations = 400}
-	\end{axis}
-\end{tikzpicture}
-\end{figure}
-\clearpage
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $72$.},
-		xlabel={$\log (t/ \log t)$},
-		ylabel={$\log n_v$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[mark=none, color= black]
-	table{../project_code/nv_log/N_72/dt_0.01/Lx_1Ly_-1/N_72num_sim_200cL_0.2iter_405000exp_-1.077err_0.007.txt};
-\addlegendentry{$\lambda_x = 1$, exp $=-1.077\pm0.007$,\\ realisations = 200}
-		\addplot[mark=none, color= orange]
-	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72num_sim_250cL_0.2iter_405000exp_-1.089err_0.007.txt};
-\addlegendentry{$\lambda_x = 0.6$, exp $=-1.089\pm0.007$,\\ realisations = 250}
-		\addplot[mark=none, color= red]
-	table{../project_code/nv_log/N_72/dt_0.01/Lx_0Ly_0/N_72num_sim_800cL_0.2iter_405000exp_-0.978err_0.005.txt};
-\addlegendentry{$\lambda_x = 0$, exp $=-0.978\pm0.005$,\\ realisations = 800}
-		\addplot[mark=none, color= purple]
-	table{../project_code/nv_log/N_72/dt_0.01/Lx_1.5Ly_-1.5/N_72num_sim_300cL_0.2iter_405000exp_-1.212err_0.007.txt};
-\addlegendentry{$\lambda_x = 1.5$, exp $=-1.212\pm0.007$,\\ realisations = 300}
-		\addplot[mark=none, color= blue]
-	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72num_sim_500cL_0.2iter_405000exp_-0.982err_0.004.txt};
-\addlegendentry{$\lambda_x = 0.2$, exp $=-0.982\pm0.004$,\\ realisations = 500}
-		\addplot[mark=none, color= green]
-	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72num_sim_400cL_0.2iter_405000exp_-1.024err_0.009.txt};
-\addlegendentry{$\lambda_x = 0.4$, exp $=-1.024\pm0.009$,\\ realisations = 400}
-		\addplot[mark=none, color= gray]
-	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72num_sim_260cL_0.2iter_405000exp_-1.109err_0.008.txt};
-\addlegendentry{$\lambda_x = 0.8$, exp $=-1.109\pm0.008$,\\ realisations = 260}
-	\end{axis}
-\end{tikzpicture}
-\end{figure}
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $80$.},
-		xlabel={$\log (t/ \log t)$},
-		ylabel={$\log n_v$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[mark=none, color= black]
-	table{../project_code/nv_log/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_200cL_0.2iter_500000exp_-1.134err_0.01.txt};
-\addlegendentry{$\lambda_x = 1$, exp $=-1.134\pm0.01$,\\ realisations = 200}
-		\addplot[mark=none, color= orange]
-	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80num_sim_200cL_0.2iter_500000exp_-1.031err_0.006.txt};
-\addlegendentry{$\lambda_x = 0.6$, exp $=-1.031\pm0.006$,\\ realisations = 200}
-		\addplot[mark=none, color= red]
-	table{../project_code/nv_log/N_80/dt_0.01/Lx_0Ly_0/N_80num_sim_550cL_0.2iter_500000exp_-0.991err_0.006.txt};
-\addlegendentry{$\lambda_x = 0$, exp $=-0.991\pm0.006$,\\ realisations = 550}
-		\addplot[mark=none, color= purple]
-	table{../project_code/nv_log/N_80/dt_0.01/Lx_1.5Ly_-1.5/N_80num_sim_200cL_0.2iter_500000exp_-1.185err_0.009.txt};
-\addlegendentry{$\lambda_x = 1.5$, exp $=-1.185\pm0.009$,\\ realisations = 200}
-		\addplot[mark=none, color= blue]
-	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80num_sim_600cL_0.2iter_500000exp_-1.003err_0.005.txt};
-\addlegendentry{$\lambda_x = 0.2$, exp $=-1.003\pm0.005$,\\ realisations = 600}
-		\addplot[mark=none, color= green]
-	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80num_sim_600cL_0.2iter_500000exp_-1.035err_0.004.txt};
-\addlegendentry{$\lambda_x = 0.4$, exp $=-1.035\pm0.004$,\\ realisations = 600}
-		\addplot[mark=none, color= gray]
-	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80num_sim_400cL_0.2iter_500000exp_-1.085err_0.009.txt};
-\addlegendentry{$\lambda_x = 0.8$, exp $=-1.085\pm0.009$,\\ realisations = 400}
-	\end{axis}
-\end{tikzpicture}
-\end{figure}
-
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
 		xlabel={Number of realisations},
 		ylabel={$g_L$},
@@ -1404,17 +1169,104 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
 	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.2Ly_0.2/N_72cL_0.2iter_405000.txt};
 \addlegendentry{$L=72$.}
+%		\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
+%	table[y error index=2]{./gL_run_cL_two/N_128/dt_0.01/Lx_0.2Ly_0.2/N_128cL_0.2iter_1280000.txt};
+%\addlegendentry{$L=128$.}
 		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
 	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.2Ly_0.2/N_80cL_0.2iter_500000.txt};
 \addlegendentry{$L=80$.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y= 0.2.$ There is no value for $128.$}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=9370$ (the mid-point of the simulation) for $L=40$.$\lambda_x = \lambda_y = 0.2$.}
+\end{figure}
+
+
+
+
+The case $\lambda_x=0.4$ is more interesting, where the efefcts of the non-linearity are much more pronounced. This provides a clear demonstration of the expectation in that the `destruction' of the convergence of the Binder cumulant occurs first for the largest system and gradually lessens for the smaller system as can be seen from the order of the curves in the plot. There is also a weak pattern in the increase of the vortex gradient as the system size is increased, ranging from $-0.928\pm 0.015$ for $L=40$ to $-0.807\pm 0.009$ for $L=128$, whereas no such pattern occurs in the linear case. 
+
+As for the uncertainties, they are all larger and in general the points are not overlapping, although this can be seen from the graph of the Binder cumulant. The uncertainty in the sizes $L=104$ and $L=128$ are much larger, and the for these sizes the Binder cumulant is fluctuating. 
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Binder cumulant for $\lambda_x$= 0.4, $\lambda_y$=0.4, $c_L$=0.2.},
+		xlabel=$\log t/L^2\log t$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48num_sim_600cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 600 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40num_sim_300cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 300 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64num_sim_1500cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 1500 runs.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72num_sim_500cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 500 runs.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log/N_128/dt_0.01/Lx_0.4Ly_0.4/N_128num_sim_300cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 300 runs.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 runs.}
+	\end{axis}
+\end{tikzpicture}
 \end{figure}
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east,
+		xlabel={Number of realisations},
+		ylabel={$g_L$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$.}
+		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$.}
+		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$.}
+		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$.}
+		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$.}
+		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$.}
+\addplot[only marks, mark=o, color= orange, error bars/.cd, y dir = both, y explicit]
+	table[y error index=2]{./gL_run_cL_one/N_128/dt_0.01/Lx_0.4Ly_0.4/N_128cL_0.2iter_1280000.txt};
+\addlegendentry{$L=80$.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=650$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y= 0.4.$}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east,
 		xlabel={Number of realisations},
 		ylabel={$g_L$},
@@ -1445,101 +1297,182 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 \caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y= 0.4.$ There is no value for $128.$}
 \end{figure}
 
+
+By observing the behaviour of the Binder cumulant as $\lambda$ is increased further, a clear pattern emerges. 
+
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Binder cumulant for $\lambda_x$= 0.6, $\lambda_y$=0.6, $c_L$=0.2.},
+		xlabel=$\log t/L^2\log t$,
+		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
 		grid style = dashed,
+		ymin=-1,
+		ymax=1,
 		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.6Ly_0.6/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.6Ly_0.6/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.6Ly_0.6/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.6Ly_0.6/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.6Ly_0.6/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.6Ly_0.6/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log/N_48/dt_0.01/Lx_0.6Ly_0.6/N_48num_sim_300cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 300 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log/N_40/dt_0.01/Lx_0.6Ly_0.6/N_40num_sim_300cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 300 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log/N_104/dt_0.01/Lx_0.6Ly_0.6/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log/N_64/dt_0.01/Lx_0.6Ly_0.6/N_64num_sim_750cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 750 runs.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log/N_72/dt_0.01/Lx_0.6Ly_0.6/N_72num_sim_160cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 160 runs.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log/N_128/dt_0.01/Lx_0.6Ly_0.6/N_128num_sim_170cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 170 runs.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log/N_80/dt_0.01/Lx_0.6Ly_0.6/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 runs.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y= 0.6.$ There is no value for $128.$}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Binder cumulant for $\lambda_x$= 0.8, $\lambda_y$=0.8, $c_L$=0.2.},
+		xlabel=$\log t/L^2\log t$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
+		grid style = dashed,
+		ymin=-1,
+		ymax=1,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log/N_48/dt_0.01/Lx_0.8Ly_0.8/N_48num_sim_300cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 300 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log/N_40/dt_0.01/Lx_0.8Ly_0.8/N_40num_sim_300cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 300 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log/N_104/dt_0.01/Lx_0.8Ly_0.8/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log/N_64/dt_0.01/Lx_0.8Ly_0.8/N_64num_sim_350cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 350 runs.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log/N_72/dt_0.01/Lx_0.8Ly_0.8/N_72num_sim_200cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 200 runs.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log/N_128/dt_0.01/Lx_0.8Ly_0.8/N_128num_sim_140cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 140 runs.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log/N_80/dt_0.01/Lx_0.8Ly_0.8/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 runs.}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Binder cumulant for $\lambda_x$= 1, $\lambda_y$=1, $c_L$=0.2.},
+		xlabel=$\log t/L^2\log t$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
+		grid style = dashed,
+		ymin=-1,
+		ymax=1,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log/N_48/dt_0.01/Lx_1Ly_1/N_48num_sim_300cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 300 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log/N_40/dt_0.01/Lx_1Ly_1/N_40num_sim_300cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 300 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log/N_104/dt_0.01/Lx_1Ly_1/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log/N_64/dt_0.01/Lx_1Ly_1/N_64num_sim_300cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 300 runs.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log/N_72/dt_0.01/Lx_1Ly_1/N_72num_sim_200cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 200 runs.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log/N_128/dt_0.01/Lx_1Ly_1/N_128num_sim_160cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 160 runs.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log/N_80/dt_0.01/Lx_1Ly_1/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 runs.}
+	\end{axis}
+\end{tikzpicture}
 \end{figure}
 
 \begin{figure}[htbp!]
 \centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Binder cumulant for $\lambda_x$= 1.5, $\lambda_y$=1.5, $c_L$=0.2.},
+		xlabel=$\log t/L^2\log t$,
+		ylabel={Binder cumulant},
 		ymajorgrids=true,
 		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
 		grid style = dashed,
+		ymin=-1,
+		ymax=1,
 		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_0.8Ly_0.8/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_0.8Ly_0.8/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_0.8Ly_0.8/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_0.8Ly_0.8/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_0.8Ly_0.8/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_0.8Ly_0.8/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log/N_48/dt_0.01/Lx_1.5Ly_1.5/N_48num_sim_300cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 300 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log/N_40/dt_0.01/Lx_1.5Ly_1.5/N_40num_sim_300cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 300 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log/N_104/dt_0.01/Lx_1.5Ly_1.5/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log/N_64/dt_0.01/Lx_1.5Ly_1.5/N_64num_sim_300cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 300 runs.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log/N_72/dt_0.01/Lx_1.5Ly_1.5/N_72num_sim_300cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 300 runs.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log/N_128/dt_0.01/Lx_1.5Ly_1.5/N_128num_sim_100cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 100 runs.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log/N_80/dt_0.01/Lx_1.5Ly_1.5/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 runs.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y= 0.8.$ There is no value for $128.$}
 \end{figure}
 
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east,
-		xlabel={Number of realisations},
-		ylabel={$g_L$},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		grid style = dashed,
-		]
-		\addplot[only marks, mark=o, color= green, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_48/dt_0.01/Lx_1Ly_1/N_48cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$.}
-		\addplot[only marks, mark=o, color= red, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_40/dt_0.01/Lx_1Ly_1/N_40cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$.}
-		\addplot[only marks, mark=o, color= black, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_104/dt_0.01/Lx_1Ly_1/N_104cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$.}
-		\addplot[only marks, mark=o, color= blue, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_64/dt_0.01/Lx_1Ly_1/N_64cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$.}
-		\addplot[only marks, mark=o, color= gray, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_72/dt_0.01/Lx_1Ly_1/N_72cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$.}
-		\addplot[only marks, mark=o, color= purple, error bars/.cd, y dir = both, y explicit]
-	table[y error index=2]{./gL_run_cL_two/N_80/dt_0.01/Lx_1Ly_1/N_80cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$.}
-	\end{axis}
-\end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y= 1.$ There is no value for $128.$}
-\end{figure}
+
+
+
+
