@@ -759,7 +759,7 @@ For the remaining values of $\lambda$, we compare both the collapse with an expo
 \caption{The Binder cumulant as a function of $(t/ \log t)^{1.217}$ for different sizes with $\lambda_x = -\lambda_y = 1.5.$}
 \end{figure}
 
-To check if this is perhaps a finite size effect, although there is no immediate indication that this should be the case, with the calculations in \cite{PhysRevX.7.041006} showing that spatial correlations are algebraic as in the $XY$ model below the BKT transitions, the gradient was check for system sizes of $L=512$. This was for $\dd{t}=0.05$ and a much lower number of realisations, so not directly comparable, but at least the behaviour of decreasing gradient with increasing $\lambda$ also follows. Further study into these areas is clearly necessary.  
+To check if this is perhaps a finite size effect, although there is no immediate indication that this should be the case, with the calculations in \cite{PhysRevX.7.041006} showing that spatial correlations are algebraic as in the $XY$ model below the BKT transitions, the gradient was check for system sizes of $L=512$. This was for $\dd{t}=0.05$ and a much lower number of realisations, so not directly comparable, but at least the behaviour of decreasing gradient with increasing $\lambda$ also follows. The $\lambda=0$ gradient under estimated (in magnitude) the low number of realisations could be the explanation. Further study into these areas is clearly necessary.  
 
 \begin{figure}[htbp!]
 \centering
@@ -1298,7 +1298,7 @@ As for the uncertainties, they are all larger and in general the points are not 
 \end{figure}
 
 
-By observing the behaviour of the Binder cumulant as $\lambda$ is increased further, a clear pattern emerges. 
+By observing the behaviour of the Binder cumulant as $\lambda$ is increased further, a clear pattern emerges. The largest systems ($L=128$ and $L=104$) first fluctuate around 0 with a negative bias before fluctuating with an amplitude of around $0.5$. Smaller systems, in order, first begin decreasing significantly and also fluctuating quite severely, which explains the very large uncertainties (not shown) obtained, before finally also fluctuating around 0 with the same amplitude. For the larger systems this occurs at $\lambda_x=0.6$ to $\lambda_x=0.8$, while $L=72$ and $L=80$ are finally fluctuating around 0 by $\lambda_x=1$. The plots do not show the very large negative values obtained by the systems, which increases on a system size decrease. This can potentially be explained as the Binder cumulant is a ratio of two quantities in the disordered state, so may be very large. We do not show the plots for $\mean{\myvec{M}^2}$: it suffices to point out that the value is close to zero. While for a completely random phase angle at each point the Binder cumulant should be zero, this may not be the case in this regime. This transition stabilises eventually. The larger decrease during the transition for small sizes could be due to the structure of the vortex interactions or also the lower number of phase points used in calculating the magnetisation. In this way, the behaviour may be a finite size effect: both the speed of the transition to the fluctuation about 0 and the severity of the behaviour of the Binder cumulant was reduced for larger system sizes. 
 
 \begin{figure}[htbp!]
 \centering
@@ -1473,6 +1473,286 @@ By observing the behaviour of the Binder cumulant as $\lambda$ is increased furt
 \end{figure}
 
 
+For the gradient of the vortices, it behaves as expected for smaller values of $\lambda$ in that increasing $\lambda$ results in the gradient increasing. The repulsive force due to the non linearity should either prevent the vortices from recombining, or slow their rate of recombination. The upshot means that for high enough values of $\lambda$ there should be a saturation on the number of vortices, at least on large enough systems. The caveat of a large system is because initially the vortex density is very higher which means that vortices closest to each other can recombine and only after the vortex density is low enough does the saturation take place. In previous simulations that have been performed, eventually the number of vortices saturates for system sizes of $L=512$. 
+
+The slightly concerning nature of these graphs is that at a sufficiently large $\lambda$ the gradient actually \emph{decreases} again, and this occurs for all system sizes with the rate being faster the larger the system. To ensure this is not perhaps a finite size effect or a numerical artefact, a simulation with size $L=512$ was performed as shown in XX. Here a saturation is obtained, matching the previous result. However, the decrease in the gradient also occurs around the same values of $\lambda$ as in the other system sizes, so further investigation is required. 
 
 
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $40$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40num_sim_300cL_0.2iter_125000exp_-0.928err_0.015.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.928\pm0.015$\\ realisations = 300}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0Ly_0/N_40num_sim_1100cL_0.2iter_125000exp_-1.056err_0.01.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-1.056\pm0.01$\\ realisations = 1100}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.6Ly_0.6/N_40num_sim_300cL_0.2iter_125000exp_-0.844err_0.013.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-0.844\pm0.013$\\ realisations = 300}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.8Ly_0.8/N_40num_sim_300cL_0.2iter_125000exp_-0.816err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-0.816\pm0.01$\\ realisations = 300}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_0.2Ly_0.2/N_40num_sim_700cL_0.2iter_125000exp_-1.014err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-1.014\pm0.01$\\ realisations = 700}
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_1Ly_1/N_40num_sim_300cL_0.2iter_125000exp_-0.811err_0.013.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-0.811\pm0.013$\\ realisations = 300}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_40/dt_0.01/Lx_1.5Ly_1.5/N_40num_sim_300cL_0.2iter_125000exp_-0.587err_0.023.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-0.587\pm0.023$\\ realisations = 300}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $48$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48num_sim_600cL_0.2iter_180000exp_-0.921err_0.012.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.921\pm0.012$\\ realisations = 600}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0Ly_0/N_48num_sim_1700cL_0.2iter_180000exp_-1.03err_0.012.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-1.03\pm0.012$\\ realisations = 1700}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.6Ly_0.6/N_48num_sim_300cL_0.2iter_180000exp_-0.815err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-0.815\pm0.01$\\ realisations = 300}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.8Ly_0.8/N_48num_sim_300cL_0.2iter_180000exp_-0.786err_0.013.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-0.786\pm0.013$\\ realisations = 300}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_0.2Ly_0.2/N_48num_sim_500cL_0.2iter_180000exp_-1.015err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-1.015\pm0.01$\\ realisations = 500}
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_1Ly_1/N_48num_sim_300cL_0.2iter_180000exp_-0.748err_0.009.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-0.748\pm0.009$\\ realisations = 300}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_48/dt_0.01/Lx_1.5Ly_1.5/N_48num_sim_300cL_0.2iter_180000exp_-0.524err_0.021.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-0.524\pm0.021$\\ realisations = 300}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $64$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64num_sim_1500cL_0.2iter_320000exp_-0.841err_0.006.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.841\pm0.006$\\ realisations = 1500}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900cL_0.2iter_320000exp_-0.999err_0.004.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.999\pm0.004$\\ realisations = 900}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.6Ly_0.6/N_64num_sim_750cL_0.2iter_320000exp_-0.733err_0.009.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-0.733\pm0.009$\\ realisations = 750}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.8Ly_0.8/N_64num_sim_350cL_0.2iter_320000exp_-0.693err_0.01.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-0.693\pm0.01$\\ realisations = 350}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_0.2Ly_0.2/N_64num_sim_600cL_0.2iter_320000exp_-0.936err_0.009.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.936\pm0.009$\\ realisations = 600}
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_1Ly_1/N_64num_sim_300cL_0.2iter_320000exp_-0.696err_0.006.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-0.696\pm0.006$\\ realisations = 300}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_64/dt_0.01/Lx_1.5Ly_1.5/N_64num_sim_300cL_0.2iter_320000exp_-0.452err_0.004.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-0.452\pm0.004$\\ realisations = 300}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $128$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.4Ly_0.4/N_128num_sim_300cL_0.2iter_1280000exp_-0.807err_0.009.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.807\pm0.009$\\ realisations = 300}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_450cL_0.2iter_1280000exp_-0.995err_0.01.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.995\pm0.01$\\ realisations = 450}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.6Ly_0.6/N_128num_sim_170cL_0.2iter_1280000exp_-0.563err_0.022.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-0.563\pm0.022$\\ realisations = 170}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.8Ly_0.8/N_128num_sim_140cL_0.2iter_1280000exp_-0.509err_0.012.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-0.509\pm0.012$\\ realisations = 140}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_0.2Ly_0.2/N_128num_sim_375cL_0.2iter_1280000exp_-0.92err_0.017.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.92\pm0.017$\\ realisations = 375}
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_1Ly_1/N_128num_sim_160cL_0.2iter_1280000exp_-0.524err_0.011.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-0.524\pm0.011$\\ realisations = 160}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_128/dt_0.01/Lx_1.5Ly_1.5/N_128num_sim_100cL_0.2iter_1280000exp_-0.509err_0.012.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-0.509\pm0.012$\\ realisations = 100}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $104$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104num_sim_125cL_0.2iter_845000exp_-0.758err_0.015.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.758\pm0.015$\\ realisations = 125}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0Ly_0/N_104num_sim_625cL_0.2iter_845000exp_-0.957err_0.006.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.957\pm0.006$\\ realisations = 625}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.6Ly_0.6/N_104num_sim_125cL_0.2iter_845000exp_-0.531err_0.011.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-0.531\pm0.011$\\ realisations = 125}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.8Ly_0.8/N_104num_sim_125cL_0.2iter_845000exp_-0.543err_0.009.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-0.543\pm0.009$\\ realisations = 125}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_0.2Ly_0.2/N_104num_sim_125cL_0.2iter_845000exp_-0.923err_0.018.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.923\pm0.018$\\ realisations = 125}
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_1Ly_1/N_104num_sim_125cL_0.2iter_845000exp_-0.547err_0.007.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-0.547\pm0.007$\\ realisations = 125}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_104/dt_0.01/Lx_1.5Ly_1.5/N_104num_sim_125cL_0.2iter_845000exp_-0.523err_0.008.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-0.523\pm0.008$\\ realisations = 125}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $72$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72num_sim_500cL_0.2iter_405000exp_-0.837err_0.006.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.837\pm0.006$\\ realisations = 500}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0Ly_0/N_72num_sim_800cL_0.2iter_405000exp_-0.978err_0.005.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.978\pm0.005$\\ realisations = 800}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.6Ly_0.6/N_72num_sim_160cL_0.2iter_405000exp_-0.696err_0.011.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-0.696\pm0.011$\\ realisations = 160}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.8Ly_0.8/N_72num_sim_200cL_0.2iter_405000exp_-0.68err_0.008.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-0.68\pm0.008$\\ realisations = 200}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_0.2Ly_0.2/N_72num_sim_260cL_0.2iter_405000exp_-0.915err_0.007.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.915\pm0.007$\\ realisations = 260}
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_1Ly_1/N_72num_sim_200cL_0.2iter_405000exp_-0.691err_0.011.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-0.691\pm0.011$\\ realisations = 200}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_72/dt_0.01/Lx_1.5Ly_1.5/N_72num_sim_300cL_0.2iter_405000exp_-0.464err_0.003.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-0.464\pm0.003$\\ realisations = 300}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $80$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80num_sim_200cL_0.2iter_500000exp_-0.843err_0.011.txt};
+\addlegendentry{$\lambda_x = 0.4$, exp $=-0.843\pm0.011$\\ realisations = 200}
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0Ly_0/N_80num_sim_550cL_0.2iter_500000exp_-0.991err_0.006.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.991\pm0.006$\\ realisations = 550}
+		\addplot[mark=none, color= orange]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.6Ly_0.6/N_80num_sim_200cL_0.2iter_500000exp_-0.738err_0.012.txt};
+\addlegendentry{$\lambda_x = 0.6$, exp $=-0.738\pm0.012$\\ realisations = 200}
+		\addplot[mark=none, color= gray]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.8Ly_0.8/N_80num_sim_200cL_0.2iter_500000exp_-0.697err_0.013.txt};
+\addlegendentry{$\lambda_x = 0.8$, exp $=-0.697\pm0.013$\\ realisations = 200}
+		\addplot[mark=none, color= blue]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_0.2Ly_0.2/N_80num_sim_510cL_0.2iter_500000exp_-0.951err_0.008.txt};
+\addlegendentry{$\lambda_x = 0.2$, exp $=-0.951\pm0.008$\\ realisations = 510}
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_1Ly_1/N_80num_sim_200cL_0.2iter_500000exp_-0.693err_0.011.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-0.693\pm0.011$\\ realisations = 200}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_80/dt_0.01/Lx_1.5Ly_1.5/N_80num_sim_200cL_0.2iter_500000exp_-0.473err_0.007.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-0.473\pm0.007$\\ realisations = 200}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		title={Vortices  for  N = $512$.},
+		xlabel={$\log (t/ \log t)$},
+		ylabel={$\log n_v$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= red]
+	table{../project_code/nv_log/N_512/dt_0.01/Lx_0Ly_0/N_512num_sim_30cL_0.2iter_80000exp_-0.932err_0.004.txt};
+\addlegendentry{$\lambda_x = 0$, exp $=-0.932\pm0.004$\\ realisations = 30}
+		\addplot[mark=none, color= yellow]
+	table{../project_code/nv_log/N_512/dt_0.01/Lx_2Ly_2/N_512num_sim_40cL_0.2iter_80000exp_-0.01err_0.003.txt};
+\addlegendentry{$\lambda_x = 2$, exp $=-0.01\pm0.003$\\ realisations = 40}
+		\addplot[mark=none, color= black]
+	table{../project_code/nv_log/N_512/dt_0.01/Lx_1Ly_1/N_512num_sim_30cL_0.2iter_80000exp_-0.514err_0.004.txt};
+\addlegendentry{$\lambda_x = 1$, exp $=-0.514\pm0.004$\\ realisations = 30}
+		\addplot[mark=none, color= purple]
+	table{../project_code/nv_log/N_512/dt_0.01/Lx_1.5Ly_1.5/N_512num_sim_40cL_0.2iter_80000exp_-0.525err_0.003.txt};
+\addlegendentry{$\lambda_x = 1.5$, exp $=-0.525\pm0.003$\\ realisations = 40}
+	\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+\section{Correlation Functions}
+
+As an aside to the main purpose of the project, a small subset of the data was utilised to calculate the form of the correlations functions and compare them to those obtained from the theory. As not all the data was able to be saved, specifically for higher lattice sizes, $L=64$ was the size chosen for three different regimes: the linear regime, the highly ($\lambda=1.5$) non-linear isotropic regime, and the corresponding anisotropic regime. 
 
