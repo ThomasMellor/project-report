@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  25 MAR 2018 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  25 MAR 2018 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2187,79 +2187,259 @@ your preamble.
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(./Thesis.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+(./Thesis.toc)
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
  [3
 
 
-]
-(./Chapters/Chapter2.tex
+] (./Chapters/Chapter2.tex
 Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction and Background
 ------------------------------------------------------------------------------
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
+
+LaTeX Warning: Citation 'PhysRevLett.75.3969' on page 1 undefined on input line
+ 5.
+
+
+LaTeX Warning: Citation 'PhysRev.108.1175' on page 1 undefined on input line 5.
+
+
+
+LaTeX Warning: Citation 'magnon' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'Byrnes2014' on page 1 undefined on input line 7.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: Citation 'PhysRevX.7.041006' on page 1 undefined on input line 9
+.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 1 undefined on input line
+ 9.
+
+
+LaTeX Warning: Citation 'PhysRevLett.56.889' on page 1 undefined on input line 
+9.
+
+
+Overfull \hbox (29.00325pt too wide) in paragraph at lines 9--10
+[]\OT1/cmr/m/n/10.95 ]. Orig-i-nally used to de-scribe height growth[[]],
+ []
+
 [1
 
 
 
 
-] [2] [3]
+]
+
+LaTeX Warning: Citation 'PhysRevX.7.041006' on page 2 undefined on input line 1
+1.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 2 undefined on input line
+ 11.
+
+
+LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 2 undefined 
+on input line 20.
+
+<./Figures/polaritonsystem.pdf, id=83, 492.23268pt x 369.88583pt>
+File: ./Figures/polaritonsystem.pdf Graphic file (type pdf)
+
+<use ./Figures/polaritonsystem.pdf>
+Package pdftex.def Info: ./Figures/polaritonsystem.pdf used on input line 32.
+(pdftex.def)             Requested size: 196.88957pt x 147.9517pt.
+
+
+LaTeX Warning: Citation 'Byrnes2014' on page 2 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Byrnes2014' on page 2 undefined on input line 36.
+
+
+LaTeX Warning: Citation '2014arXiv1408.1680S' on page 2 undefined on input line
+ 41.
+
+
+LaTeX Warning: Citation 'RevModPhys.85.299' on page 2 undefined on input line 4
+2.
+
+[2] [3 <./Figures/polaritonsystem.pdf>]
+<./Figures/polaritondispersion.pdf, id=108, 426.79132pt x 441.01773pt>
+File: ./Figures/polaritondispersion.pdf Graphic file (type pdf)
+
+<use ./Figures/polaritondispersion.pdf>
+Package pdftex.def Info: ./Figures/polaritondispersion.pdf used on input line 8
+3.
+(pdftex.def)             Requested size: 170.7135pt x 176.40396pt.
+
+
+LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 4 undefined 
+on input line 84.
+
+
+LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 4 undefined 
+on input line 84.
+
+
+LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 4 undefined 
+on input line 89.
+
+
+Overfull \hbox (84.88757pt too wide) in paragraph at lines 88--91
+\OT1/cmr/m/n/10.95 the $[] \OML/cmm/m/it/10.95 ^^R$ \OT1/cmr/m/n/10.95 where $\
+OML/cmm/m/it/10.95 ^^R$ \OT1/cmr/m/n/10.95 is the an-gle of the laser with re-s
+pect to the plane [[]].
+ []
+
+
+LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 4 undefined 
+on input line 92.
+
+[4 <./Figures/polaritondispersion.pdf>]
+
+LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 5 undefined 
+on input line 94.
+
+
+LaTeX Warning: Citation 'PhysRevLett.118.016602' on page 5 undefined on input l
+ine 96.
+
+
+Overfull \hbox (61.52197pt too wide) in paragraph at lines 96--97
+[]\OT1/cmr/m/n/10.95 These tech-niques al-low ex-per-i-menters to ob-serve a BE
+C, for ex-am-ple in [[]],
+ []
+
+<./polaritoncondensation.pdf, id=125, 250.38426pt x 207.70512pt>
+File: ./polaritoncondensation.pdf Graphic file (type pdf)
+
+<use ./polaritoncondensation.pdf>
+Package pdftex.def Info: ./polaritoncondensation.pdf used on input line 100.
+(pdftex.def)             Requested size: 250.38364pt x 207.7046pt.
+
+
+LaTeX Warning: Citation 'PhysRevLett.118.016602' on page 5 undefined on input l
+ine 101.
+
+
+LaTeX Warning: Citation 'PhysRevLett.118.016602' on page 5 undefined on input l
+ine 101.
+
+
+LaTeX Warning: Citation 'Byrnes2014' on page 5 undefined on input line 108.
+
+[5 <./polaritoncondensation.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 82.
+(hyperref)                removing `math shift' on input line 113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 82.
-
-[4] [5] [6] [7]
-
-LaTeX Warning: Citation '2016PhRvB..94j4521S' on page 8 undefined on input line
- 184.
+(hyperref)                removing `math shift' on input line 113.
 
 
-Overfull \hbox (33.7172pt too wide) in paragraph at lines 184--185
+LaTeX Warning: Citation 'altland2010condensed' on page 6 undefined on input lin
+e 115.
+
+
+LaTeX Warning: Citation 'Coleman1973' on page 6 undefined on input line 128.
+
+
+LaTeX Warning: Citation '8.334 lecture notes' on page 6 undefined on input line
+ 128.
+
+[6] [7]
+
+LaTeX Warning: Citation 'altland2010condensed' on page 8 undefined on input lin
+e 179.
+
+[8] [9]
+
+LaTeX Warning: Citation '2016PhRvB..94j4521S' on page 10 undefined on input lin
+e 212.
+
+
+Overfull \hbox (33.7172pt too wide) in paragraph at lines 212--213
 []\OT1/cmr/m/n/10.95 After con-sid-er-ing equi-lib-rium is-sues, what of dy-nam
 -ics? We de-scribe [[]]
  []
 
-[8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 203.
+(hyperref)                removing `math shift' on input line 231.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 203.
+(hyperref)                removing `math shift' on input line 231.
 
 
-LaTeX Warning: Citation 'Janssen1989' on page 9 undefined on input line 205.
+LaTeX Warning: Citation 'Janssen1989' on page 10 undefined on input line 233.
 
-[9] [10] [11] [12] [13]
+
+LaTeX Warning: Citation 'nishimori2011elements' on page 10 undefined on input l
+ine 233.
+
+[10] <./xyscaling.pdf, id=209, 216.24095pt x 182.09764pt>
+File: ./xyscaling.pdf Graphic file (type pdf)
+
+<use ./xyscaling.pdf>
+Package pdftex.def Info: ./xyscaling.pdf used on input line 246.
+(pdftex.def)             Requested size: 194.61504pt x 163.88635pt.
+ [11 <./xyscaling.pdf>]
+
+LaTeX Warning: Citation 'PhysRevX.7.041006' on page 12 undefined on input line 
+263.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 12 undefined on input lin
+e 271.
+
+[12] [13]
+
+LaTeX Warning: Citation 'PhysRevB.94.10452' on page 14 undefined on input line 
+297.
+
+
+LaTeX Warning: Citation 'PhysRevX.7.041006' on page 14 undefined on input line 
+309.
+
+[14] <rgflows.pdf, id=260, 256.0748pt x 165.02599pt>
+File: rgflows.pdf Graphic file (type pdf)
+ <use rgflows.pdf>
+Package pdftex.def Info: rgflows.pdf used on input line 331.
+(pdftex.def)             Requested size: 153.64606pt x 99.01634pt.
+
+
+LaTeX Warning: Citation 'PhysRevLett.111.088701' on page 15 undefined on input 
+line 334.
+
+
+LaTeX Warning: Citation 'PhysRevLett.111.088701' on page 15 undefined on input 
+line 334.
+
+[15 <./rgflows.pdf>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [14]) [15] [16
+) [16] [17
 
 ]
 ------------------------------------------------------------------------------
@@ -2277,10 +2457,13 @@ Package rerunfilecheck Warning: File `Thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: AB79F97C0FF670D1B015ECF57FCAC5C8;2917
-(rerunfilecheck)             After:  13CDE29F0C63AF473D7CAE7D20AFAC7D;1800.
+(rerunfilecheck)             Before: 63BC59B41EFFAB2EC91D1925F455D505;1668
+(rerunfilecheck)             After:  5C01EF7EFBF50047B0CCF29A23F9235B;1803.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -2297,65 +2480,43 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
 ### simple group (level 1) entered at line 167 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 44298 strings out of 493029
- 942304 string characters out of 6136234
- 1378867 words of memory out of 5000000
- 47211 multiletter control sequences out of 15000+600000
- 17943 words of font info for 66 fonts, out of 8000000 for 9000
+ 44314 strings out of 493029
+ 942819 string characters out of 6136234
+ 1378550 words of memory out of 5000000
+ 47221 multiletter control sequences out of 15000+600000
+ 19197 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,21n,77p,10466b,1113s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.67} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.48} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.24} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.20} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.19} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.17} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.12} has been referenced but does not exist,
- replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (20 pages, 314641 bytes).
+ 55i,21n,77p,10466b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmex
+tra/cmbsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmext
+ra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb>
+Output written on Thesis.pdf (21 pages, 1457970 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 262 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 395 PDF objects out of 1000 (max. 8388607)
+ 302 compressed objects within 4 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

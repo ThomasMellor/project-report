@@ -2049,9 +2049,45 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">2016PhRvB..94j4521S</bcf:citekey>
-    <bcf:citekey order="2">PhysRevLett.84.1503</bcf:citekey>
-    <bcf:citekey order="3">Janssen1989</bcf:citekey>
+    <bcf:citekey order="1">PhysRevLett.75.3969</bcf:citekey>
+    <bcf:citekey order="2">PhysRev.108.1175</bcf:citekey>
+    <bcf:citekey order="3">magnon</bcf:citekey>
+    <bcf:citekey order="4">Byrnes2014</bcf:citekey>
+    <bcf:citekey order="5">PhysRevX.7.041006</bcf:citekey>
+    <bcf:citekey order="5">2015PhRvX...5a1017A</bcf:citekey>
+    <bcf:citekey order="6">PhysRevLett.56.889</bcf:citekey>
+    <bcf:citekey order="7">PhysRevX.7.041006</bcf:citekey>
+    <bcf:citekey order="7">2015PhRvX...5a1017A</bcf:citekey>
+    <bcf:citekey order="8">doi:10.1080/00107514.2010.550120</bcf:citekey>
+    <bcf:citekey order="9">Byrnes2014</bcf:citekey>
+    <bcf:citekey order="10">Byrnes2014</bcf:citekey>
+    <bcf:citekey order="11">2014arXiv1408.1680S</bcf:citekey>
+    <bcf:citekey order="12">RevModPhys.85.299</bcf:citekey>
+    <bcf:citekey order="13">doi:10.1080/00107514.2010.550120</bcf:citekey>
+    <bcf:citekey order="14">doi:10.1080/00107514.2010.550120</bcf:citekey>
+    <bcf:citekey order="15">doi:10.1080/00107514.2010.550120</bcf:citekey>
+    <bcf:citekey order="16">doi:10.1080/00107514.2010.550120</bcf:citekey>
+    <bcf:citekey order="17">doi:10.1080/00107514.2010.550120</bcf:citekey>
+    <bcf:citekey order="18">PhysRevLett.118.016602</bcf:citekey>
+    <bcf:citekey order="19">PhysRevLett.118.016602</bcf:citekey>
+    <bcf:citekey order="20">PhysRevLett.118.016602</bcf:citekey>
+    <bcf:citekey order="21">Byrnes2014</bcf:citekey>
+    <bcf:citekey order="22">altland2010condensed</bcf:citekey>
+    <bcf:citekey order="23">Coleman1973</bcf:citekey>
+    <bcf:citekey order="24">8.334 lecture notes</bcf:citekey>
+    <bcf:citekey order="25">altland2010condensed</bcf:citekey>
+    <bcf:citekey order="26">2016PhRvB..94j4521S</bcf:citekey>
+    <bcf:citekey order="27">PhysRevLett.84.1503</bcf:citekey>
+    <bcf:citekey order="28">Janssen1989</bcf:citekey>
+    <bcf:citekey order="29">nishimori2011elements</bcf:citekey>
+    <bcf:citekey order="30">PhysRevLett.84.1503</bcf:citekey>
+    <bcf:citekey order="31">PhysRevLett.84.1503</bcf:citekey>
+    <bcf:citekey order="32">PhysRevX.7.041006</bcf:citekey>
+    <bcf:citekey order="33">2015PhRvX...5a1017A</bcf:citekey>
+    <bcf:citekey order="34">PhysRevB.94.10452</bcf:citekey>
+    <bcf:citekey order="35">PhysRevX.7.041006</bcf:citekey>
+    <bcf:citekey order="36">PhysRevLett.111.088701</bcf:citekey>
+    <bcf:citekey order="37">PhysRevLett.111.088701</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global" type="entry" sortscheme="nty" sortnamekeyscheme="global">
   <bcf:sorting>
