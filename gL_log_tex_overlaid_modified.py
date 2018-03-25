@@ -6,12 +6,12 @@ import operator
 import fnmatch 
 
 matches = []
-for root, dirnames, filenames in os.walk('../project_code/gL_log_modified'):
+for root, dirnames, filenames in os.walk('../project_code/gL_log_modified_two'):
     for filename in fnmatch.filter(filenames, '*.txt'):
         matches.append(os.path.join(root, filename))
 counter=0
 
-lam = [[0,0],[0.2,0.2],[0.2,-0.2],[0.4,0.4],[0.4,-0.4],[0.6,-0.6],[0.6,0.6],[0.8,0.8],[0.8,-0.8],[1,1],[1,-1]]
+lam = [[0,0],[0.2,0.2],[0.2,-0.2],[0.4,0.4],[0.4,-0.4],[0.6,-0.6],[0.6,0.6],[0.8,0.8],[0.8,-0.8],[1,1],[1,-1],[1.5,-1.5]]
 
 colours = {40: 'red', 64: 'blue', 48: 'green', 128: 'orange', 72: 'gray', 104: 'black', 80: 'purple' }
 sizes = [40,48, 64, 128, 72, 104, 80]

@@ -1754,5 +1754,89 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 
 \section{Correlation Functions}
 
-As an aside to the main purpose of the project, a small subset of the data was utilised to calculate the form of the correlations functions and compare them to those obtained from the theory. As not all the data was able to be saved, specifically for higher lattice sizes, $L=64$ was the size chosen for three different regimes: the linear regime, the highly ($\lambda=1.5$) non-linear isotropic regime, and the corresponding anisotropic regime. 
+As an aside to the main purpose of the project, a small subset of the data was utilised to calculate the form of the correlations functions and compare them to those obtained from the theory. In particular, we test the correlation function $\mean{\cos(\theta_(\myvec{r})- \theta(\myvec{0}))}= g(r)$ as a function of $r$. We are interested in qualitative behaviour, not the in values of any exponents, and therefore this has not been done very rigorously and there are no uncertainties. As not all the data was able to be saved, specifically for higher lattice sizes, $L=64$ was the size chosen for three different regimes: the linear regime, the highly ($\lambda=1.5$) non-linear isotropic regime, and the corresponding anisotropic regime.
+
+In the linear case, \fig{\ref{fig:_cor_lin_beg}} shows the correlation at the beginning of the siulation. Since the spins were completely random, we expect the correlation to be 0 for all distances. Although this is primarily to ensure the simulation and correlations behave as expected as we manually insert these conditions, it corresponds to the infinite temperature case with a correlation length of zero and therefore a correlation $exp(-r/\xi)$ of zero at all distances. Small scale fluctuations about 0 are observed, which we take as a confirmation of the desired behaviour.  
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel={$r$},
+		ylabel={$g(r)$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none]
+	table{./correlation_linear_beg.txt};
+
+	\end{axis}
+\end{tikzpicture}
+\caption{The spatial correlation function as a function of distance for $L=64$ linear case with an inifinite noise (temperature).}
+\label{fig:cor_lin_beg}
+\end{figure}
+
+At the end of the simulation in the linear regime, the system is in the ordered phase where the correlations are algebraic. We plot $\log g(r)$ as a function of $\log r$ which is expected to be linear (with a negative gradient). As shown in \fig{\ref{fig:cor_lin_end}}, we obtain a reasonable plot. The curve is linear to good approximation. A change in gradient appears as the end is approach. This distance is half the lattice size. The periodic boundary conditions may be interfering with the expected behaviour--in other words, a finite size effect. As usual, perforing this on a large system would have been prefereble. Nonetheless the results support, or at the very least do not conflict with, the expectation. 
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel={$\log r$},
+		ylabel={$\log g(r)$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none]
+	table{./correlation_linear_end.txt};
+
+	\end{axis}
+\end{tikzpicture}
+\caption{The spatial correlation function as a function of distance for the $L=64$ linear case in the ordered phase.}
+\label{fig:cor_lin_end}
+\end{figure}
+
+The anisotropic case is displayed in \fig{\ref{fig:cor_anisotropic_end}}. Like the linear case, the approximation of a linear curve is also quite good. The magnitudes of the correlation are also of a similar magnitude up to $\sim 2$, but then their values deviate from each other. This further supports that finite size effects are responsible for the non linear behaviour beyond this point. This data sheds light on previous results: the expectation that the anisotropic regime would be that of the $XY$ model was obtained through a renormalisation group analysis. For long time behaviour (once the system has undergone a phase transition), the correlation functions support this prediction. However the approach to this phase is not determined
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel={$\log r$},
+		ylabel={$\log g(r)$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none]
+	table{./correlation_anisotroptic.txt};
+
+	\end{axis}
+\end{tikzpicture}
+\caption{The spatial correlation function as a function of distance for the $L=64$ and $\lambda=1.5$ anisotropic case.}
+\label{fig:cor_anisotropic_end}
+\end{figure}
+
+Finally for the anisotropic case we expect stretched exponential, i.e. functions of the form $e^{-r^\chi}$. We plot $\log(-\log g(r))$ as a function of $\log r$ for which we expect a straight linear with a positive gradient. Because the stretched exponential decays quite rapidly, the majority of the points in the plot oscillated near 0, and so we can only use a few points for the plot. This is shown in \fig{\ref{fig:cor_isotropic_end}} and is as expected. As we only kept a few points and have not calculated any uncertainties, the comment can only be the same as the previous two cases: the plot at worst does not defy expectations. 
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel={$\log r$},
+		ylabel={$\log(-\log g(r))$},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+		\addplot[mark=none]
+	table{./correlation_isotroptic.txt};
+
+	\end{axis}
+\end{tikzpicture}
+\caption{The spatial correlation function as a function of distance for the $L=64$ and $\lambda=1.5$ isotropic case.}
+\label{fig:cor_isotropic_end}
+\end{figure}
 

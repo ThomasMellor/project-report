@@ -129,10 +129,36 @@ To calculate the number of vortices or anti-vortices, we use a discretised versi
 \[
 \theta_{i,j} \to \theta_{i+1,j} \to \theta_{i+1,j+1} \to \theta_{i,j+1} \to \theta_{i,j}
 \]
-and the value of one angle minus the value of the previous angle is calculated and all such differences are summed. If the total is greater than or equal to $2 \pi$, there is a vortex, whereas if the total is less than or equal to $-2 \pi$, there is an antivortex. 
+and the value of one angle minus the value of the previous angle is calculated and all such differences are summed. If the total is greater than or equal to $2 \pi$, there is a vortex, whereas if the total is less than or equal to $-2 \pi$, there is an antivortex.
+
+The uncertainty on the number of vortices was unfortunately not calculated as the necessary data for larger system sizes had to be periodically deleted and the need for the vortex uncertainty was not considered (in fact it was fortuotous that the uncertainty on the Binder cumulant was calculable without requiring extra data). That being said, there are indications that such an error would would be small based on the variation of the average number of vortices vs the number of realisations, as in \fig{\ref{fig:vortex_run}}. Here it is plotted for the $L=128$ linear case at snapshot 10. This was chosen as the largest system size and the most realisations for the size. There is clearly a downward trend, but the relative variation $\sim 0.15/4.725=0.03$ or 3\% which is not extreme. It is not acceptable for exact values but should be acceptable to observe general trends and also in the comparison to the expectation in the linear case. To calculate the uncertainties, we used Python's \texttt{scimpy} package.
+
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+y tick label style={
+        /pgf/number format/.cd,
+            fixed,
+            fixed zerofill,
+            precision=5,
+        /tikz/.cd
+    },
+		xlabel={Number of realisations.},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		grid style = dashed,
+		]
+	\addplot[only marks] 
+	table{../project_code/nv_run/N_128/dt_0.01/Lx_0Ly_0/N_128cL_0.2iter_1280000.txt};
+	\end{axis}
+\end{tikzpicture}
+\caption{The number of vortices as a function of the number of realisatations for $L=128$ and $\lambda_x = \lambda_y=0$ at snapshot 10.}
+\label{fig:vortex_run}
+\end{figure}
 
 
-
+For calculating the correlation functions, the average of $\cos(\theta_{i,j} - \theta_{i,0})$ was calculated from $i=0$ to $i=L-1$ and over all realistations at a specific time step. The correlation distance is given by $j$ and $j=1$ to $j=L/2$ was used. 
  
 
 

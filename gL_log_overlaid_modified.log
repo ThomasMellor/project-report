@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  21 MAR 2018 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  22 MAR 2018 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -532,20 +532,20 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into
 your preamble.
  on input line 6.
 
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0Ly_0/N_48nu
-m_sim_1700cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0Ly_0/N_40nu
-m_sim_1100cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0Ly_0/N_104
-num_sim_625cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0Ly_0/N_64nu
-m_sim_900cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0Ly_0/N_72nu
-m_sim_800cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0Ly_0/N_128
-num_sim_450cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0Ly_0/N_80nu
-m_sim_550cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0Ly_0/N_
+48num_sim_1700cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0Ly_0/N_
+40num_sim_1100cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0Ly_0/N
+_104num_sim_625cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0Ly_0/N_
+64num_sim_900cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0Ly_0/N_
+72num_sim_800cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0Ly_0/N
+_128num_sim_450cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0Ly_0/N_
+80num_sim_550cL_0.2iter_500000.txt}
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -553,230 +553,252 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 44.
 
-Overfull \hbox (12.788pt too wide) in paragraph at lines 45--46
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 45--46
  [][] 
  []
 
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.2Ly_0.2/N_
-48num_sim_500cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.2Ly_0.2/N_
-40num_sim_700cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.2Ly_0.2/N
-_104num_sim_125cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.2Ly_0.2/N_
-64num_sim_600cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.2Ly_0.2/N_
-72num_sim_260cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.2Ly_0.2/N
-_128num_sim_375cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.2Ly_0.2/N_
-80num_sim_510cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0.2Ly_0.
+2/N_48num_sim_500cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0.2Ly_0.
+2/N_40num_sim_700cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0.2Ly_0
+.2/N_104num_sim_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0.2Ly_0.
+2/N_64num_sim_600cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0.2Ly_0.
+2/N_72num_sim_260cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0.2Ly_0
+.2/N_128num_sim_375cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0.2Ly_0.
+2/N_80num_sim_510cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.788pt too wide) in paragraph at lines 85--86
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 85--86
  [][] 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.2Ly_-0.2/N
-_48num_sim_400cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.2Ly_-0.2/N
-_40num_sim_1000cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.2Ly_-0.2/
-N_104num_sim_425cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.2Ly_-0.2/N
-_64num_sim_500cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.2Ly_-0.2/N
-_72num_sim_500cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.2Ly_-0.2/
-N_128num_sim_310cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.2Ly_-0.2/N
-_80num_sim_600cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0.2Ly_-0
+.2/N_48num_sim_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0.2Ly_-0
+.2/N_40num_sim_1000cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0.2Ly_-
+0.2/N_104num_sim_425cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0.2Ly_-0
+.2/N_64num_sim_500cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0.2Ly_-0
+.2/N_72num_sim_500cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0.2Ly_-
+0.2/N_128num_sim_310cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0.2Ly_-0
+.2/N_80num_sim_600cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.78989pt too wide) in paragraph at lines 126--127
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.4Ly_0.4/N_
-48num_sim_600cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.4Ly_0.4/N_
-40num_sim_300cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.4Ly_0.4/N
-_104num_sim_125cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.4Ly_0.4/N_
-64num_sim_1500cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.4Ly_0.4/N_
-72num_sim_500cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.4Ly_0.4/N
-_128num_sim_300cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.4Ly_0.4/N_
-80num_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0.4Ly_0.
+4/N_48num_sim_600cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0.4Ly_0.
+4/N_40num_sim_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0.4Ly_0
+.4/N_104num_sim_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0.4Ly_0.
+4/N_64num_sim_1500cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0.4Ly_0.
+4/N_72num_sim_500cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0.4Ly_0
+.4/N_128num_sim_300cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0.4Ly_0.
+4/N_80num_sim_200cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.788pt too wide) in paragraph at lines 166--167
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 166--167
  [][] 
  []
 
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.4Ly_-0.4/N
-_48num_sim_300cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.4Ly_-0.4/N
-_40num_sim_800cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.4Ly_-0.4/
-N_104num_sim_250cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.4Ly_-0.4/N
-_64num_sim_450cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.4Ly_-0.4/N
-_72num_sim_400cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.4Ly_-0.4/
-N_128num_sim_240cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.4Ly_-0.4/N
-_80num_sim_600cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0.4Ly_-0
+.4/N_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0.4Ly_-0
+.4/N_40num_sim_800cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0.4Ly_-
+0.4/N_104num_sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0.4Ly_-0
+.4/N_64num_sim_450cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0.4Ly_-0
+.4/N_72num_sim_400cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0.4Ly_-
+0.4/N_128num_sim_240cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0.4Ly_-0
+.4/N_80num_sim_600cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.78955pt too wide) in paragraph at lines 206--207
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 206--207
  [][] 
  []
 
 [2
 
 ] [3]
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.6Ly_-0.6/N
-_48num_sim_300cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.6Ly_-0.6/N
-_40num_sim_1600cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.6Ly_-0.6/
-N_104num_sim_250cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.6Ly_-0.6/N
-_64num_sim_400cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.6Ly_-0.6/N
-_72num_sim_250cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.6Ly_-0.6/
-N_128num_sim_260cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.6Ly_-0.6/N
-_80num_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0.6Ly_-0
+.6/N_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0.6Ly_-0
+.6/N_40num_sim_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0.6Ly_-
+0.6/N_104num_sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0.6Ly_-0
+.6/N_64num_sim_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0.6Ly_-0
+.6/N_72num_sim_250cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0.6Ly_-
+0.6/N_128num_sim_260cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0.6Ly_-0
+.6/N_80num_sim_200cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.78908pt too wide) in paragraph at lines 247--248
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 247--248
  [][] 
  []
 
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.6Ly_0.6/N_
-48num_sim_300cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.6Ly_0.6/N_
-40num_sim_300cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.6Ly_0.6/N
-_104num_sim_125cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.6Ly_0.6/N_
-64num_sim_750cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.6Ly_0.6/N_
-72num_sim_160cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.6Ly_0.6/N
-_128num_sim_170cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.6Ly_0.6/N_
-80num_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0.6Ly_0.
+6/N_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0.6Ly_0.
+6/N_40num_sim_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0.6Ly_0
+.6/N_104num_sim_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0.6Ly_0.
+6/N_64num_sim_750cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0.6Ly_0.
+6/N_72num_sim_160cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0.6Ly_0
+.6/N_128num_sim_170cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0.6Ly_0.
+6/N_80num_sim_200cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.788pt too wide) in paragraph at lines 287--288
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 287--288
  [][] 
  []
 
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.8Ly_0.8/N_
-48num_sim_300cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.8Ly_0.8/N_
-40num_sim_300cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.8Ly_0.8/N
-_104num_sim_125cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.8Ly_0.8/N_
-64num_sim_350cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.8Ly_0.8/N_
-72num_sim_200cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.8Ly_0.8/N
-_128num_sim_140cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.8Ly_0.8/N_
-80num_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0.8Ly_0.
+8/N_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0.8Ly_0.
+8/N_40num_sim_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0.8Ly_0
+.8/N_104num_sim_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0.8Ly_0.
+8/N_64num_sim_350cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0.8Ly_0.
+8/N_72num_sim_200cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0.8Ly_0
+.8/N_128num_sim_140cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0.8Ly_0.
+8/N_80num_sim_200cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.788pt too wide) in paragraph at lines 327--328
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 327--328
  [][] 
  []
 
 [4
 
 ] [5]
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.8Ly_-0.8/N
-_48num_sim_400cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.8Ly_-0.8/N
-_40num_sim_1600cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.8Ly_-0.8/
-N_104num_sim_400cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.8Ly_-0.8/N
-_64num_sim_400cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.8Ly_-0.8/N
-_72num_sim_260cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.8Ly_-0.8/
-N_128num_sim_230cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.8Ly_-0.8/N
-_80num_sim_400cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_0.8Ly_-0
+.8/N_48num_sim_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_0.8Ly_-0
+.8/N_40num_sim_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_0.8Ly_-
+0.8/N_104num_sim_400cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_0.8Ly_-0
+.8/N_64num_sim_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_0.8Ly_-0
+.8/N_72num_sim_260cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_0.8Ly_-
+0.8/N_128num_sim_230cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_0.8Ly_-0
+.8/N_80num_sim_400cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.7893pt too wide) in paragraph at lines 368--369
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 368--369
  [][] 
  []
 
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_1Ly_1/N_48nu
-m_sim_300cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_1Ly_1/N_40nu
-m_sim_300cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_1Ly_1/N_104
-num_sim_125cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_1Ly_1/N_64nu
-m_sim_300cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_1Ly_1/N_72nu
-m_sim_200cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_1Ly_1/N_128
-num_sim_160cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_1Ly_1/N_80nu
-m_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_1Ly_1/N_
+48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_1Ly_1/N_
+40num_sim_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_1Ly_1/N
+_104num_sim_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_1Ly_1/N_
+64num_sim_300cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_1Ly_1/N_
+72num_sim_200cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_1Ly_1/N
+_128num_sim_160cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_1Ly_1/N_
+80num_sim_200cL_0.2iter_500000.txt}
 
-Overfull \hbox (13.83449pt too wide) in paragraph at lines 408--409
+Overfull \hbox (13.83226pt too wide) in paragraph at lines 408--409
  [][] 
  []
 
-PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_1Ly_-1/N_48n
-um_sim_300cL_0.2iter_180000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_1Ly_-1/N_40n
-um_sim_300cL_0.2iter_125000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_1Ly_-1/N_10
-4num_sim_375cL_0.2iter_845000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_1Ly_-1/N_64n
-um_sim_450cL_0.2iter_320000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_1Ly_-1/N_72n
-um_sim_200cL_0.2iter_405000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_1Ly_-1/N_12
-8num_sim_300cL_0.2iter_1280000.txt}
-PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_1Ly_-1/N_80n
-um_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_1Ly_-1/N
+_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_1Ly_-1/N
+_40num_sim_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_1Ly_-1/
+N_104num_sim_375cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_1Ly_-1/N
+_64num_sim_450cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_1Ly_-1/N
+_72num_sim_200cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_1Ly_-1/
+N_128num_sim_300cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_1Ly_-1/N
+_80num_sim_200cL_0.2iter_500000.txt}
 
-Overfull \hbox (12.78864pt too wide) in paragraph at lines 448--449
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 448--449
  [][] 
  []
 
 [6
 
-] [7] (./gL_log_overlaid_modified.aux) ) 
+] [7]
+PGFPlots: reading {../project_code/gL_log_modified_two/N_48/dt_0.01/Lx_1.5Ly_-1
+.5/N_48num_sim_500cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_40/dt_0.01/Lx_1.5Ly_-1
+.5/N_40num_sim_900cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_104/dt_0.01/Lx_1.5Ly_-
+1.5/N_104num_sim_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_64/dt_0.01/Lx_1.5Ly_-1
+.5/N_64num_sim_300cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_72/dt_0.01/Lx_1.5Ly_-1
+.5/N_72num_sim_300cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_128/dt_0.01/Lx_1.5Ly_-
+1.5/N_128num_sim_120cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified_two/N_80/dt_0.01/Lx_1.5Ly_-1
+.5/N_80num_sim_200cL_0.2iter_500000.txt}
+
+Overfull \hbox (12.78577pt too wide) in paragraph at lines 489--490
+ [][] 
+ []
+
+[8
+
+] (./gL_log_overlaid_modified.aux) ) 
 Here is how much of TeX's memory you used:
- 21478 strings out of 493029
- 576712 string characters out of 6136234
- 956113 words of memory out of 5000000
- 24510 multiletter control sequences out of 15000+600000
+ 21510 strings out of 493029
+ 578989 string characters out of 6136234
+ 954568 words of memory out of 5000000
+ 24529 multiletter control sequences out of 15000+600000
  6376 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,19n,77p,736b,2106s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb>
-Output written on gL_log_overlaid_modified.pdf (7 pages, 185967 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b>
+Output written on gL_log_overlaid_modified.pdf (8 pages, 196504 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
