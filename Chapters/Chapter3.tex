@@ -13,7 +13,7 @@ The evolution of the condensate phase was simulated using code written in C++. T
 \]
 where $\theta_{i,j}(t)$ is the value of the condensate at points $i,j$ of the lattice and $\dd{t}$ is the timestep used. Periodic boundary conditions were used. The final term is the stochastic term where $\xi$ is a uniformaly distributed random number (restricted to $[-0.5, 0.5]$) that was also added at each timestep. Finally, for all simulations $D_x$ and $D_y$ were set to 1 as the coordinates can always be rescaled to ensure this.  
 
-The timestep was initially chosen to be $\dd{t}=0.01$ and this was the value used to generate the significant data. However, other values were considered with: namely, $\dd{t} = 0.02$ and $\dd{t} = 0.001$ with system size 32. \fig{\ref{fig:binder_different_cL}} comes the Binder cumulant for this system size for the three values of $\dd{t}$. The evolution for $\dd{t}=0.02$  did not follow that of $\dd{t}=0.01$, implying that $\dd{t}=0.02$ was potentially too large of a timestep, whereas the behaviour of $\dd{t}=0.01$ reasonably matched that of $\dd{t}=0.001$, demonstrating that $\dd{t}=0.01$ was an appropriate timestep for the simulation, and a smaller one was computationally unnecessary. 
+The timestep was initially chosen to be $\dd{t}=0.01$ and this was the value used to generate the significant data. However, other values were considered with: namely, $\dd{t} = 0.02$ and $\dd{t} = 0.001$ with system size 32. \fig{\ref{fig:binder_different_cL}} shows the Binder cumulant for this system size for the three values of $\dd{t}$. The evolution for $\dd{t}=0.02$  did not follow that of $\dd{t}=0.01$, implying that $\dd{t}=0.02$ was potentially too large of a timestep, whereas the behaviour of $\dd{t}=0.01$ reasonably matched that of $\dd{t}=0.001$, demonstrating that $\dd{t}=0.01$ was a suitable choice of timestep for the simulation, and a smaller one was computationally unnecessary. 
 
 \begin{figure}[htbp!]
 \centering
@@ -40,7 +40,7 @@ The timestep was initially chosen to be $\dd{t}=0.01$ and this was the value use
 \label{fig:binder_different_cL}
 \end{figure}
 
-The value of $c_L$ at which the phase transition occurs was determined. \fig{\ref{fig:vor_vs_cL}} shows the number of vortices $t=400$ for a system size of 64 at various values of $c_L$. The value $c_L = 0.2$ was then chosen for the remainder of project. For the value of $c_L=0.1$ the Binder cumulant did not approach one at all in the case of $L=128$, as shown in \fig{\ref{fig:binder_cL_0.1}}. This is likely a numerical artefact and can be explained by the existence of vortices stuck to lattice sites and not able to anihilate due to the low noise. The number of vortices is higher in \fig{\ref{fig:vor_vs_cL}} for $c_L=0.1$ than higher values below the transition. XX shows a snapshat of the system for one realisation to illustrate this. This issue was also mentioned in XX.     
+The value of $c_L$ at which the phase transition occurs was determined. \fig{\ref{fig:vor_vs_cL}} shows the number of vortices at $t=400$ for a system size of 64 at various values of $c_L$. The value $c_L = 0.2$ was then chosen for the remainder of project. For the value of $c_L=0.1$ the Binder cumulant did not approach one at all in the case of $L=128$, as shown in \fig{\ref{fig:binder_cL_0.1}}. This is likely a numerical artefact and can be explained by the existence of vortices stuck to lattice sites and not able to anihilate due to the low noise. The number of vortices is higher in \fig{\ref{fig:vor_vs_cL}} for $c_L=0.1$ than higher values below the transition. This issue was also mentioned in \cite{PhysRevE.47.1525}.     
 
 \begin{figure}[htbp!]
 \centering
@@ -131,7 +131,7 @@ To calculate the number of vortices or anti-vortices, we use a discretised versi
 \]
 and the value of one angle minus the value of the previous angle is calculated and all such differences are summed. If the total is greater than or equal to $2 \pi$, there is a vortex, whereas if the total is less than or equal to $-2 \pi$, there is an antivortex.
 
-The uncertainty on the number of vortices was unfortunately not calculated as the necessary data for larger system sizes had to be periodically deleted and the need for the vortex uncertainty was not considered (in fact it was fortuotous that the uncertainty on the Binder cumulant was calculable without requiring extra data). That being said, there are indications that such an error would would be small based on the variation of the average number of vortices vs the number of realisations, as in \fig{\ref{fig:vortex_run}}. Here it is plotted for the $L=128$ linear case at snapshot 10. This was chosen as the largest system size and the most realisations for the size. There is clearly a downward trend, but the relative variation $\sim 0.15/4.725=0.03$ or 3\% which is not extreme. It is not acceptable for exact values but should be acceptable to observe general trends and also in the comparison to the expectation in the linear case. To calculate the uncertainties, we used Python's \texttt{scimpy} package.
+The uncertainty on the number of vortices was unfortunately not calculated as the necessary data for larger system sizes had to be periodically deleted and the need for the vortex uncertainty was not considered (in fact it was fortuotous that the uncertainty on the Binder cumulant was calculable without requiring extra data). That being said, there are indications that such an error would would be small based on the variation of the average number of vortices vs the number of realisations, as in \fig{\ref{fig:vortex_run}}. Here it is plotted for the $L=128$ linear case at snapshot 10. This was chosen as the largest system size and the most realisations for that size. There is clearly a downward trend, but the relative variation $\sim 0.15/4.725=0.03$ or 3\% which is not extreme. A lack of an uncertainty is not acceptable for exact values but should be acceptable to observe general trends and also in the comparison to the expectation in the linear case. To calculate the uncertainties, we used Python's \texttt{scimpy} package.
 
 \begin{figure}[htbp!]
 \centering
@@ -156,7 +156,6 @@ y tick label style={
 \caption{The number of vortices as a function of the number of realisatations for $L=128$ and $\lambda_x = \lambda_y=0$ at snapshot 10.}
 \label{fig:vortex_run}
 \end{figure}
-
 
 For calculating the correlation functions, the average of $\cos(\theta_{i,j} - \theta_{i,0})$ was calculated from $i=0$ to $i=L-1$ and over all realistations at a specific time step. The correlation distance is given by $j$ and $j=1$ to $j=L/2$ was used. 
  

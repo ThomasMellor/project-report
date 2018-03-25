@@ -336,23 +336,37 @@ where $l$ is the scale factor during an application of the RG method. The flows 
 
 \end{figure}
 
-In practice, only the weakly anisotropic regime is accessible in the case of incoherent pumping, whereas for the OPO pumping it is experimentally viable to traverse different regimes by the adjustment of the pump strength. We shall now describe the various possible regimes for both pumping types and for both anisotrpic and isotropic parameters. 
+In practice, only the weakly anisotropic regime is accessible in the case of incoherent pumping \cite{2015PhRvX...5a1017A}, whereas for the OPO pumping it is experimentally viable to traverse different regimes by the adjustment of the pump strength. We shall now describe the various possible regimes for both pumping types and for both anisotrpic and isotropic parameters. 
 
 In the weakly isotropic case, a dual modified electrodynamic theory has been mapped from the KPZ equation which describes the vortices as charges, extending the mapping that was used in the BKT transition. In the present case, the interactions of these vortices have repulsive contributions that grow with $\lambda$. Thus it was determined that beyond a length scale $L_v = e^{2\pi/\lambda}$, vortices are screened and thus always proliferate. Beyond this distance they are expected to show exponential correlations, while beyond the KPZ distance $L_{\text{KPZ}}$ stretched exponential correlations are expected, i.e. $e^{-r^{2\chi}}$ is the form of the correlation function, with $\chi \sim 0.39$ determined from numerical investigations.
 
-In the case of incoherent pumping in the isotropic regime it is found that although in the thermodynamic limit the algebraic order will always be destroyed, the size $L_{\text{KPZ}}$ to which a finite system can show algebraic correlation depends on a tuning parameter where the $x = \gamma_p/\gamma_l - 1$ $p$ and $l$ are pump power and loss, respectively. Algebraic correlations may be destroyed in one of two ways: for a sufficiently large tuning parameter and system, decreasing the tuning parameter increases the nonequilibrium fluctuations so that the system enters the KPZ phase. Alternatively, a BKT transition may take place first. This is illustrated in \fig{\ref{fig:incoherentkpz}}.
+In the case of incoherent pumping in the isotropic regime it is found \cite{2015PhRvX...5a1017A} that although in the thermodynamic limit the algebraic order will always be destroyed, the size $L_{\text{KPZ}}$ to which a finite system can show algebraic correlation depends on a tuning parameter $x = \gamma_p/\gamma_l - 1$ where the $p$ and $l$ are pump power and loss, respectively. Algebraic correlations may be destroyed in one of two ways: for a sufficiently large tuning parameter and system, decreasing the tuning parameter increases the nonequilibrium fluctuations so that the system enters the KPZ phase. Alternatively, a BKT transition may take place first. This is illustrated in \fig{\ref{fig:incoherentkpz}}.
 It is noted that the KPZ length scale $L^*$ is much larger than realistic system sizes, and therefore may not be observed for incoherently pumped systems. 
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[scale=0.4]{incoherentkpz.pdf}
+	\includegraphics[scale=0.7]{incoherentkpz.pdf}
 	\caption{The different regimes the system is in in the case of incoherent pumping depends on the tuning parameter $x$ and system size. At a combination with a sufficiently small system size and sufficiently large $x$, the system displays algebraic correlations. Depending on the system size, decreasing $x$ can lead to stretched exponential correlations either through entering the KPZ phase or via a BKT transition \cite{2015PhRvX...5a1017A}.}
 	\label{fig:incoherentkpz}
 \end{figure}
 
-For coherent pumping, the length scales as a function of the pump strength relative to the maximum pump strength that allows the OPO regime is shown in Fig. 8. Although the length scale Lv is less than that of $L_{\text{KPZ}}$ where the KPZ phase would be observable, thus seemingly precluding the KPZ phase, it has been pointed out that in numerical studies of up to 1000 $\mu$m that the vortex rich phase appears absent XX, which could suggest a prevention of the vortex proliferation, or an underestimation of $L_v$.
+For coherent pumping, the length scales as a function of the pump strength relative to the maximum pump strength that allows the OPO regime is shown in \fig{\ref{fig:coherentwa}}. Although the length scale $L_v$ is less than that of $L_{\text{KPZ}}$ where the KPZ phase would be observable, thus seemingly precluding the KPZ phase, it has been pointed out that in numerical studies of up to 1000 $\mu$m that the vortex rich phase appears absent XX, which could suggest a prevention of the vortex proliferation, or an underestimation of $L_v$.
 
-In systems with strong anisotropy there only exists a phase transition between the BKT phases. An incoherent pump phase diagram that illustrates this is shown in XX. In particular, the system exhibits ‘reentrance’ which means that by increasing the pump power it is possible to enter into the algebraic regime, and then subsequently exit it on further increase. Coherent pumping displays similar phases as the incoherent pump, specifically in reentrance, however in experimental realisations the various regimes can be explored much more easily with the available system size by varying the detuning (see the caption below Fig. 4, pump power, and pump wavevector. 
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.4]{coherentwa.pdf}
+	\caption{The case of coherent pumping in the weak anisotropic regime. This shows the various length scales as a function of the pump power normalised to the maximum pump that allows the OPO regime. For most values of pump power the $L_v$ is less than that of $L_{\textrm{KPZ}}$ where the KPZ phase would be observable \cite{PhysRevX.5.041028}.}
+	\label{fig:coherentwa}
+\end{figure}
+In systems with strong anisotropy there only exists a phase transition between the BKT phases \cite{2015PhRvX...5a1017A, PhysRevX.5.041028}. An incoherent pump phase diagram that illustrates this is shown in \fig{\cite{fig:incoherentanisotropic}}. In particular, the system exhibits ‘reentrance’ which means that by increasing the pump power it is possible to enter into the algebraic regime, and then subsequently exit it on further increase. Coherent pumping displays similar phases as the incoherent pump, specifically in reentrance, however in experimental realisations the various regimes can be explored much more easily with the available system size by varying the detuning (the energy difference between the cavity resonance and exciton energy at $k=0$), pump power, and pump wavevector. 
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.7]{incoherentanisotropic.pdf}
+	\caption{A phase diagram for the anistropic KPZ state for the incoherent pump for the parameters $\Gamma_0$ (as defined in the text) and the parameter $\kappa_0 = \Lambda/\sqrt{D_x D_y}$ where $\Lambda$ is the noise strength. 
+	The curve shows a potential route that would be traversed in experiment as pump power is increased: the key feature of reentrance where the algebraic phase is entered and left as this path is crossed \cite{2015PhRvX...5a1017A}.}
+	\label{fig:incoherentanisotropic}
+\end{figure}
 
 \section{Project Aim}
 

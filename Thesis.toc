@@ -24,7 +24,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.6}Polariton Condensate Regimes}{14}{section.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Project Aim}{16}{section.16}
+\contentsline {section}{\numberline {1.7}Project Aim}{17}{section.19}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 

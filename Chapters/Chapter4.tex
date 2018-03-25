@@ -153,7 +153,7 @@ Therefore it is sensible not to read the values too literally, but take them as 
 
 
 \section{Anistropic Case} 
-For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the same result as the linear case. Figures \ref{fig:binder_logt_0.2_-0.2} to \ref{fig:binder_t_1-1} show the Binder cumulant plotted as a function of $t$ and also $t/ L^2 \log t$ for several values of increasing $\lambda_x$. Although the collapse is not as tight as for the linear case, it clearly still occurs to an extent, confirming the expectation. For the case $\lambda_x = 0.2$, the curves do not cross each other as closely as in the linear case at the mid-point of the simulation, however looking at the uncertainties shows that only the $L=80$ size deviates from the others. All other points are within each other when considering the uncertainties. These conclusions also apply after three quarters of the simulation has completed. This is corroborated by the grandient in vortex gradient which is averaged to be $-1.001 \pm 0.003$, demonstarted linear behaviour.
+For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the same result as the linear case. The following pages show the Binder cumulant plotted as a function of $t$ and also $t/ L^2 \log t$ for several values of increasing $\lambda_x$. Although the collapse is not as tight as for the linear case, it clearly still occurs to a large extent. For the case $\lambda_x = 0.2$, the curves do not cross each other as closely as in the linear case at the mid-point of the simulation, however looking at the uncertainties shows that only the $L=80$ size deviates from the others. All other points are within each other when also considering the errors on the points. These conclusions also apply after three quarters of the simulation has completed. This is corroborated by the vortex vortex gradient which is averaged to be $-1.001 \pm 0.003$, supporting linear behaviour.
 
 \begin{figure}[htbp!] \centering
 	\begin{tikzpicture}[scale=0.8]
@@ -266,13 +266,7 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 \end{figure}
 
 
-For $\lambda_x =0.4$ there are similar conclusions to be made. $L=80$ also deviates, while the mid point uncertainties in the Binder cumulant are within each other for other system sizes. Due to these errors on the Binder cumulant, it would appear that it is undetermined whether further realisations are necessary to tighten the collapse further, or if the dynamical exponent growth rate $(t/\log t)^{1/2}$ is simply not as good an approximation as in the linear case. On the other hand, the vortex gradient does show deviation in its calculated average of $-1.013 \pm 0.003$. As these decrease for higher values of $\lambda$ monotonically it is clear that the effects of higher values of $\lambda$ are beginning to be felt. In particular, the convergence of the Binder cumulant becomes faster as $\lambda$ increases, indicating a faster transition to the ordered phase. 
-
-To test how this effects the collapse of the Binder cumulant, we can reverse the process which determined the gradient from the correlation length. Therefore the Binder cumulant should be plotted as a function of $(t/log t)^{\alpha/2}$ where $\alpha$ is the gradient of the vortex plot. Similarly to how \cite{PhysRevLett.84.1503} plotted the collapse with an effective exponent $z=2.35$, the purpose of this plot does not have a physical origin but to demonstrate that the $t/\log t$ must be modified. It should be again noted that \cite{PhysRevB.94.104520} only has calculations for the first and second order (in $\lambda$) terms for the force between vortices in the weakly isotropic case, where the terms were repulsive at large distances. In the following they appear to be attractive. 
-
-
-For $\lambda_x=0.4$, the plot of the Binder cumulant as a function of $(t/\log t)^1.013/L^2$ is shown in XX. The collapse is only slightly tighter. The gradient, however, has not significantly deviated from the linear case, so this is not unexpected. In both cases the collapse is still weaker than the linear case. Noting the previous comments on the uncertainties, further simulations are indeed necessary, but there are also are differences to the linear case. 
-
+For $\lambda_x =0.4$ there are similar conclusions to be made, shown in \fig{\ref{fig:binder_0.4-0.4}}. $L=80$ also deviates, while the mid point uncertainties in the Binder cumulant are within each other for other system sizes. Due to these errors on the Binder cumulant (shown in Figures \ref{fig:err_0.4-0.4one} and \ref{fig:err_0.4-0.4two}, it would appear that it is undetermined whether more realisations are necessary to tighten the collapse further, or if the dynamical exponent growth rate $(t/\log t)^{1/2}$ is simply not as good an approximation as in the linear case. On the other hand, the vortex gradient does show deviation in its calculated average of $-1.013 \pm 0.003$. As these decrease for higher values of $\lambda$ monotonically it is clear that the effects of higher values of $\lambda$ are beginning to be felt. In particular, the convergence of the Binder cumulant becomes faster as $\lambda$ increases, indicating a faster transition to the ordered phase. 
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
@@ -312,6 +306,7 @@ For $\lambda_x=0.4$, the plot of the Binder cumulant as a function of $(t/\log t
 	\end{axis}
 \end{tikzpicture}
 \caption{The Binder cumulant as a function of $t/L^2 \log t$ for different sizes with $\lambda_x = -\lambda_y = 0.4.$}
+\label{fig:binder_0.4-0.4}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -348,6 +343,7 @@ For $\lambda_x=0.4$, the plot of the Binder cumulant as a function of $(t/\log t
 	\end{axis}
 \end{tikzpicture}
 \caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.4$.}
+\label{fig:err_0.4-0.4one}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -381,7 +377,14 @@ For $\lambda_x=0.4$, the plot of the Binder cumulant as a function of $(t/\log t
 	\end{axis}
 \end{tikzpicture}
 \caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y -0.4$ There is no value for $128.$}
+\label{fig:err_0.4-0.4two}
 \end{figure}
+
+To test how this effects the collapse of the Binder cumulant, we can reverse the process which determined the gradient from the correlation length. Therefore the Binder cumulant should be plotted as a function of $(t/log t)^{\alpha/2}$ where $\alpha$ is the gradient of the vortex plot. Similarly to how \cite{PhysRevLett.84.1503} plotted the collapse with an effective exponent $z=2.35$, the purpose of this plot does not have a physical origin but to demonstrate that the $t/\log t$ must be modified. It should be again noted dual electrodynamic theory in \cite{PhysRevB.94.104520} only looked at the weakly isotropic case in which the second order (in $\lambda$) term of the force between vortices was repulsive at large distances. Due to the decrease in the vortex gradient and a faster convergence, in the following they appear to be attractive. 
+
+
+For $\lambda_x=0.4$, the plot of the Binder cumulant as a function of $(t/\log t)^1.013/L^2$ is shown in \fig{\ref{fig:binder_0.4-0.4mod}}. The collapse is only slightly tighter. The gradient, however, has not significantly deviated from the linear case, so this is not unexpected. In both cases the collapse is still weaker than the linear case. Noting the previous comments on the uncertainties, further simulations are indeed necessary, but there are also are differences to the linear case. 
+
 
 \begin{figure}[htbp!]
 \centering
@@ -422,6 +425,7 @@ For $\lambda_x=0.4$, the plot of the Binder cumulant as a function of $(t/\log t
 	\end{axis}
 \end{tikzpicture}
 \caption{The Binder cumulant as a function of $(t/\log t)^{1.013}/L^2$ for different sizes with $\lambda_x = -\lambda_y = 0.4.$}
+\label{fig:binder_0.4-0.4mod}
 \end{figure}
 
 For the remaining values of $\lambda$, we compare both the collapse with an exponent $\alpha = 1$ and one calculated from the gradient. As one increases $\lambda$ the collapse becomes weaker with a linear exponent but does not appear to degrade in any linear fashion with the modified exponent. In fact, a subjective glance seems to indicate it actually improves, with $\lambda=1.5$ showing the strongest collapse besides the linear case. 

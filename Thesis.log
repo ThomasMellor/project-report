@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  25 MAR 2018 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  25 MAR 2018 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2187,14 +2187,24 @@ your preamble.
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(./Thesis.toc)
+(./Thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
  [3
 
 
-] (./Chapters/Chapter2.tex
+]
+(./Chapters/Chapter2.tex
 Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction and Background
@@ -2213,15 +2223,6 @@ LaTeX Warning: Citation 'magnon' on page 1 undefined on input line 5.
 
 LaTeX Warning: Citation 'Byrnes2014' on page 1 undefined on input line 7.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 LaTeX Warning: Citation 'PhysRevX.7.041006' on page 1 undefined on input line 9
 .
@@ -2257,7 +2258,7 @@ LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 2 undefined on input line
 LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 2 undefined 
 on input line 20.
 
-<./Figures/polaritonsystem.pdf, id=83, 492.23268pt x 369.88583pt>
+<./Figures/polaritonsystem.pdf, id=97, 492.23268pt x 369.88583pt>
 File: ./Figures/polaritonsystem.pdf Graphic file (type pdf)
 
 <use ./Figures/polaritonsystem.pdf>
@@ -2279,7 +2280,7 @@ LaTeX Warning: Citation 'RevModPhys.85.299' on page 2 undefined on input line 4
 2.
 
 [2] [3 <./Figures/polaritonsystem.pdf>]
-<./Figures/polaritondispersion.pdf, id=108, 426.79132pt x 441.01773pt>
+<./Figures/polaritondispersion.pdf, id=122, 426.79132pt x 441.01773pt>
 File: ./Figures/polaritondispersion.pdf Graphic file (type pdf)
 
 <use ./Figures/polaritondispersion.pdf>
@@ -2325,7 +2326,7 @@ Overfull \hbox (61.52197pt too wide) in paragraph at lines 96--97
 C, for ex-am-ple in [[]],
  []
 
-<./polaritoncondensation.pdf, id=125, 250.38426pt x 207.70512pt>
+<./polaritoncondensation.pdf, id=139, 250.38426pt x 207.70512pt>
 File: ./polaritoncondensation.pdf Graphic file (type pdf)
 
 <use ./polaritoncondensation.pdf>
@@ -2394,7 +2395,7 @@ LaTeX Warning: Citation 'Janssen1989' on page 10 undefined on input line 233.
 LaTeX Warning: Citation 'nishimori2011elements' on page 10 undefined on input l
 ine 233.
 
-[10] <./xyscaling.pdf, id=209, 216.24095pt x 182.09764pt>
+[10] <./xyscaling.pdf, id=223, 216.24095pt x 182.09764pt>
 File: ./xyscaling.pdf Graphic file (type pdf)
 
 <use ./xyscaling.pdf>
@@ -2418,11 +2419,11 @@ LaTeX Warning: Citation 'PhysRevB.94.10452' on page 14 undefined on input line
 LaTeX Warning: Citation 'PhysRevX.7.041006' on page 14 undefined on input line 
 309.
 
-[14] <rgflows.pdf, id=260, 256.0748pt x 165.02599pt>
+[14] <rgflows.pdf, id=274, 256.0748pt x 165.02599pt>
 File: rgflows.pdf Graphic file (type pdf)
  <use rgflows.pdf>
 Package pdftex.def Info: rgflows.pdf used on input line 331.
-(pdftex.def)             Requested size: 153.64606pt x 99.01634pt.
+(pdftex.def)             Requested size: 204.8601pt x 132.02095pt.
 
 
 LaTeX Warning: Citation 'PhysRevLett.111.088701' on page 15 undefined on input 
@@ -2432,14 +2433,87 @@ line 334.
 LaTeX Warning: Citation 'PhysRevLett.111.088701' on page 15 undefined on input 
 line 334.
 
-[15 <./rgflows.pdf>]
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 15 undefined on input lin
+e 339.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 15 undefined on input lin
+e 343.
+
+
+Overfull \hbox (28.01659pt too wide) in paragraph at lines 343--345
+[]\OT1/cmr/m/n/10.95 In the case of in-co-her-ent pump-ing in the isotropic reg
+ime it is found [[]]
+ []
+
+[15 <./rgflows.pdf>] <incoherentkpz.pdf, id=299, 250.94698pt x 174.9718pt>
+File: incoherentkpz.pdf Graphic file (type pdf)
+
+<use incoherentkpz.pdf>
+Package pdftex.def Info: incoherentkpz.pdf used on input line 348.
+(pdftex.def)             Requested size: 100.377pt x 69.98747pt.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 16 undefined on input lin
+e 349.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 16 undefined on input lin
+e 349.
+
+<coherentwa.pdf, id=301, 417.63588pt x 417.56pt>
+File: coherentwa.pdf Graphic file (type pdf)
+ <use coherentwa.pdf>
+Package pdftex.def Info: coherentwa.pdf used on input line 357.
+(pdftex.def)             Requested size: 167.05139pt x 167.02103pt.
+
+
+LaTeX Warning: Citation 'PhysRevX.5.041028' on page 16 undefined on input line 
+358.
+
+
+LaTeX Warning: Citation 'PhysRevX.5.041028' on page 16 undefined on input line 
+358.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 16 undefined on input lin
+e 361.
+
+
+LaTeX Warning: Citation 'PhysRevX.5.041028' on page 16 undefined on input line 
+361.
+
+
+LaTeX Warning: Citation 'fig:incoherentanisotropic' on page 16 undefined on inp
+ut line 361.
+
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [16] [17
+[16 <./incoherentkpz.pdf> <./coherentwa.pdf
+
+pdfTeX warning: pdflatex (file ./coherentwa.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+>] <incoherentanisotropic.pdf, id=629, 245.34496pt x 146.14601pt>
+File: incoherentanisotropic.pdf Graphic file (type pdf)
+
+<use incoherentanisotropic.pdf>
+Package pdftex.def Info: incoherentanisotropic.pdf used on input line 365.
+(pdftex.def)             Requested size: 98.13623pt x 58.45735pt.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 17 undefined on input lin
+e 367.
+
+
+LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 17 undefined on input lin
+e 367.
+
+) [17 <./incoherentanisotropic.pdf>] [18
 
 ]
 ------------------------------------------------------------------------------
@@ -2450,15 +2524,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
 (./Thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 39047DF7EEF1BE738DA1971D2ED219BD;1803.
 
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: 63BC59B41EFFAB2EC91D1925F455D505;1668
-(rerunfilecheck)             After:  5C01EF7EFBF50047B0CCF29A23F9235B;1803.
 
 LaTeX Warning: There were undefined references.
 
@@ -2480,10 +2548,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
 ### simple group (level 1) entered at line 167 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 44314 strings out of 493029
- 942819 string characters out of 6136234
- 1378550 words of memory out of 5000000
- 47221 multiletter control sequences out of 15000+600000
+ 44337 strings out of 493029
+ 943288 string characters out of 6136234
+ 1380186 words of memory out of 5000000
+ 47237 multiletter control sequences out of 15000+600000
  19197 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,21n,77p,10466b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2513,10 +2581,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
 /public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (21 pages, 1457970 bytes).
+Output written on Thesis.pdf (22 pages, 1724109 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 40 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 934 PDF objects out of 1000 (max. 8388607)
+ 662 compressed objects within 7 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
