@@ -1,11 +1,3 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The Binder cumulant convergence for $L=32$ at different values of $\dd {t}$. The convergence of $\dd {t}=0.001$ compared to $\dd {t}=0.01$ suggests that a timestep of $\dd {t}=0.001$ was unnecessary, while the behaviour of $\dd {t}=0.02$ although qualitatively correct, deviated from that $\dd {t}=0.02$ significantly to be considered trustworthy.\relax }}{2}{figure.caption.20}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The number of vortices at the end of a simulation ($t=400$) as a function of $c_L$ for $L=64$ with 20 runs.\relax }}{2}{figure.caption.21}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces The Binder cumulant for $L=128$ and $c_L=0.1$. Despite being in the ordered phase, the Binder cumulant does not converge to near one due to the vortices.\relax }}{3}{figure.caption.22}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces The number of vortices as a function of the number of realisatations for $L=128$ and $\lambda _x = \lambda _y=0$ at snapshot 10.\relax }}{5}{figure.caption.24}

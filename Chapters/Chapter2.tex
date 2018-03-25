@@ -1,14 +1,15 @@
-\chapter{Theory}
+\chapter{Introduction and Background}
+
 \section{Introduction}
 
-Condensation--the phenomenon whereby a macroscropic number of particles occupy the ground state a system--has been of theoretical and experimental interest for physicists for almost a century. Bose Einstein Condensation (BEC), perhaps the most familiar example, was predicted to occur for a system of non-interacting Bosons at a sufficiently low temperature. This was observed in ultrocold atoms in the 1990s, but there are many other examples of condensation, such as Bardeen Cooper Srhreifer superconductivity. The excitations can even be quasi particles, for example int he case of magnons--electronic spin waves.
+Condensation--the phenomenon whereby a macroscropic number of particles occupy the ground state a system--has been of theoretical and experimental interest for physicists for almost a century. Bose Einstein Condensation, perhaps the most familiar example, was predicted to occur for a system of non-interacting Bosons at a sufficiently low temperature. This was observed in ultrocold atoms in the 1990s \cite{PhysRevLett.75.3969}, but there are many other examples of condensation, such as Bardeen Cooper Srhrieffer superconductivity \cite{PhysRev.108.1175}. The excitations can even be quasi particles, for example in the case of magnons--electronic spin waves \cite{magnon}.
 
-More recently, another type of quasiparticle, the exciton-polariton, formed from the coupling of electron-hole (exciton) pairs and photons, has been observed to undergo condensation in microcavities. However, to maintain the condensate, the continual pumping of a laser is required, inhibiting the system from attaining equilibrium. Because it cannot, many questions still remain as to the exact nature of the condensate and how the understanding of condensation derived from equilibrium physics must be modified. 
+More recently, another type of quasiparticle, the exciton-polariton, formed from the coupling of electron-hole (exciton) pairs and photons, has been observed to undergo condensation in microcavities \cite{Byrnes2014}. However, to maintain the condensate, the continual pumping of a laser is required, inhibiting the system from attaining equilibrium. Because it cannot, many questions still remain as to the exact nature of the condensate and how the understanding of condensation derived from equilibrium physics must be modified. 
 
-The aim of this project is to address some of these issues by confirming behaviour of the condensate expected from a theoretical analysis. In particular, when describing the condensate as a macroscopic wavefunction $\rho(r,t)e^{i\theta(r,t)}$, it is found that the long range behaviour of the condensate can be described strictly by the evolution of the phase $\theta$ through the Karder-Parisi-Zhang (KPZ) equation. Originally used to describe height growth, in its current context the compactness of the $\theta$, i.e. that it is limited between $0$ and $2\pi$, allows for the existence of topoligal defects which are crucial in explaining the physics.
+The aim of this project is to address some of these issues by confirming behaviour of the condensate expected from a theoretical analysis. In particular, when describing the condensate as a macroscopic wavefunction $\rho(r,t)e^{i\theta(r,t)}$, it is found that the long range behaviour of the condensate can be described strictly by the evolution of the phase $\theta$ through the Karder-Parisi-Zhang (KPZ) equation \cite{PhysRevX.7.041006,2015PhRvX...5a1017A}. Originally used to describe height growth\cite{PhysRevLett.56.889}, in its current context the compactness of the $\theta$, i.e. that it is limited between $0$ and $2\pi$, allows for the existence of topoligal defects which are crucial in explaining the physics.
 
-By employing techniques from the renormalistion group, it is found that depending on the parameters of the equation there are effectively two regime. The first is described by Berezinskii–Kosterlitz–Thouless (BKT) physics, which is that of the XY model. The second, the KPZ phase. 
-During the porject, the evolution of the condensate phase was simulated through the KPZ equation, to confirm the that in the different regime the behaviour was as expected. 
+By employing techniques from the renormalistion group, it is found that depending on the parameters of the equation there are effectively two regimes. The first is described by Berezinskii–Kosterlitz–Thouless (BKT) physics, which is that of the $XY$ model. The second, the KPZ phase. 
+During the porject, the evolution of the condensate phase was simulated through the KPZ equation, to confirm that in the different regime the behaviour was as expected. 
 
 
 \section{Exciton-Polariton Condensates}
@@ -16,7 +17,7 @@ During the porject, the evolution of the condensate phase was simulated through 
 Exciton-polaritons are formed in a laser illuminated microcavity--an example of a so-called drive dissipative system: the laser contiually \emph{drives} the microcavity and photons inside the cavity escape or 
 \emph{dissipate} continually out of the microcavity. As such, the system is distinctly non equilibrium due to the external influence. 
 
-To create these quasiparticles, a thin superconducting surface is sandwitched between two reflective Bragg mirrors on either side. The material is then illuminated with a laser, exciting an electron which, because of the Coulombic interaction, forms a hydrogen-like bound state with the remaining hole: an exciton. The excitons are also confined to very narrow widths in the material due to the alternating doping that varies the band gap, making the system two dimensional. Perpendicular to the surface, the photon frequency is restricted due to the finite length $L$ of the $z$ plane, the possible values given by $2\pi N/L$ where $N$ is an integer. The possible frequencies are therefore 
+To create these quasiparticles, a thin superconducting surface is sandwitched between two reflective Bragg mirrors on either side. The material is then illuminated with a laser, exciting an electron which, because of the Coulombic interaction, forms a hydrogen-like bound state with the remaining hole: an exciton. The excitons are also confined to very narrow widths in the material due to the alternating doping that varies the band gap, making the system two dimensional. This is illustrated in XX. Perpendicular to the surface, the photon frequency is restricted due to the finite length $L$ of the $z$ plane, the possible values given by $2\pi N/L$ where $N$ is an integer. The possible frequencies are therefore 
 \[
 \omega = \frac{c}{n}\sqrt{k^2 + (2\pi N/L)^2} 
 \]
@@ -26,8 +27,26 @@ where $n$ is the material refractive index and $k$ is the magnitude of the `in-p
 \]
 where $m = \hbar(n/c)(2 \pi N /L)$ is the effective mass of the photon and is set by the cavity length. The energy  $\omega_0 = (c/n)(2 \pi N / L)$ at the bottom of the dispersion should be near that of the energy rquired to create an exciton. This fixes the photon mass to be $m \sim 10^{-4}m_e$ while the exciton mass is typically $\sim m_e$, meaning we can neglect that we can effectively neglect the exciton dispersion compared to that of the polariton. 
 
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.4]{polaritonsystem.pdf}
+	\caption{The exciton-polariton microcavity.
+	Superconducting material of with an alternating band gap is sandwiched between Bragg mirrors. 
+	A laser illuminates the semiconducting material which creates excitons that are confined in a 2D plane due to the doping. 
+	With sufficient photon lifetime, the photons can couple with the exciton, effectively becoming a quasi particle known as a exciton-polariton \cite{Byrnes2014}.}
+	\label{fig:exciton-polariton}
+\end{figure}
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.3]{polaritondispersion.pdf}
+	\caption{A dispersion graph for the exciton-polariton system. The angle corresponds to the momentum of the polariton. LP and UP are upper and lower polariton, respectively, and are the two eigenvalues for the Hamiltonian. Due to the photon's low effective mass compared to the exciton, the dispersion for the polariton is almost totally dependent on the photon dispersion. In experiments it is the LP modes that are become occupied. Its dispersion relation looks quadratic at low momentum but has a point inflection, tending to the exciton dispersion, at high momentum. \cite{doi:10.1080/00107514.2010.550120}}
+	\label{fig:polaritondispersion}
+\end{figure}
+
+
 Although the mirrors are not perfectly reflective,
-with the lifetime of the polaritons being limited to $\sim 200 ps$ in current experiments, if the rate of recombination and electron excitation exceeds that of photon dissipation,
+with the lifetime of the polaritons being limited to $\sim 200 ps$ in current experiments \cite{2014arXiv1408.1680S}s, if the rate of recombination and electron excitation exceeds that of photon dissipation,
 the excitons are able to couple with the photons. To describe this, the Hamiltonian of the photons is given by 
 \[
 \mathcal{H}_{\text{cav}} = \int \frac{\dd[2]{\myvec{k}}}{(2\pi)^2} \sum_\sigma 
