@@ -1,15 +1,28 @@
-[5] Config.pm:340> INFO - This is Biber 2.4
-[6] Config.pm:343> INFO - Logfile is 'Thesis.blg'
-[238] biber:287> INFO - === Sat Mar 17, 2018, 11:36:01
-[699] Biber.pm:348> INFO - Reading 'Thesis.bcf'
-[1427] Biber.pm:742> INFO - Found 1 citekeys in bib section 0
-[1524] Biber.pm:3151> INFO - Processing section 0
-[1924] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
-[2165] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[2352] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
-[2569] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2569] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2570] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
-[2570] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[2578] bbl.pm:519> INFO - Writing 'Thesis.bbl' with encoding 'ascii'
-[2640] bbl.pm:615> INFO - Output to Thesis.bbl
+[2] Config.pm:340> INFO - This is Biber 2.4
+[2] Config.pm:343> INFO - Logfile is 'Thesis.blg'
+[239] biber:287> INFO - === Mon Mar 26, 2018, 02:09:28
+[692] Biber.pm:348> INFO - Reading 'Thesis.bcf'
+[1458] Biber.pm:742> INFO - Found 24 citekeys in bib section 0
+[1546] Biber.pm:3151> INFO - Processing section 0
+[2007] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
+[2254] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[2447] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
+[3384] Utils.pm:147> WARN - I didn't find a database entry for 'PhysRevLett.75.3969' (section 0)
+[3386] Utils.pm:147> WARN - I didn't find a database entry for 'magnon' (section 0)
+[3386] Utils.pm:147> WARN - I didn't find a database entry for 'PhysRevLett.56.889' (section 0)
+[3387] Utils.pm:147> WARN - I didn't find a database entry for 'RevModPhys.85.299' (section 0)
+[3388] Utils.pm:147> WARN - I didn't find a database entry for '8.334 lecture notes' (section 0)
+[3389] Utils.pm:147> WARN - I didn't find a database entry for 'Janssen1989' (section 0)
+[3389] Utils.pm:147> WARN - I didn't find a database entry for 'nishimori2011elements' (section 0)
+[3390] Utils.pm:147> WARN - I didn't find a database entry for 'PhysRevB.94.10452' (section 0)
+[3391] Utils.pm:147> WARN - I didn't find a database entry for 'fig:incoherentanisotropic' (section 0)
+[3391] Utils.pm:147> WARN - I didn't find a database entry for 'PhysRevE.47.1525' (section 0)
+[4381] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4382] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4383] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
+[4383] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[4534] bbl.pm:519> INFO - Writing 'Thesis.bbl' with encoding 'ascii'
+[4878] Utils.pm:147> WARN - The entry 'PhysRevX.5.041028' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[5226] Utils.pm:147> WARN - The entry 'PhysRevX.7.041006' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[5265] bbl.pm:615> INFO - Output to Thesis.bbl
+[5266] Biber.pm:109> INFO - WARNINGS: 12

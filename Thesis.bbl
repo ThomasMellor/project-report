@@ -19,6 +19,119 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global}
+    \entry{altland2010condensed}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0e8283059ab66548e6a111f680ea5d02}{%
+           family={Altland},
+           family_i={A\bibinitperiod},
+           given={Alexander},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Leiden}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{0e8283059ab66548e6a111f680ea5d02}
+      \strng{fullhash}{0e8283059ab66548e6a111f680ea5d02}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0521769754}
+      \field{title}{Condensed Matter Field Theory}
+      \field{year}{2010}
+    \endentry
+    \entry{2015PhRvX...5a1017A}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f1be9b83e208651c072127fa31c44380}{%
+           family={{Altman}},
+           family_i={A\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+        {{hash=3edfda711385889de530d68ba649f9ea}{%
+           family={{Sieberer}},
+           family_i={S\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           given_i={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9a59c40c928a4caadf9f8dd2965b041f}{%
+           family={{Chen}},
+           family_i={C\bibinitperiod},
+           given={L.},
+           given_i={L\bibinitperiod}}}%
+        {{hash=760e6d6e792fab75bbd8c24aad5c0ed1}{%
+           family={{Diehl}},
+           family_i={D\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=293c7bf2c21680ae60ca655f6ac31415}{%
+           family={{Toner}},
+           family_i={T\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{461b48126390fbebb95e14b788edf8ea}
+      \strng{fullhash}{ebbb3579365891c5596549240d65f223}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{011017}
+      \field{journaltitle}{Physical Review X}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Two-Dimensional Superfluidity of Exciton Polaritons Requires Strong Anisotropy}}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{011017}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.5.011017
+      \endverb
+    \endentry
+    \entry{PhysRev.108.1175}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a2166ded4b4480c2db03be223858e978}{%
+           family={Bardeen},
+           family_i={B\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=1bf59ad6db8f360c4c9421cdf820058a}{%
+           family={Cooper},
+           family_i={C\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           given_i={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=d2e2b0c717f8437fede2fdd4e9a23fef}{%
+           family={Schrieffer},
+           family_i={S\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           given_i={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{cb0ca4ad26a75b26a27915779eb69d74}
+      \strng{fullhash}{cb0ca4ad26a75b26a27915779eb69d74}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{5}
+      \field{journaltitle}{Phys. Rev.}
+      \field{month}{12}
+      \field{title}{Theory of Superconductivity}
+      \field{volume}{108}
+      \field{year}{1957}
+      \field{pages}{1175\bibrangedash 1204}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1103/PhysRev.108.1175
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.108.1175
+      \endverb
+    \endentry
     \entry{PhysRevLett.84.1503}{article}{}
       \name{author}{3}{}{%
         {{hash=cbd17823a9f29d0d61bcccc93572cf43}{%
@@ -61,7 +174,480 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.84.1503
       \endverb
     \endentry
+    \entry{Byrnes2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=319c4004a1d1800d25b8f3a4a6c32c9e}{%
+           family={Byrnes},
+           family_i={B\bibinitperiod},
+           given={Tim},
+           given_i={T\bibinitperiod}}}%
+        {{hash=d93bf7971a2429af007cce20beef394f}{%
+           family={Kim},
+           family_i={K\bibinitperiod},
+           given={Na\bibnamedelima Young},
+           given_i={N\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=b79708cb8655a5ddd7419878b1baadaf}{%
+           family={Yamamoto},
+           family_i={Y\bibinitperiod},
+           given={Yoshihisa},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{122500d693d2c885ff7c085ce8f76bf7}
+      \strng{fullhash}{122500d693d2c885ff7c085ce8f76bf7}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1745-2473}
+      \field{journaltitle}{Nat Phys}
+      \field{month}{11}
+      \field{note}{Review}
+      \field{number}{11}
+      \field{title}{Exciton-polariton condensates}
+      \field{volume}{10}
+      \field{year}{2014}
+      \field{pages}{803\bibrangedash 813}
+      \range{pages}{11}
+      \verb{url}
+      \verb http://dx.doi.org/10.1038/nphys3143
+      \endverb
+    \endentry
+    \entry{PhysRevLett.111.088701}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f30a382ac40cea43985b9d78420b7a07}{%
+           family={Chen},
+           family_i={C\bibinitperiod},
+           given={Leiming},
+           given_i={L\bibinitperiod}}}%
+        {{hash=8adebc928ac1d947525b3ea9a99e0c7a}{%
+           family={Toner},
+           family_i={T\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{5c485711392569225fde37ac762b7501}
+      \strng{fullhash}{5c485711392569225fde37ac762b7501}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{8}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{08}
+      \field{title}{Universality for Moving Stripes: A Hydrodynamic Theory of Polar Active Smectics}
+      \field{volume}{111}
+      \field{year}{2013}
+      \field{pages}{088701}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.111.088701
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.111.088701
+      \endverb
+    \endentry
+    \entry{Coleman1973}{article}{}
+      \name{author}{1}{}{%
+        {{hash=482d8709754f85ef0a09f447888369c7}{%
+           family={Coleman},
+           family_i={C\bibinitperiod},
+           given={Sidney},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{fullhash}{482d8709754f85ef0a09f447888369c7}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Mathematical Physics}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{There are no Goldstone bosons in two dimensions}
+      \field{volume}{31}
+      \field{year}{1973}
+      \field{pages}{259\bibrangedash 264}
+      \range{pages}{6}
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01646487
+      \endverb
+    \endentry
+    \entry{PhysRevX.5.041028}{article}{}
+      \name{author}{6}{}{%
+        {{hash=ab4ced8c55e88347b606ea0ec60aaf30}{%
+           family={Dagvadorj},
+           family_i={D\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+        {{hash=04cef16291e98aa5a175c54424c8f821}{%
+           family={Fellows},
+           family_i={F\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6327bd235f9e014493dc2495eabf6039}{%
+           family={Matyja\ifmmode\bibnamedelimb \acute{s}\else\bibnamedelima \'{s}\fi{}kiewicz},
+           family_i={M\bibinitperiod\bibinitdelim \~\'{s}\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=3e1d059f28e7c7c0a02984eae44ce03a}{%
+           family={Marchetti},
+           family_i={M\bibinitperiod},
+           given={F.\bibnamedelimi M.},
+           given_i={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=eeabd655b0c87e82bf59f6f8ca29fa59}{%
+           family={Carusotto},
+           family_i={C\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=d20d4f99ef1dcca61ba71d473f179a81}{%
+           family={Szyma\ifmmode\bibnamedelimb \acute{n}\else\bibnamedelima \'{n}\fi{}ska},
+           family_i={S\bibinitperiod\bibinitdelim \~\'{n}\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           given_i={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{923293c6a8b271db13be3822c136d308}
+      \strng{fullhash}{d58e8be6970820e65195942f931edad7}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{Phys. Rev. X}
+      \field{month}{11}
+      \field{title}{Nonequilibrium Phase Transition in a Two-Dimensional Driven Open Quantum System}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{041028}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.5.041028
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.5.041028
+      \endverb
+    \endentry
+    \entry{doi:10.1080/00107514.2010.550120}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e2a957dbba2e9be8bb192a2434819228}{%
+           family={Keeling},
+           family_i={K\bibinitperiod},
+           given={Jonathan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=a4606190880e6baa1430df0c85df65b0}{%
+           family={Berloff},
+           family_i={B\bibinitperiod},
+           given={Natalia\bibnamedelima G.},
+           given_i={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{47393395f1210f34b58ac2f7b198b5eb}
+      \strng{fullhash}{47393395f1210f34b58ac2f7b198b5eb}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Contemporary Physics}
+      \field{number}{2}
+      \field{title}{Exciton-polariton condensation}
+      \field{volume}{52}
+      \field{year}{2011}
+      \field{pages}{131\bibrangedash 151}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1080/00107514.2010.550120
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1080/00107514.2010.550120
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/00107514.2010.550120
+      \endverb
+    \endentry
+    \entry{2016PhRvB..94j4521S}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3edfda711385889de530d68ba649f9ea}{%
+           family={{Sieberer}},
+           family_i={S\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           given_i={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=450f550d31471dfb782f80229b9817a6}{%
+           family={{Wachtel}},
+           family_i={W\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+        {{hash=f1be9b83e208651c072127fa31c44380}{%
+           family={{Altman}},
+           family_i={A\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+        {{hash=760e6d6e792fab75bbd8c24aad5c0ed1}{%
+           family={{Diehl}},
+           family_i={D\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{81b1a3e1038254301b6e27f40714154c}
+      \strng{fullhash}{27fe035b8601a3f09e7b07785ddac6a1}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{104521}
+      \field{eprintclass}{cond-mat.stat-mech}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{09}
+      \field{number}{10}
+      \field{title}{{Lattice duality for the compact Kardar-Parisi-Zhang equation}}
+      \field{volume}{94}
+      \field{year}{2016}
+      \field{pages}{104521}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.94.104521
+      \endverb
+      \verb{eprint}
+      \verb 1604.01043
+      \endverb
+    \endentry
+    \entry{2014arXiv1408.1680S}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fe638ee5892e7d68d1935e362ccae01f}{%
+           family={{Steger}},
+           family_i={S\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=24086bc13761e340d663d4d420f48207}{%
+           family={{Gautham}},
+           family_i={G\bibinitperiod},
+           given={C.},
+           given_i={C\bibinitperiod}}}%
+        {{hash=eb0eeeb2bab9ed1b8fb7407b123fa55e}{%
+           family={{Snoke}},
+           family_i={S\bibinitperiod},
+           given={D.\bibnamedelimi W.},
+           given_i={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=56c05282af5a3c2eb6a89a8df60c57bd}{%
+           family={{Pfeiffer}},
+           family_i={P\bibinitperiod},
+           given={L.},
+           given_i={L\bibinitperiod}}}%
+        {{hash=d1c1e36f412ea51bc7e36eb7c3ac7957}{%
+           family={{West}},
+           family_i={W\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{7db763562bde2be3dfebef7a5e982857}
+      \strng{fullhash}{c6951204b21d24fcf6d4364f8fdafb8e}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.optics}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{ArXiv e-prints}
+      \field{month}{08}
+      \field{title}{{Slow reflection and two-photon generation of microcavity exciton-polaritons}}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1408.1680
+      \endverb
+      \keyw{Physics - Optics}
+    \endentry
+    \entry{PhysRevLett.118.016602}{article}{}
+      \name{author}{9}{}{%
+        {{hash=0c9ee6e1eda275924b4c0cd234c324ae}{%
+           family={Sun},
+           family_i={S\bibinitperiod},
+           given={Yongbao},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=c33ca2b1e19ea8eeaf48f37cf4f71bd6}{%
+           family={Wen},
+           family_i={W\bibinitperiod},
+           given={Patrick},
+           given_i={P\bibinitperiod}}}%
+        {{hash=9d9637d3ef58acc3ba1b44c653118408}{%
+           family={Yoon},
+           family_i={Y\bibinitperiod},
+           given={Yoseob},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=12fb0c85964542a2c55df7e95e88fcab}{%
+           family={Liu},
+           family_i={L\bibinitperiod},
+           given={Gangqiang},
+           given_i={G\bibinitperiod}}}%
+        {{hash=369923719ff9f77f071ac266578bad05}{%
+           family={Steger},
+           family_i={S\bibinitperiod},
+           given={Mark},
+           given_i={M\bibinitperiod}}}%
+        {{hash=84ad6eae54057fe6f89694ff823245cb}{%
+           family={Pfeiffer},
+           family_i={P\bibinitperiod},
+           given={Loren\bibnamedelima N.},
+           given_i={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=72ee08946187c6319c0d5e2500da710e}{%
+           family={West},
+           family_i={W\bibinitperiod},
+           given={Ken},
+           given_i={K\bibinitperiod}}}%
+        {{hash=57dee2f585af91a1673773644441b318}{%
+           family={Snoke},
+           family_i={S\bibinitperiod},
+           given={David\bibnamedelima W.},
+           given_i={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=49777a289be75aa24a5fdc5647761bde}{%
+           family={Nelson},
+           family_i={N\bibinitperiod},
+           given={Keith\bibnamedelima A.},
+           given_i={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{81176e2b83e4f23c08a3f17b969675af}
+      \strng{fullhash}{e96f58ba05084dc10b615c19faff7d4e}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{01}
+      \field{title}{Bose-Einstein Condensation of Long-Lifetime Polaritons in Thermal Equilibrium}
+      \field{volume}{118}
+      \field{year}{2017}
+      \field{pages}{016602}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.118.016602
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.118.016602
+      \endverb
+    \endentry
+    \entry{PhysRevB.94.104520}{article}{}
+      \name{author}{4}{}{%
+        {{hash=450f550d31471dfb782f80229b9817a6}{%
+           family={Wachtel},
+           family_i={W\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+        {{hash=3edfda711385889de530d68ba649f9ea}{%
+           family={Sieberer},
+           family_i={S\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           given_i={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=760e6d6e792fab75bbd8c24aad5c0ed1}{%
+           family={Diehl},
+           family_i={D\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=f1be9b83e208651c072127fa31c44380}{%
+           family={Altman},
+           family_i={A\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{3fbd0df604d6b9d4a036a0e3f5f7ab48}
+      \strng{fullhash}{3b530013906b91a0f556ec738923ed71}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{10}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{09}
+      \field{title}{Electrodynamic duality and vortex unbinding in driven-dissipative condensates}
+      \field{volume}{94}
+      \field{year}{2016}
+      \field{pages}{104520}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.94.104520
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.94.104520
+      \endverb
+    \endentry
+    \entry{PhysRevX.7.041006}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5e12885c2524b1f5fbd0b5397a9a8b51}{%
+           family={Zamora},
+           family_i={Z\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=3edfda711385889de530d68ba649f9ea}{%
+           family={Sieberer},
+           family_i={S\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           given_i={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=db5bef1d45903c0e2518844feb4872ff}{%
+           family={Dunnett},
+           family_i={D\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=760e6d6e792fab75bbd8c24aad5c0ed1}{%
+           family={Diehl},
+           family_i={D\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=d20d4f99ef1dcca61ba71d473f179a81}{%
+           family={Szyma\ifmmode\bibnamedelimb \acute{n}\else\bibnamedelima \'{n}\fi{}ska},
+           family_i={S\bibinitperiod\bibinitdelim \~\'{n}\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           given_i={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{f8a5eed7f03bd602800cfcb39ca66f70}
+      \strng{fullhash}{87143839146b44a074700450a5a8f3a8}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{Phys. Rev. X}
+      \field{month}{10}
+      \field{title}{Tuning across Universalities with a Driven Open Condensate}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{pages}{041006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.7.041006
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.7.041006
+      \endverb
+    \endentry
   \endsortlist
+  \missing{PhysRevB.94.10452}
+  \missing{Janssen1989}
+  \missing{RevModPhys.85.299}
+  \missing{magnon}
+  \missing{PhysRevLett.56.889}
+  \missing{nishimori2011elements}
+  \missing{8.334 lecture notes}
+  \missing{PhysRevLett.75.3969}
+  \missing{PhysRevE.47.1525}
+  \missing{fig:incoherentanisotropic}
 \endrefsection
 \endinput
 

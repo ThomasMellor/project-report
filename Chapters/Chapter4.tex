@@ -4,7 +4,7 @@ Simulations were peformed on system sizes $L=40, 48, 64, 80, 104, 128$ with the 
 
 \section{Linear Case}
 
-\fig{\ref{fig:binder_t_00}} overlays the Binder cumulant evolution for different sizes in the linear ($\lambda_x = \lambda_y = 0$) case which corresponds to the XY model. \fig{\ref{fig:binder_logt_00}} does the same but plotted with respect to $t/L^2 \log t$ where the collapse is expected. 
+\fig{\ref{fig:binder_logt_zerozero}} overlays the Binder cumulant evolution for different sizes as a function of $t/L^2\log t$ in the linear ($\lambda_x = \lambda_y = 0$) case which corresponds to the XY model.  
 As is clear, this reobtains the result from \cite{PhysRevLett.84.1503} while using Stochastic evolution rather than Monte Carlo and provides confidence in the results for the non-linear cases. 
 The collapse is not perfect: Figures \ref{fig:error_00} and \ref{fig:error_00_2}, which display the Binder cumulant as a function of the number of realisations for all the system sizes, show how far apart the curves are. A value of $t /L^2 \log t$ was calculated for $L=40$ for two points in the simulation, namely, midway through and three quarters of the way thourgh, and the corresponding $t$ was chosen for all other system sizes that was closest to this value. In this report we call these the midway and three quarters graph for brevity. 
 For the first case, the uncertainties of the points do not all cross, although none are isolated. 
@@ -52,7 +52,7 @@ Ideally one would perform further simulations to ensure this, but this was not p
 	\end{axis}
 \end{tikzpicture}
 \caption{The Binder cumulant as a function of $t/L^2 \log t$ for different sizes with $\lambda_x = \lambda_y = 0.$}
-\label{fig:binder_logt_00}
+\label{fig:binder_logt_zerozero}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -143,7 +143,7 @@ y tick label style={
 \label{fig:error_00_2}
 \end{figure} 
 
-With those caveats in mind, we may be assured that the result has been obtained, and this is further corroborated by the plots of $\log n_v$, where $n_v$ is the number of vortices, as a function of $\log (t / \log t)$, shown in  \ref{fig:nv_anistroptic_40} to\ref{fig:nv_anistropic_128}  for each system size. 
+With those caveats in mind, we may be assured that the result has been obtained, and this is further corroborated by the plots of $\log n_v$, where $n_v$ is the number of vortices, as a function of $\log (t / \log t)$, shown in  Figures \ref{fig:nv_anisotropic_40} to \ref{fig:nv_anisotropic_128}  for each system size. 
 For the linear case, it is expected that $\log n_v = -\log (t / \log t)$. 
 This can be explained as follows: using the result in \cite{PhysRevLett.84.1503} that the distance between vortices $R$ is approximately proportional to $ (t / \log t)^{1/2}$, we have that the vortex density is then $1/R^2$, and the number of vortices $n_v \sim L^2/R^2$, and therefore $\log n_v \sim -  \log R^2 = -\log(t/\log t)$ up to some additive constants. For brevity, we shall call this the `vortex gradient.'
 As the figures show, the gradient was obtained to good accuracy for all system sizes: taking an average for all sizes, we obtain the value $-1.001 \pm 0.003$. Due to the finite size of the system, the approximation breaks down at large times once the majority of the vortices have annihilated, and therefore a time scale must be chosen with which to calculate the gradient. 
@@ -229,7 +229,7 @@ For non-zero $\lambda$s, when $\lambda_x = - \lambda_y$, we expect to obtain the
 \addlegendentry{$L=80$.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.2$.}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$. $\lambda_x = -\lambda_y = 0.2$.}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -342,7 +342,7 @@ For $\lambda_x =0.4$ there are similar conclusions to be made, shown in \fig{\re
 \addlegendentry{$L=80$.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = -\lambda_y = 0.4$.}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$. $\lambda_x = -\lambda_y = 0.4$.}
 \label{fig:err_0.4-0.4one}
 \end{figure}
 
@@ -376,7 +376,7 @@ For $\lambda_x =0.4$ there are similar conclusions to be made, shown in \fig{\re
 \addlegendentry{$L=80$.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y -0.4$ There is no value for $128.$}
+\caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y -0.4.$ There is no value for $128.$}
 \label{fig:err_0.4-0.4two}
 \end{figure}
 
@@ -629,7 +629,7 @@ For the remaining values of $\lambda$, we compare both the collapse with an expo
 \addlegendentry{$L=72$, 200 realisations.}
 		\addplot[mark=none, color= orange]
 	table{../project_code/gL_log/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_300cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$, 3[0 realisations.}
+\addlegendentry{$L=128$, 300 realisations.}
 		\addplot[mark=none, color= purple]
 	table{../project_code/gL_log/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_200cL_0.2iter_500000.txt};
 \addlegendentry{$L=80$, 200 realisations.}
@@ -672,7 +672,7 @@ For the remaining values of $\lambda$, we compare both the collapse with an expo
 \addlegendentry{$L=72$, 200 realisations.}
 		\addplot[mark=none, color= orange]
 	table{../project_code/gL_log_modified/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_300cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$, 3[0 realisations.}
+\addlegendentry{$L=128$, 300 realisations.}
 		\addplot[mark=none, color= purple]
 	table{../project_code/gL_log_modified/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_200cL_0.2iter_500000.txt};
 \addlegendentry{$L=80$, 200 realisations.}
@@ -760,10 +760,10 @@ For the remaining values of $\lambda$, we compare both the collapse with an expo
 \addlegendentry{$L=80$, 200 runs.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The Binder cumulant as a function of $(t/ \log t)^{1.217}$ for different sizes with $\lambda_x = -\lambda_y = 1.5.$}
+\caption{The Binder cumulant as a function of $(t/ \log t)^{1.217}/L^2$ for different sizes with $\lambda_x = -\lambda_y = 1.5.$}
 \end{figure}
 
-To check if this is perhaps a finite size effect, although there is no immediate indication that this should be the case, with the calculations in \cite{PhysRevX.7.041006} showing that spatial correlations are algebraic as in the $XY$ model below the BKT transitions, the gradient was check for system sizes of $L=512$. This was for $\dd{t}=0.05$ and a much lower number of realisations, so not directly comparable, but at least the behaviour of decreasing gradient with increasing $\lambda$ also follows. The $\lambda=0$ gradient under estimated (in magnitude) the low number of realisations could be the explanation. Further study into these areas is clearly necessary.  
+To check if this is perhaps a finite size effect, although there is no immediate indication that this should be the case, with the calculations in \cite{PhysRevX.7.041006} showing that spatial correlations are algebraic as in the $XY$ model below the BKT transitions, the gradient was checked for system sizes of $L=512$, shown in \fig{\ref{fig:vortex_512anis}}. This was for $\dd{t}=0.05$ and a much lower number of realisations, so not directly comparable, but at least the behaviour of decreasing gradient with increasing $\lambda$ also follows. The $\lambda=0$ gradient under estimated (in magnitude), though the low number of realisations could be the explanation. Further study into these areas is clearly necessary.  
 
 \begin{figure}[htbp!]
 \centering
@@ -790,7 +790,8 @@ To check if this is perhaps a finite size effect, although there is no immediate
 \addlegendentry{$\lambda_x = 2$, exp $=-1.179\pm0.005$,\\ realisations = 40}
 	\end{axis}
 \end{tikzpicture}
-\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=512$ in the anistropic case.} 
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=512$ in the anisotropic case.} 
+\label{fig:vortex_512anis}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
@@ -825,8 +826,8 @@ To check if this is perhaps a finite size effect, although there is no immediate
 \addlegendentry{$\lambda_x = 0.8$, exp $=-1.144\pm0.009$,\\ realisations = 1600}
 	\end{axis}
 \end{tikzpicture}
-\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=40$ in the anistropic case.} 
-\ref{fig:nv_anistropic_40}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=40$ in the anisotropic case.} 
+\label{fig:nv_anisotropic_40}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
@@ -862,7 +863,7 @@ To check if this is perhaps a finite size effect, although there is no immediate
 \addlegendentry{$\lambda_x = 0.8$, exp $=-1.118\pm0.007$,\\ realisations = 400}
 	\end{axis}
 \end{tikzpicture}
-\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=48$ in the anistropic case.} 
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=48$ in the anisotropic case.} 
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -899,7 +900,7 @@ To check if this is perhaps a finite size effect, although there is no immediate
 \addlegendentry{$\lambda_x = 0.8$, exp $=-1.123\pm0.006$,\\ realisations = 400}
 	\end{axis}
 \end{tikzpicture}
-\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=64$ in the anistropic case.} 
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=64$ in the anisotropic case.} 
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -936,7 +937,7 @@ To check if this is perhaps a finite size effect, although there is no immediate
 \addlegendentry{$\lambda_x = 0.8$, exp $=-1.109\pm0.008$,\\ realisations = 260}
 	\end{axis}
 \end{tikzpicture}
-\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=72$ in the anistropic case.} 
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=72$ in the anisotropic case.} 
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -973,7 +974,7 @@ To check if this is perhaps a finite size effect, although there is no immediate
 \addlegendentry{$\lambda_x = 0.8$, exp $=-1.085\pm0.009$,\\ realisations = 400}
 	\end{axis}
 \end{tikzpicture}
-\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=80$ in the anistropic case.} 
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=80$ in the anisotropic case.} 
 \end{figure}
 
 
@@ -1011,7 +1012,7 @@ To check if this is perhaps a finite size effect, although there is no immediate
 \addlegendentry{$\lambda_x = 0.8$, exp $=-1.162\pm0.017$,\\ realisations = 400}
 	\end{axis}
 \end{tikzpicture}
-\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=104$ in the anistropic case.} 
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=104$ in the anisotropic case.} 
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -1048,8 +1049,8 @@ To check if this is perhaps a finite size effect, although there is no immediate
 \addlegendentry{$\lambda_x = 0.8$, exp $=-1.153\pm0.028$,\\ realisations = 230}
 	\end{axis}
 \end{tikzpicture}
-\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=128$ in the anistropic case.} 
-\label{fig:nv_anistropic_128}
+\caption{Log of the number of vortices as a function of $\log ( t /\log t)$ for $L=128$ in the anisotropic case.} 
+\label{fig:nv_anisotropic_128}
 \end{figure}
 
 
@@ -1057,22 +1058,21 @@ To check if this is perhaps a finite size effect, although there is no immediate
 
 \section{Isotrpic case}
 
-In the isotropic case, due to the non-linearity, we expect a repulsive contribution of the vortex force at large calculated in \cite{PhysRevB.94.104520} with the second order result, the first order being a force perpendicular to the line joining the vortices, of 
+In the isotropic case, due to the non-linearity, we expect a repulsive contribution of the vortex force at distances large calculated in \cite{PhysRevB.94.104520} with a second order result, the first order being a force perpendicular to the line joining the vortices, of 
 \[
 \myvec{f}(\myvec{R}) = \frac18 \left( \frac{\lambda}{2D}\right)^2 + \frac{1}{\epsilon} \frac{\myvec{R}}{R^2}(8\log(R/a)^2 + 4\log(R/a)-1)
 \]
-where $R$ is the vortex separation, $\epsilon$ the dielectric constant, and $a$ the lattice spacing. Thus, beyond a certain length scale vortex unbinding should occur--the vortex dominated phase--although this is not the same as the entropic unbinding in the $XY$ case, estimated from equlibrium thermodynamics. Also in the paper the estimate for distance at which this correction term dominates and is given by 
+where $R$ is the vortex separation, $\epsilon$ the dielectric constant, and $a$ the lattice spacing. Thus, beyond a certain length scale vortex unbinding should occur--the vortex dominated phase--although this is not the same as the entropic unbinding in the $XY$ case, estimated from equlibrium thermodynamics. Also, in the paper the estimate for the distance at which this correction term dominates is given by 
 \[
 L_v = ae^{\frac{2D}{\lambda}}.
 \]
 
-These conclusions are matched by the results. \fig{\ref{fig:binder_log_t_cL_0.20.2}} shows the collapse for $\lambda_x=0.2$ and the quality is comparable to the anisotropic case. This is as anticipated as we do not expect drastic change in the qualitative behaviour away from a critical point, and provides further confidence in the obtained results. Although the points in the uncertainty graph appear to all cross each other when including the errors, the uncertainties are much larger. The average vortex gradient is $-0.953 \pm 0.005$, so has already altered unlike in the anisotropic case. This is in the direction we expect, where the the vortex recombination occurs at a slower rate due to their reduced attractions. In brief, the behaviour is slighty but not significantly different from the linear case. 
+These conclusions are matched by the results. \fig{\ref{fig:binder_log_t_cL_0.20.2}} shows the collapse for $\lambda_x=0.2$ and the quality is comparable to the anisotropic case. This is as anticipated as we do not expect drastic change in the qualitative behaviour away from a critical point, and provides further confidence in the obtained results. Although the points in the uncertainty graph (Figures \ref{fig:err_0.20.2one} and \ref{fig:err_0.20.2two}) appear to all cross each other when including the errors, the uncertainties are much larger. The average vortex gradient is $-0.953 \pm 0.005$, so has already altered unlike in the anisotropic case. This is in the direction we expect, where the the vortex recombination occurs at a slower rate due to their reduced attractions. In brief, the behaviour is slighty but not significantly different from the linear case. 
  
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Binder cumulant for $\lambda_x$= 0.2, $\lambda_y$=0.2, $c_L$=0.2.},
 		xlabel=$\log t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
@@ -1107,11 +1107,10 @@ These conclusions are matched by the results. \fig{\ref{fig:binder_log_t_cL_0.20
 \addlegendentry{$L=80$, 510 runs.}
 	\end{axis}
 \end{tikzpicture}
-
+\caption{The binder cumulant as a function of $t/L^2 \log t$ for different system sizes and $\lambda_x=\lambda_y=0.2$.}
 \label{fig:binder_log_t_cL_0.20.2}
 \end{figure}
 
-Figures XX and XX show the uncertainties for $\lambda_x = 0.2$. 
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
@@ -1146,6 +1145,7 @@ Figures XX and XX show the uncertainties for $\lambda_x = 0.2$.
 	\end{axis}
 \end{tikzpicture}
 \caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=6500$ (the mid-point of the simulation) for $L=40$.$\lambda_x = \lambda_y = 0.2$.}
+\label{fig:err_0.20.2one}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -1182,20 +1182,21 @@ Figures XX and XX show the uncertainties for $\lambda_x = 0.2$.
 	\end{axis}
 \end{tikzpicture}
 \caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=9370$ (the mid-point of the simulation) for $L=40$.$\lambda_x = \lambda_y = 0.2$.}
+\label{fig:err_0.20.2two}
 \end{figure}
 
 
 
 
-The case $\lambda_x=0.4$ is more interesting, where the efefcts of the non-linearity are much more pronounced. This provides a clear demonstration of the expectation in that the `destruction' of the convergence of the Binder cumulant occurs first for the largest system and gradually lessens for the smaller system as can be seen from the order of the curves in the plot. There is also a weak pattern in the increase of the vortex gradient as the system size is increased, ranging from $-0.928\pm 0.015$ for $L=40$ to $-0.807\pm 0.009$ for $L=128$, whereas no such pattern occurs in the linear case. 
 
-As for the uncertainties, they are all larger and in general the points are not overlapping, although this can be seen from the graph of the Binder cumulant. The uncertainty in the sizes $L=104$ and $L=128$ are much larger, and the for these sizes the Binder cumulant is fluctuating. 
+The case $\lambda_x=0.4$ is more interesting, shown in \fig{\ref{fig:binder_logt_0.40.4}}, where the effects of the non-linearity are much more pronounced. This provides a clear demonstration of the expectation in that the `destruction' of the convergence of the Binder cumulant occurs first for the largest system and gradually lessens for the smaller system as can be seen from the order of the curves in the plot. There is also a weak pattern in the increase of the vortex gradient as the system size is increased, ranging from $-0.928\pm 0.015$ for $L=40$ to $-0.807\pm 0.009$ for $L=128$, whereas no such pattern occurs in the linear case. 
+
+As for the uncertainties, shown in Figures \ref{fig:err_0.40.4one} and \ref{fig:err_0.40.4two}, they are all larger and in general the points are not overlapping, although this can be seen from the graph of the Binder cumulant. The uncertainty in the sizes $L=104$ and $L=128$ are much larger, and for these sizes the Binder cumulant is fluctuating. 
 
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Binder cumulant for $\lambda_x$= 0.4, $\lambda_y$=0.4, $c_L$=0.2.},
 		xlabel=$\log t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
@@ -1230,6 +1231,8 @@ As for the uncertainties, they are all larger and in general the points are not 
 \addlegendentry{$L=80$, 200 runs.}
 	\end{axis}
 \end{tikzpicture}
+\caption{The Binder cumulant as a function of $t/L^2 \log t$ for different sizes with $\lambda_x = \lambda_y = 0.4.$ The range has been restricted to be $(-1,1)$.}
+\label{fig:binder_logt_0.40.4}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -1266,6 +1269,7 @@ As for the uncertainties, they are all larger and in general the points are not 
 	\end{axis}
 \end{tikzpicture}
 \caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=650$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y= 0.4.$}
+\label{fig:err_0.40.4one}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -1299,11 +1303,15 @@ As for the uncertainties, they are all larger and in general the points are not 
 	\end{axis}
 \end{tikzpicture}
 \caption{The uncertainty in the Binder cumulant as a function of the number of realisations at a point closest to $t / L^2 \log t$ for $t=937.5$ (three quarters through the simualtion) for $L=40$. $\lambda_x = \lambda_y= 0.4.$ There is no value for $128.$}
+\label{fig:err_0.40.4two}
 \end{figure}
 
 
-By observing the behaviour of the Binder cumulant as $\lambda$ is increased further, a clear pattern emerges. The largest systems ($L=128$ and $L=104$) first fluctuate around 0 with a negative bias before fluctuating with an amplitude of around $0.5$. Smaller systems, in order, first begin decreasing significantly and also fluctuating quite severely, which explains the very large uncertainties (not shown) obtained, before finally also fluctuating around 0 with the same amplitude. For the larger systems this occurs at $\lambda_x=0.6$ to $\lambda_x=0.8$, while $L=72$ and $L=80$ are finally fluctuating around 0 by $\lambda_x=1$. The plots do not show the very large negative values obtained by the systems, which increases on a system size decrease. This can potentially be explained as the Binder cumulant is a ratio of two quantities in the disordered state, so may be very large. We do not show the plots for $\mean{\myvec{M}^2}$: it suffices to point out that the value is close to zero. While for a completely random phase angle at each point the Binder cumulant should be zero, this may not be the case in this regime. This transition stabilises eventually. The larger decrease during the transition for small sizes could be due to the structure of the vortex interactions or also the lower number of phase points used in calculating the magnetisation. In this way, the behaviour may be a finite size effect: both the speed of the transition to the fluctuation about 0 and the severity of the behaviour of the Binder cumulant was reduced for larger system sizes. 
+By observing the behaviour of the Binder cumulant as $\lambda$ is increased further, shown in Figures \ref{fig:binder_logt_0.60.6} through \ref{fig:binder_logt_0.60.6}, a clear pattern emerges. The largest systems ($L=128$ and $L=104$) first fluctuate around 0 with a negative bias before fluctuating aronud 0 with an amplitude of around $0.5$. Smaller systems, in order of size, first begin decreasing significantly and also fluctuate quite severely, which explains the very large uncertainties (not shown) obtained, before finally also fluctuating around 0 with the same amplitude. For the larger systems the former occurs at $\lambda_x=0.6$ to $\lambda_x=0.8$, while $L=72$ and $L=80$ are finally fluctuating around 0 by $\lambda_x=1$. 
 
+The plots do not show the very large negative values obtained by the systems, which increase as the system size is decreased. This can be explained by the fact thet Binder cumulant contains a ratio of two quantities. In the disordered state, these are small, so the ratio may be very large. We do not show the plots for $\mean{\myvec{M}^2}$: it suffices to point out that the value is close to zero. For a completely random phase angle at each point, the Binder cumulant should be zero. The same may not be the case in this regime. However, this transition appears to stabilise eventually. Prior to that it is interesting to note that the decrease of the Binder cumulant only occurs after a certain time and occurs quite rapidly, signaling a transition. An example in shown in \fig{\ref{fig:binder_transition}} for $L=64$. The values of $\mean{\myvec{M}^2}$ and $\mean{\myvec{M}^2}^2$ also both increased, although they still remained quite small, around $0.04$ and $0.02$, respectively.
+
+The larger decrease during the transition for small sizes could be due to the structure of the vortex interactions, or also due to the lower number of phase points used in calculating the magnetisation. In this way, the behaviour may be a finite size effect: both the rate (in terms of the value of $\lambda$) of the transition to the final behaviour and also the how was reduced for larger system sizes. 
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
@@ -1345,6 +1353,8 @@ By observing the behaviour of the Binder cumulant as $\lambda$ is increased furt
 \addlegendentry{$L=80$, 200 runs.}
 	\end{axis}
 \end{tikzpicture}
+\caption{The Binder cumulant as a function of $t/L^2 \log t$ for different sizes with $\lambda_x = \lambda_y = 0.6.$ The range has been restricted to be $(-1,1)$.}
+\label{fig:binder_logt_0.60.6}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
@@ -1387,57 +1397,17 @@ By observing the behaviour of the Binder cumulant as $\lambda$ is increased furt
 \addlegendentry{$L=80$, 200 runs.}
 	\end{axis}
 \end{tikzpicture}
+\caption{The Binder cumulant as a function of $t/L^2 \log t$ for different sizes with $\lambda_x = \lambda_y = 0.8.$ The range has been restricted to be $(-1,1)$.}
+\label{fig:binder_logt_0.80.8}
 \end{figure}
+
+
 
 
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Binder cumulant for $\lambda_x$= 1, $\lambda_y$=1, $c_L$=0.2.},
-		xlabel=$\log t/L^2\log t$,
-		ylabel={Binder cumulant},
-		ymajorgrids=true,
-		xmajorgrids=true,
-		ticklabel style={
-            	/pgf/number format/fixed,
-            	/pgf/number format/precision=2,
-            	/pgf/number format/fixed zerofill
-        	},
-		grid style = dashed,
-		ymin=-1,
-		ymax=1,
-		]
-		\addplot[mark=none, color= green]
-	table{../project_code/gL_log/N_48/dt_0.01/Lx_1Ly_1/N_48num_sim_300cL_0.2iter_180000.txt};
-\addlegendentry{$L=48$, 300 runs.}
-		\addplot[mark=none, color= red]
-	table{../project_code/gL_log/N_40/dt_0.01/Lx_1Ly_1/N_40num_sim_300cL_0.2iter_125000.txt};
-\addlegendentry{$L=40$, 300 runs.}
-		\addplot[mark=none, color= black]
-	table{../project_code/gL_log/N_104/dt_0.01/Lx_1Ly_1/N_104num_sim_125cL_0.2iter_845000.txt};
-\addlegendentry{$L=104$, 125 runs.}
-		\addplot[mark=none, color= blue]
-	table{../project_code/gL_log/N_64/dt_0.01/Lx_1Ly_1/N_64num_sim_300cL_0.2iter_320000.txt};
-\addlegendentry{$L=64$, 300 runs.}
-		\addplot[mark=none, color= gray]
-	table{../project_code/gL_log/N_72/dt_0.01/Lx_1Ly_1/N_72num_sim_200cL_0.2iter_405000.txt};
-\addlegendentry{$L=72$, 200 runs.}
-		\addplot[mark=none, color= orange]
-	table{../project_code/gL_log/N_128/dt_0.01/Lx_1Ly_1/N_128num_sim_160cL_0.2iter_1280000.txt};
-\addlegendentry{$L=128$, 160 runs.}
-		\addplot[mark=none, color= purple]
-	table{../project_code/gL_log/N_80/dt_0.01/Lx_1Ly_1/N_80num_sim_200cL_0.2iter_500000.txt};
-\addlegendentry{$L=80$, 200 runs.}
-	\end{axis}
-\end{tikzpicture}
-\end{figure}
-
-\begin{figure}[htbp!]
-\centering
-	\begin{tikzpicture}[scale=0.8]
-		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Binder cumulant for $\lambda_x$= 1.5, $\lambda_y$=1.5, $c_L$=0.2.},
 		xlabel=$\log t/L^2\log t$,
 		ylabel={Binder cumulant},
 		ymajorgrids=true,
@@ -1474,20 +1444,60 @@ By observing the behaviour of the Binder cumulant as $\lambda$ is increased furt
 \addlegendentry{$L=80$, 200 runs.}
 	\end{axis}
 \end{tikzpicture}
+\caption{The Binder cumulant as a function of $t/L^2 \log t$ for different sizes with $\lambda_x = \lambda_y = 1.5.$ The range has been restricted to be $(-1,1)$.}
+\label{fig:binder_logt_1.51.5}
 \end{figure}
 
+\begin{figure}[htbp!]
+\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
+		xlabel=$\log t/L^2\log t$,
+		ylabel={Binder cumulant},
+		ymajorgrids=true,
+		xmajorgrids=true,
+		ticklabel style={
+            	/pgf/number format/fixed,
+            	/pgf/number format/precision=2,
+            	/pgf/number format/fixed zerofill
+        	},
+		grid style = dashed,
+		]
+		\addplot[mark=none, color= green]
+	table{../project_code/gL_log/N_48/dt_0.01/Lx_1Ly_1/N_48num_sim_300cL_0.2iter_180000.txt};
+\addlegendentry{$L=48$, 300 runs.}
+		\addplot[mark=none, color= red]
+	table{../project_code/gL_log/N_40/dt_0.01/Lx_1Ly_1/N_40num_sim_300cL_0.2iter_125000.txt};
+\addlegendentry{$L=40$, 300 runs.}
+		\addplot[mark=none, color= black]
+	table{../project_code/gL_log/N_104/dt_0.01/Lx_1Ly_1/N_104num_sim_125cL_0.2iter_845000.txt};
+\addlegendentry{$L=104$, 125 runs.}
+		\addplot[mark=none, color= blue]
+	table{../project_code/gL_log/N_64/dt_0.01/Lx_1Ly_1/N_64num_sim_300cL_0.2iter_320000.txt};
+\addlegendentry{$L=64$, 300 runs.}
+		\addplot[mark=none, color= gray]
+	table{../project_code/gL_log/N_72/dt_0.01/Lx_1Ly_1/N_72num_sim_200cL_0.2iter_405000.txt};
+\addlegendentry{$L=72$, 200 runs.}
+		\addplot[mark=none, color= orange]
+	table{../project_code/gL_log/N_128/dt_0.01/Lx_1Ly_1/N_128num_sim_160cL_0.2iter_1280000.txt};
+\addlegendentry{$L=128$, 160 runs.}
+		\addplot[mark=none, color= purple]
+	table{../project_code/gL_log/N_80/dt_0.01/Lx_1Ly_1/N_80num_sim_200cL_0.2iter_500000.txt};
+\addlegendentry{$L=80$, 200 runs.}
+	\end{axis}
+\end{tikzpicture}
+\caption{The Binder cumulant as a function of $t/L^2 \log t$ for different sizes with $\lambda_x = \lambda_y = 1.$}
+\label{fig:binder_transition}
+\end{figure}
 
-For the gradient of the vortices, it behaves as expected for smaller values of $\lambda$ in that increasing $\lambda$ results in the gradient increasing. The repulsive force due to the non linearity should either prevent the vortices from recombining, or slow their rate of recombination. The upshot means that for high enough values of $\lambda$ there should be a saturation on the number of vortices, at least on large enough systems. The caveat of a large system is because initially the vortex density is very higher which means that vortices closest to each other can recombine and only after the vortex density is low enough does the saturation take place. In previous simulations that have been performed, eventually the number of vortices saturates for system sizes of $L=512$. 
+For the gradient of the vortices, shown in Figures \fig{\ref{fig:nv_anisotropic_40}} through \fig{\ref{fig:nv_anisotropic_128}}, they behave as expected for smaller values of $\lambda$ in that increasing $\lambda$ results in the gradient increasing. The repulsive force due to the non linearity should either prevent the vortices from recombining, or slow their rate of recombination. The upshot is that for high enough values of $\lambda$ there should be a saturation on the number of vortices, at least on large enough systems. The caveat of a large system is because initially the vortex density is very higher which means that vortices closest to each other can recombine and only after the vortex density is low enough does the saturation take place. In previous simulations that have been performed, eventually the number of vortices saturates for system sizes of $L=512$. 
 
-The slightly concerning nature of these graphs is that at a sufficiently large $\lambda$ the gradient actually \emph{decreases} again, and this occurs for all system sizes with the rate being faster the larger the system. To ensure this is not perhaps a finite size effect or a numerical artefact, a simulation with size $L=512$ was performed as shown in XX. Here a saturation is obtained, matching the previous result. However, the decrease in the gradient also occurs around the same values of $\lambda$ as in the other system sizes, so further investigation is required. 
-
-
+The slightly concerning nature of these graphs is that at a sufficiently large $\lambda$ the gradient actually \emph{decreases} again, and this occurs for all system sizes with the rate being faster the larger the system. To ensure this is not perhaps a finite size effect or a numerical artefact, a simulation with size $L=512$ was performed as shown in \fig{\ref{fig:vortex_512_iso}}. Here a saturation is obtained, matching the previous result. However, the decrease in the gradient also occurs around the same values of $\lambda$ as in the other system sizes, so further investigation is required. 
 
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $40$.},
 		xlabel={$\log (t/ \log t)$},
 		ylabel={$\log n_v$},
 		ymajorgrids=true,
@@ -1517,12 +1527,13 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 \addlegendentry{$\lambda_x = 1.5$, exp $=-0.587\pm0.023$\\ realisations = 300}
 	\end{axis}
 \end{tikzpicture}
+\caption{Log the number of vortices as a function of $\log(t/\log t)$ for $L=40$ in the isotropic case.}
+\label{fig:nv_anisotropic_40}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $48$.},
 		xlabel={$\log (t/ \log t)$},
 		ylabel={$\log n_v$},
 		ymajorgrids=true,
@@ -1552,12 +1563,12 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 \addlegendentry{$\lambda_x = 1.5$, exp $=-0.524\pm0.021$\\ realisations = 300}
 	\end{axis}
 \end{tikzpicture}
+\caption{Log the number of vortices as a function of $\log(t/\log t)$ for $L=48$ in the isotropic case.}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $64$.},
 		xlabel={$\log (t/ \log t)$},
 		ylabel={$\log n_v$},
 		ymajorgrids=true,
@@ -1587,6 +1598,7 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 \addlegendentry{$\lambda_x = 1.5$, exp $=-0.452\pm0.004$\\ realisations = 300}
 	\end{axis}
 \end{tikzpicture}
+\caption{Log the number of vortices as a function of $\log(t/\log t)$ for $L=64$ in the isotropic case.}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
@@ -1622,12 +1634,12 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 \addlegendentry{$\lambda_x = 1.5$, exp $=-0.509\pm0.012$\\ realisations = 100}
 	\end{axis}
 \end{tikzpicture}
+\caption{Log the number of vortices as a function of $\log(t/\log t)$ for $L=128$ in the isotropic case.}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $104$.},
 		xlabel={$\log (t/ \log t)$},
 		ylabel={$\log n_v$},
 		ymajorgrids=true,
@@ -1657,13 +1669,13 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 \addlegendentry{$\lambda_x = 1.5$, exp $=-0.523\pm0.008$\\ realisations = 125}
 	\end{axis}
 \end{tikzpicture}
+\caption{Log the number of vortices as a function of $\log(t/\log t)$ for $L=104$ in the isotropic case.}
 \end{figure}
 
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $72$.},
 		xlabel={$\log (t/ \log t)$},
 		ylabel={$\log n_v$},
 		ymajorgrids=true,
@@ -1693,12 +1705,12 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 \addlegendentry{$\lambda_x = 1.5$, exp $=-0.464\pm0.003$\\ realisations = 300}
 	\end{axis}
 \end{tikzpicture}
+\caption{Log the number of vortices as a function of $\log(t/\log t)$ for $L=72$ in the isotropic case.}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $80$.},
 		xlabel={$\log (t/ \log t)$},
 		ylabel={$\log n_v$},
 		ymajorgrids=true,
@@ -1728,12 +1740,13 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 \addlegendentry{$\lambda_x = 1.5$, exp $=-0.473\pm0.007$\\ realisations = 200}
 	\end{axis}
 \end{tikzpicture}
+\caption{Log the number of vortices as a function of $\log(t/\log t)$ for $L=80$ in the isotropic case.}
 \end{figure}
+\label{fig:nv_anisotropic_128}
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		title={Vortices  for  N = $512$.},
 		xlabel={$\log (t/ \log t)$},
 		ylabel={$\log n_v$},
 		ymajorgrids=true,
@@ -1754,13 +1767,16 @@ The slightly concerning nature of these graphs is that at a sufficiently large $
 \addlegendentry{$\lambda_x = 1.5$, exp $=-0.525\pm0.003$\\ realisations = 40}
 	\end{axis}
 \end{tikzpicture}
+\caption{Log the number of vortices as a function of $\log(t/\log t)$ for $L=512$ in the isotropic case.}
+\label{fig:vortex_512_iso}
 \end{figure}
 
 \section{Correlation Functions}
 
-As an aside to the main purpose of the project, a small subset of the data was utilised to calculate the form of the correlations functions and compare them to those obtained from the theory. In particular, we test the correlation function $\mean{\cos(\theta_(\myvec{r})- \theta(\myvec{0}))}= g(r)$ as a function of $r$. We are interested in qualitative behaviour, not the in values of any exponents, and therefore this has not been done very rigorously and there are no uncertainties. As not all the data was able to be saved, specifically for higher lattice sizes, $L=64$ was the size chosen for three different regimes: the linear regime, the highly ($\lambda=1.5$) non-linear isotropic regime, and the corresponding anisotropic regime.
+As an aside to the main purpose of the project, a small subset of the data was utilised to calculate the form of the correlations functions and compare them to those obtained from the theory. In particular, we test the correlation function $\mean{\cos(\theta_(\myvec{r})- \theta(\myvec{0}))}= g(r)$ as a function of $r$. We are interested in qualitative behaviour, not the in values of any exponents, and therefore this has not been done very rigorously and there are no uncertainties. As not all the data was able to be saved, specifically for higher lattice sizes, $L=64$ was the size chosen for two different regimes: the linear regime and the highly ($\lambda=1.5$) non-linear isotropic regime. For the isotropic case either exponential or stretched exponential correlations are expected. To differentiate these would require exact values (a gradient of 1 in a $\log(-\log g(r))$ vs $\log r$ plot or a value other than one), therefore our approach is not suitable.
 
-In the linear case, \fig{\ref{fig:_cor_lin_beg}} shows the correlation at the beginning of the siulation. Since the spins were completely random, we expect the correlation to be 0 for all distances. Although this is primarily to ensure the simulation and correlations behave as expected as we manually insert these conditions, it corresponds to the infinite temperature case with a correlation length of zero and therefore a correlation $exp(-r/\xi)$ of zero at all distances. Small scale fluctuations about 0 are observed, which we take as a confirmation of the desired behaviour.  
+
+In the linear case, \fig{\ref{fig:cor_lin_beg}} shows the correlation at the beginning of the siulation. Since the spins were completely random, we expect the correlation to be 0 for all distances. Although this is primarily to ensure the simulation and correlations behave as expected as we manually insert these conditions, it corresponds to the infinite temperature case with a correlation length of zero and therefore a correlation $exp(-r/\xi)$ of zero at all distances. Small scale fluctuations about 0 are observed, which we take as a confirmation of the desired behaviour.  
 
 \begin{figure}[htbp!]
 \centering
@@ -1781,7 +1797,7 @@ In the linear case, \fig{\ref{fig:_cor_lin_beg}} shows the correlation at the be
 \label{fig:cor_lin_beg}
 \end{figure}
 
-At the end of the simulation in the linear regime, the system is in the ordered phase where the correlations are algebraic. We plot $\log g(r)$ as a function of $\log r$ which is expected to be linear (with a negative gradient). As shown in \fig{\ref{fig:cor_lin_end}}, we obtain a reasonable plot. The curve is linear to good approximation. A change in gradient appears as the end is approach. This distance is half the lattice size. The periodic boundary conditions may be interfering with the expected behaviour--in other words, a finite size effect. As usual, perforing this on a large system would have been prefereble. Nonetheless the results support, or at the very least do not conflict with, the expectation. 
+At the end of the simulation in the linear regime, the system is in the ordered phase where the correlations are algebraic. We plot $\log g(r)$ as a function of $\log r$ which is expected to be linear (with a negative gradient). As shown in \fig{\ref{fig:cor_lin_end}}, we obtain a reasonable plot. The curve is linear to good approximation. A change in gradient appears as the end is approached. This distance is half the lattice size. The periodic boundary conditions may be interfering with the expected behaviour--in other words, a finite size effect. As usual, perforing this on a large system would have been prefereble. Nonetheless the results support, or at the very least do not conflict with, the expectation. 
 
 \begin{figure}[htbp!]
 \centering
@@ -1802,7 +1818,7 @@ At the end of the simulation in the linear regime, the system is in the ordered 
 \label{fig:cor_lin_end}
 \end{figure}
 
-The anisotropic case is displayed in \fig{\ref{fig:cor_anisotropic_end}}. Like the linear case, the approximation of a linear curve is also quite good. The magnitudes of the correlation are also of a similar magnitude up to $\sim 2$, but then their values deviate from each other. This further supports that finite size effects are responsible for the non linear behaviour beyond this point. This data sheds light on previous results: the expectation that the anisotropic regime would be that of the $XY$ model was obtained through a renormalisation group analysis. For long time behaviour (once the system has undergone a phase transition), the correlation functions support this prediction. However the approach to this phase is not determined
+The anisotropic case is displayed in \fig{\ref{fig:cor_anisotropic_end}}. Like the linear case, the approximation of a linear curve is also quite good. The magnitudes of the correlation are also of a similar magnitude up to $\sim 2$, but then their values deviate from each other. This perhaps is further support that finite size effects are responsible for the non linear behaviour beyond this point. This data sheds light on previous results: the expectation that the anisotropic regime would be that of the $XY$ model was obtained through a renormalisation group analysis. For long time behaviour (once the system has reached steady state), the correlation functions support this prediction. However the approach to this phase is not determined and is why the behaviour of the linear and anisotropic regimes is different. This can be see in the plot of the correlation functions roughly midway through the simulation for both anisotropic and linear cases, shown in \fig{\ref{fig:cor_anisotropic_comparison}}. Clearly, despite the correlations being the same at the end by the simulation, the linear case takes longer to reach steady state. 
 
 \begin{figure}[htbp!]
 \centering
@@ -1823,24 +1839,28 @@ The anisotropic case is displayed in \fig{\ref{fig:cor_anisotropic_end}}. Like t
 \label{fig:cor_anisotropic_end}
 \end{figure}
 
-Finally for the anisotropic case we expect stretched exponential, i.e. functions of the form $e^{-r^\chi}$. We plot $\log(-\log g(r))$ as a function of $\log r$ for which we expect a straight linear with a positive gradient. Because the stretched exponential decays quite rapidly, the majority of the points in the plot oscillated near 0, and so we can only use a few points for the plot. This is shown in \fig{\ref{fig:cor_isotropic_end}} and is as expected. As we only kept a few points and have not calculated any uncertainties, the comment can only be the same as the previous two cases: the plot at worst does not defy expectations. 
-
 \begin{figure}[htbp!]
 \centering
 	\begin{tikzpicture}[scale=0.8]
 		\begin{axis}[legend pos=outer north east, legend style={cells={align=left}},
-		xlabel={$\log r$},
-		ylabel={$\log(-\log g(r))$},
+		xlabel={$r$},
+		ylabel={$g(r)$},
 		ymajorgrids=true,
 		xmajorgrids=true,
 		grid style = dashed,
 		]
-		\addplot[mark=none]
-	table{./correlation_isotroptic.txt};
-
+		\addplot[mark=none,color=blue]
+	table{../project_code/final_correlation/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900cL_0.2iter_320000time_1424.txt};
+	\addlegendentry{$\lambda_x = 0.$}
+		\addplot[mark=none,color=black]
+	table{../project_code/final_correlation/N_64/dt_0.01/Lx_1.5Ly_-1.5/N_64num_sim_300cL_0.2iter_320000time_1200.txt};
+	\addlegendentry{$\lambda_x = 1.5$.}
 	\end{axis}
 \end{tikzpicture}
-\caption{The spatial correlation function as a function of distance for the $L=64$ and $\lambda=1.5$ isotropic case.}
-\label{fig:cor_isotropic_end}
+\caption{The spatial correlation function as a function of distance for the $L=64$ and $\lambda=1.5$ anisotropic case and the linear case. The linear case is at $t=1424$ and the anisotropic is at $t=1200$.}
+\label{fig:cor_anisotropic_comparison}
 \end{figure}
+
+
+
 

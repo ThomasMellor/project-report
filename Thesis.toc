@@ -26,6 +26,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.7}Project Aim}{17}{section.19}
 \defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Method}{18}{chapter.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Data Generation}{18}{section.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Data Extraction}{20}{section.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Results}{23}{chapter.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Linear Case}{23}{section.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Anistropic Case}{25}{section.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Isotrpic case}{34}{section.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Correlation Functions}{39}{section.75}
+\defcounter {refsection}{0}\relax 
 \vspace {2em}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Source Code}{47}{appendix.81}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}

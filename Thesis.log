@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  25 MAR 2018 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.22)  26 MAR 2018 02:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2083,7 +2083,14 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 \@quotelevel=\count378
 \@quotereset=\count379
 
-(./Thesis.aux)
+(./Thesis.aux
+
+LaTeX Warning: Label `fig:nv_anisotropic_128' multiply defined.
+
+
+LaTeX Warning: Label `fig:nv_anisotropic_40' multiply defined.
+
+)
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -2153,11 +2160,81 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
- (./Thesis.bbl)
+ (./Thesis.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                PhysRevB.94.10452
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Janssen1989
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                RevModPhys.85.299
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                magnon
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                PhysRevLett.56.889
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                nishimori2011elements
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                8.334 lecture notes
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                PhysRevLett.75.3969
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                PhysRevE.47.1525
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                fig:incoherentanisotropic
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 29.
 Package biblatex Info: Reference segment=0 on input line 29.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
@@ -2167,6 +2244,9 @@ your preamble.
 ------------------------------------------------------------------------------
  Title Page
 ------------------------------------------------------------------------------
+
+Package hyperref Warning: Suppressing empty link on input line 41.
+
 [1
 
 
@@ -2209,142 +2289,33 @@ Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction and Background
 ------------------------------------------------------------------------------
-
-LaTeX Warning: Citation 'PhysRevLett.75.3969' on page 1 undefined on input line
- 5.
-
-
-LaTeX Warning: Citation 'PhysRev.108.1175' on page 1 undefined on input line 5.
-
-
-
-LaTeX Warning: Citation 'magnon' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'Byrnes2014' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'PhysRevX.7.041006' on page 1 undefined on input line 9
-.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 1 undefined on input line
- 9.
-
-
-LaTeX Warning: Citation 'PhysRevLett.56.889' on page 1 undefined on input line 
-9.
-
-
-Overfull \hbox (29.00325pt too wide) in paragraph at lines 9--10
-[]\OT1/cmr/m/n/10.95 ]. Orig-i-nally used to de-scribe height growth[[]],
- []
-
 [1
 
 
 
 
-]
-
-LaTeX Warning: Citation 'PhysRevX.7.041006' on page 2 undefined on input line 1
-1.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 2 undefined on input line
- 11.
-
-
-LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 2 undefined 
-on input line 20.
-
-<./Figures/polaritonsystem.pdf, id=97, 492.23268pt x 369.88583pt>
+] <./Figures/polaritonsystem.pdf, id=146, 492.23268pt x 369.88583pt>
 File: ./Figures/polaritonsystem.pdf Graphic file (type pdf)
 
 <use ./Figures/polaritonsystem.pdf>
 Package pdftex.def Info: ./Figures/polaritonsystem.pdf used on input line 32.
 (pdftex.def)             Requested size: 196.88957pt x 147.9517pt.
-
-
-LaTeX Warning: Citation 'Byrnes2014' on page 2 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Byrnes2014' on page 2 undefined on input line 36.
-
-
-LaTeX Warning: Citation '2014arXiv1408.1680S' on page 2 undefined on input line
- 41.
-
-
-LaTeX Warning: Citation 'RevModPhys.85.299' on page 2 undefined on input line 4
-2.
-
-[2] [3 <./Figures/polaritonsystem.pdf>]
-<./Figures/polaritondispersion.pdf, id=122, 426.79132pt x 441.01773pt>
+ [2] [3 <./Figures/polaritonsystem.pdf>]
+<./Figures/polaritondispersion.pdf, id=177, 426.79132pt x 441.01773pt>
 File: ./Figures/polaritondispersion.pdf Graphic file (type pdf)
 
 <use ./Figures/polaritondispersion.pdf>
 Package pdftex.def Info: ./Figures/polaritondispersion.pdf used on input line 8
 3.
 (pdftex.def)             Requested size: 170.7135pt x 176.40396pt.
-
-
-LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 4 undefined 
-on input line 84.
-
-
-LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 4 undefined 
-on input line 84.
-
-
-LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 4 undefined 
-on input line 89.
-
-
-Overfull \hbox (84.88757pt too wide) in paragraph at lines 88--91
-\OT1/cmr/m/n/10.95 the $[] \OML/cmm/m/it/10.95 ^^R$ \OT1/cmr/m/n/10.95 where $\
-OML/cmm/m/it/10.95 ^^R$ \OT1/cmr/m/n/10.95 is the an-gle of the laser with re-s
-pect to the plane [[]].
- []
-
-
-LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 4 undefined 
-on input line 92.
-
-[4 <./Figures/polaritondispersion.pdf>]
-
-LaTeX Warning: Citation 'doi:10.1080/00107514.2010.550120' on page 5 undefined 
-on input line 94.
-
-
-LaTeX Warning: Citation 'PhysRevLett.118.016602' on page 5 undefined on input l
-ine 96.
-
-
-Overfull \hbox (61.52197pt too wide) in paragraph at lines 96--97
-[]\OT1/cmr/m/n/10.95 These tech-niques al-low ex-per-i-menters to ob-serve a BE
-C, for ex-am-ple in [[]],
- []
-
-<./polaritoncondensation.pdf, id=139, 250.38426pt x 207.70512pt>
+ [4 <./Figures/polaritondispersion.pdf>] <./polaritoncondensation.pdf, id=200, 
+250.38426pt x 207.70512pt>
 File: ./polaritoncondensation.pdf Graphic file (type pdf)
 
 <use ./polaritoncondensation.pdf>
 Package pdftex.def Info: ./polaritoncondensation.pdf used on input line 100.
 (pdftex.def)             Requested size: 250.38364pt x 207.7046pt.
-
-
-LaTeX Warning: Citation 'PhysRevLett.118.016602' on page 5 undefined on input l
-ine 101.
-
-
-LaTeX Warning: Citation 'PhysRevLett.118.016602' on page 5 undefined on input l
-ine 101.
-
-
-LaTeX Warning: Citation 'Byrnes2014' on page 5 undefined on input line 108.
-
-[5 <./polaritoncondensation.pdf>]
+ [5 <./polaritoncondensation.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 113.
@@ -2353,33 +2324,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 113.
 
-
-LaTeX Warning: Citation 'altland2010condensed' on page 6 undefined on input lin
-e 115.
-
-
-LaTeX Warning: Citation 'Coleman1973' on page 6 undefined on input line 128.
-
-
-LaTeX Warning: Citation '8.334 lecture notes' on page 6 undefined on input line
- 128.
-
-[6] [7]
-
-LaTeX Warning: Citation 'altland2010condensed' on page 8 undefined on input lin
-e 179.
-
-[8] [9]
-
-LaTeX Warning: Citation '2016PhRvB..94j4521S' on page 10 undefined on input lin
-e 212.
-
-
-Overfull \hbox (33.7172pt too wide) in paragraph at lines 212--213
-[]\OT1/cmr/m/n/10.95 After con-sid-er-ing equi-lib-rium is-sues, what of dy-nam
--ics? We de-scribe [[]]
- []
-
+[6] [7] [8] [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 231.
@@ -2388,173 +2333,1450 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 231.
 
-
-LaTeX Warning: Citation 'Janssen1989' on page 10 undefined on input line 233.
-
-
-LaTeX Warning: Citation 'nishimori2011elements' on page 10 undefined on input l
-ine 233.
-
-[10] <./xyscaling.pdf, id=223, 216.24095pt x 182.09764pt>
+[10] <./xyscaling.pdf, id=294, 216.24095pt x 182.09764pt>
 File: ./xyscaling.pdf Graphic file (type pdf)
 
 <use ./xyscaling.pdf>
 Package pdftex.def Info: ./xyscaling.pdf used on input line 246.
 (pdftex.def)             Requested size: 194.61504pt x 163.88635pt.
- [11 <./xyscaling.pdf>]
-
-LaTeX Warning: Citation 'PhysRevX.7.041006' on page 12 undefined on input line 
-263.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 12 undefined on input lin
-e 271.
-
-[12] [13]
-
-LaTeX Warning: Citation 'PhysRevB.94.10452' on page 14 undefined on input line 
-297.
-
-
-LaTeX Warning: Citation 'PhysRevX.7.041006' on page 14 undefined on input line 
-309.
-
-[14] <rgflows.pdf, id=274, 256.0748pt x 165.02599pt>
+ [11 <./xyscaling.pdf>] [12] [13] [14]
+<rgflows.pdf, id=349, 256.0748pt x 165.02599pt>
 File: rgflows.pdf Graphic file (type pdf)
  <use rgflows.pdf>
 Package pdftex.def Info: rgflows.pdf used on input line 331.
 (pdftex.def)             Requested size: 204.8601pt x 132.02095pt.
-
-
-LaTeX Warning: Citation 'PhysRevLett.111.088701' on page 15 undefined on input 
-line 334.
-
-
-LaTeX Warning: Citation 'PhysRevLett.111.088701' on page 15 undefined on input 
-line 334.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 15 undefined on input lin
-e 339.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 15 undefined on input lin
-e 343.
-
-
-Overfull \hbox (28.01659pt too wide) in paragraph at lines 343--345
-[]\OT1/cmr/m/n/10.95 In the case of in-co-her-ent pump-ing in the isotropic reg
-ime it is found [[]]
- []
-
-[15 <./rgflows.pdf>] <incoherentkpz.pdf, id=299, 250.94698pt x 174.9718pt>
+ [15 <./rgflows.pdf>] <incoherentkpz.pdf, id=379, 250.94698pt x 174.9718pt>
 File: incoherentkpz.pdf Graphic file (type pdf)
 
 <use incoherentkpz.pdf>
 Package pdftex.def Info: incoherentkpz.pdf used on input line 348.
-(pdftex.def)             Requested size: 100.377pt x 69.98747pt.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 16 undefined on input lin
-e 349.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 16 undefined on input lin
-e 349.
-
-<coherentwa.pdf, id=301, 417.63588pt x 417.56pt>
+(pdftex.def)             Requested size: 175.66167pt x 122.47942pt.
+ <coherentwa.pdf, id=383, 417.63588pt x 417.56pt>
 File: coherentwa.pdf Graphic file (type pdf)
- <use coherentwa.pdf>
+
+<use coherentwa.pdf>
 Package pdftex.def Info: coherentwa.pdf used on input line 357.
 (pdftex.def)             Requested size: 167.05139pt x 167.02103pt.
-
-
-LaTeX Warning: Citation 'PhysRevX.5.041028' on page 16 undefined on input line 
-358.
-
-
-LaTeX Warning: Citation 'PhysRevX.5.041028' on page 16 undefined on input line 
-358.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 16 undefined on input lin
-e 361.
-
-
-LaTeX Warning: Citation 'PhysRevX.5.041028' on page 16 undefined on input line 
-361.
-
-
-LaTeX Warning: Citation 'fig:incoherentanisotropic' on page 16 undefined on inp
-ut line 361.
-
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-[16 <./incoherentkpz.pdf> <./coherentwa.pdf
+ [16 <./incoherentkpz.pdf> <./coherentwa.pdf
 
 pdfTeX warning: pdflatex (file ./coherentwa.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
->] <incoherentanisotropic.pdf, id=629, 245.34496pt x 146.14601pt>
+>] <incoherentanisotropic.pdf, id=715, 245.34496pt x 146.14601pt>
 File: incoherentanisotropic.pdf Graphic file (type pdf)
 
 <use incoherentanisotropic.pdf>
 Package pdftex.def Info: incoherentanisotropic.pdf used on input line 365.
-(pdftex.def)             Requested size: 98.13623pt x 58.45735pt.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 17 undefined on input lin
-e 367.
-
-
-LaTeX Warning: Citation '2015PhRvX...5a1017A' on page 17 undefined on input lin
-e 367.
-
-) [17 <./incoherentanisotropic.pdf>] [18
+(pdftex.def)             Requested size: 171.74028pt x 102.3015pt.
+) (./Chapters/Chapter3.tex [17 <./incoherentanisotropic.pdf>]
+Chapter 2.
+------------------------------------------------------------------------------
+ 2 Method
+------------------------------------------------------------------------------
+[18
 
 ]
+PGFPlots: reading {../project_code/binder_cumulant/N=32/dt=0.01/Lx=0Ly=0/N_32nu
+m_sim_200cL_0.2iter=122880.txt}
+PGFPlots: reading {../project_code/binder_cumulant/N=32/dt=0.02/Lx=0Ly=0/N_32nu
+m_sim_200cL_0.2iter=61440.txt}
+PGFPlots: reading {../project_code/binder_cumulant/N=32/dt=0.001/Lx=0Ly=0/N_32n
+um_sim_100cL_0.2iter=1228800.txt}
+PGFPlots: reading {../project_code/vor_vs_cL.txt}
+PGFPlots: reading {../project_code/vor_vs_cL2.txt}
+PGFPlots: reading {../project_code/final_binder_cumulant/N_128/dt_0.01/Lx_0Ly_0
+/N_128num_sim_100cL_0.1iter_1280000.txt}
+ [19]
+Overfull \hbox (9.09688pt too wide) in paragraph at lines 125--125
+[] 
+ []
+
+[20]
+PGFPlots: reading {../project_code/nv_run/N_128/dt_0.01/Lx_0Ly_0/N_128cL_0.2ite
+r_1280000.txt}
+) (./Chapters/Chapter4.tex [21] [22]
+Chapter 3.
+------------------------------------------------------------------------------
+ 3 Results
+------------------------------------------------------------------------------
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0Ly_0/N_48num_sim_170
+0cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0Ly_0/N_40num_sim_110
+0cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0Ly_0/N_104num_sim_6
+25cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900
+cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0Ly_0/N_72num_sim_800
+cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_4
+50cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0Ly_0/N_80num_sim_550
+cL_0.2iter_500000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_40/dt_0.01/Lx_0Ly_0/N_40cL_0.2iter_125000.
+txt}
+PGFPlots: reading {./gL_run_cL_one/N_48/dt_0.01/Lx_0Ly_0/N_48cL_0.2iter_180000.
+txt}
+PGFPlots: reading {./gL_run_cL_one/N_64/dt_0.01/Lx_0Ly_0/N_64cL_0.2iter_320000.
+txt}
+PGFPlots: reading {./gL_run_cL_one/N_72/dt_0.01/Lx_0Ly_0/N_72cL_0.2iter_405000.
+txt}
+PGFPlots: reading {./gL_run_cL_one/N_80/dt_0.01/Lx_0Ly_0/N_80cL_0.2iter_500000.
+txt}
+PGFPlots: reading {./gL_run_cL_one/N_104/dt_0.01/Lx_0Ly_0/N_104cL_0.2iter_84500
+0.txt}
+PGFPlots: reading {./gL_run_cL_one/N_128/dt_0.01/Lx_0Ly_0/N_128cL_0.2iter_12800
+00.txt}
+PGFPlots: reading {./gL_run_cL_two/N_40/dt_0.01/Lx_0Ly_0/N_40cL_0.2iter_125000.
+txt}
+PGFPlots: reading {./gL_run_cL_two/N_48/dt_0.01/Lx_0Ly_0/N_48cL_0.2iter_180000.
+txt}
+PGFPlots: reading {./gL_run_cL_two/N_64/dt_0.01/Lx_0Ly_0/N_64cL_0.2iter_320000.
+txt}
+PGFPlots: reading {./gL_run_cL_two/N_72/dt_0.01/Lx_0Ly_0/N_72cL_0.2iter_405000.
+txt}
+PGFPlots: reading {./gL_run_cL_two/N_80/dt_0.01/Lx_0Ly_0/N_80cL_0.2iter_500000.
+txt}
+PGFPlots: reading {./gL_run_cL_two/N_104/dt_0.01/Lx_0Ly_0/N_104cL_0.2iter_84500
+0.txt}
+[23
+
+] [24]
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48num_si
+m_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40num_si
+m_1000cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104num_
+sim_425cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64num_si
+m_500cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72num_si
+m_500cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128num_
+sim_310cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80num_si
+m_600cL_0.2iter_500000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48cL_0.2iter_18
+0000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40cL_0.2iter_12
+5000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104cL_0.2iter_
+845000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64cL_0.2iter_32
+0000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72cL_0.2iter_40
+5000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128cL_0.2iter_
+1280000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80cL_0.2iter_50
+0000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48cL_0.2iter_18
+0000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40cL_0.2iter_12
+5000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104cL_0.2iter_
+845000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64cL_0.2iter_32
+0000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72cL_0.2iter_40
+5000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80cL_0.2iter_50
+0000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48num_si
+m_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40num_si
+m_800cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104num_
+sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64num_si
+m_450cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72num_si
+m_400cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128num_
+sim_240cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80num_si
+m_600cL_0.2iter_500000.txt}
+ [25]
+PGFPlots: reading {./gL_run_cL_one/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48cL_0.2iter_18
+0000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40cL_0.2iter_12
+5000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104cL_0.2iter_
+845000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64cL_0.2iter_32
+0000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72cL_0.2iter_40
+5000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128cL_0.2iter_
+1280000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80cL_0.2iter_50
+0000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48cL_0.2iter_18
+0000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40cL_0.2iter_12
+5000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104cL_0.2iter_
+845000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64cL_0.2iter_32
+0000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72cL_0.2iter_40
+5000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80cL_0.2iter_50
+0000.txt}
+ [26] [27]
+PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.4Ly_-0.4/N
+_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.4Ly_-0.4/N
+_40num_sim_800cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.4Ly_-0.4/N
+_80num_sim_600cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.4Ly_-0.4/
+N_104num_sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.4Ly_-0.4/N
+_64num_sim_450cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.4Ly_-0.4/N
+_72num_sim_400cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.4Ly_-0.4/
+N_128num_sim_240cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48num_si
+m_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40num_si
+m_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104num_
+sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64num_si
+m_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72num_si
+m_250cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.6Ly_-0.6/N_128num_
+sim_260cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80num_si
+m_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.6Ly_-0.6/N
+_48num_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.6Ly_-0.6/N
+_40num_sim_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.6Ly_-0.6/
+N_104num_sim_250cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.6Ly_-0.6/N
+_64num_sim_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.6Ly_-0.6/N
+_72num_sim_250cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.6Ly_-0.6/
+N_128num_sim_260cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.6Ly_-0.6/N
+_80num_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48num_si
+m_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40num_si
+m_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104num_
+sim_400cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64num_si
+m_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72num_si
+m_260cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.8Ly_-0.8/N_128num_
+sim_230cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80num_si
+m_400cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_0.8Ly_-0.8/N
+_48num_sim_400cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_0.8Ly_-0.8/N
+_40num_sim_1600cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_0.8Ly_-0.8/
+N_104num_sim_400cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_0.8Ly_-0.8/N
+_64num_sim_400cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_0.8Ly_-0.8/N
+_72num_sim_260cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_0.8Ly_-0.8/
+N_128num_sim_230cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_0.8Ly_-0.8/N
+_80num_sim_400cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_1Ly_-1/N_48num_sim_30
+0cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_1Ly_-1/N_40num_sim_30
+0cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_1Ly_-1/N_104num_sim_
+375cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_1Ly_-1/N_64num_sim_45
+0cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_1Ly_-1/N_72num_sim_20
+0cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_
+300cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_20
+0cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_1Ly_-1/N_48n
+um_sim_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_1Ly_-1/N_40n
+um_sim_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_1Ly_-1/N_10
+4num_sim_375cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_1Ly_-1/N_64n
+um_sim_450cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_1Ly_-1/N_72n
+um_sim_200cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_1Ly_-1/N_12
+8num_sim_300cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_1Ly_-1/N_80n
+um_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_1.5Ly_-1.5/N_48num_si
+m_500cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_1.5Ly_-1.5/N_40num_si
+m_900cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_1.5Ly_-1.5/N_104num_
+sim_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_1.5Ly_-1.5/N_64num_si
+m_300cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_1.5Ly_-1.5/N_72num_si
+m_300cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_1.5Ly_-1.5/N_128num_
+sim_120cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_1.5Ly_-1.5/N_80num_si
+m_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_48/dt_0.01/Lx_1.5Ly_-1.5/N
+_48num_sim_500cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_40/dt_0.01/Lx_1.5Ly_-1.5/N
+_40num_sim_900cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_104/dt_0.01/Lx_1.5Ly_-1.5/
+N_104num_sim_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_64/dt_0.01/Lx_1.5Ly_-1.5/N
+_64num_sim_300cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_72/dt_0.01/Lx_1.5Ly_-1.5/N
+_72num_sim_300cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_128/dt_0.01/Lx_1.5Ly_-1.5/
+N_128num_sim_120cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log_modified/N_80/dt_0.01/Lx_1.5Ly_-1.5/N
+_80num_sim_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/nv_log/N_512/dt_0.01/Lx_1Ly_-1/N_512num_sim_
+30cL_0.2iter_80000exp_-1.135err_0.008.txt}
+PGFPlots: reading {../project_code/nv_log/N_512/dt_0.01/Lx_0Ly_0/N_512num_sim_3
+0cL_0.2iter_80000exp_-0.932err_0.004.txt}
+PGFPlots: reading {../project_code/nv_log/N_512/dt_0.01/Lx_1.5Ly_-1.5/N_512num_
+sim_40cL_0.2iter_80000exp_-1.152err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_512/dt_0.01/Lx_2Ly_-2/N_512num_sim_
+40cL_0.2iter_80000exp_-1.179err_0.005.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_1Ly_-1/N_40num_sim_30
+0cL_0.2iter_125000exp_-1.229err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0.6Ly_-0.6/N_40num_si
+m_1600cL_0.2iter_125000exp_-1.09err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0Ly_0/N_40num_sim_110
+0cL_0.2iter_125000exp_-1.056err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_1.5Ly_-1.5/N_40num_si
+m_900cL_0.2iter_125000exp_-1.255err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0.2Ly_-0.2/N_40num_si
+m_1000cL_0.2iter_125000exp_-1.053err_0.014.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0.4Ly_-0.4/N_40num_si
+m_800cL_0.2iter_125000exp_-1.056err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0.8Ly_-0.8/N_40num_si
+m_1600cL_0.2iter_125000exp_-1.144err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_1Ly_-1/N_48num_sim_30
+0cL_0.2iter_180000exp_-1.203err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0.6Ly_-0.6/N_48num_si
+m_300cL_0.2iter_180000exp_-1.104err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0Ly_0/N_48num_sim_170
+0cL_0.2iter_180000exp_-1.03err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_1.5Ly_-1.5/N_48num_si
+m_500cL_0.2iter_180000exp_-1.264err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0.2Ly_-0.2/N_48num_si
+m_500cL_0.2iter_180000exp_-1.042err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0.4Ly_-0.4/N_48num_si
+m_300cL_0.2iter_180000exp_-1.082err_0.008.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0.8Ly_-0.8/N_48num_si
+m_400cL_0.2iter_180000exp_-1.118err_0.007.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_1Ly_-1/N_64num_sim_45
+0cL_0.2iter_320000exp_-1.095err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0.6Ly_-0.6/N_64num_si
+m_400cL_0.2iter_320000exp_-1.083err_0.008.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900
+cL_0.2iter_320000exp_-0.999err_0.004.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_1.5Ly_-1.5/N_64num_si
+m_300cL_0.2iter_320000exp_-1.165err_0.008.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0.2Ly_-0.2/N_64num_si
+m_500cL_0.2iter_320000exp_-0.98err_0.005.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0.4Ly_-0.4/N_64num_si
+m_450cL_0.2iter_320000exp_-1.007err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0.8Ly_-0.8/N_64num_si
+m_400cL_0.2iter_320000exp_-1.123err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_1Ly_-1/N_72num_sim_20
+0cL_0.2iter_405000exp_-1.077err_0.007.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0.6Ly_-0.6/N_72num_si
+m_250cL_0.2iter_405000exp_-1.089err_0.007.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0Ly_0/N_72num_sim_800
+cL_0.2iter_405000exp_-0.978err_0.005.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_1.5Ly_-1.5/N_72num_si
+m_300cL_0.2iter_405000exp_-1.212err_0.007.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0.2Ly_-0.2/N_72num_si
+m_500cL_0.2iter_405000exp_-0.982err_0.004.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0.4Ly_-0.4/N_72num_si
+m_400cL_0.2iter_405000exp_-1.024err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0.8Ly_-0.8/N_72num_si
+m_260cL_0.2iter_405000exp_-1.109err_0.008.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_1Ly_-1/N_80num_sim_20
+0cL_0.2iter_500000exp_-1.134err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0.6Ly_-0.6/N_80num_si
+m_200cL_0.2iter_500000exp_-1.031err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0Ly_0/N_80num_sim_550
+cL_0.2iter_500000exp_-0.991err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_1.5Ly_-1.5/N_80num_si
+m_200cL_0.2iter_500000exp_-1.185err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0.2Ly_-0.2/N_80num_si
+m_600cL_0.2iter_500000exp_-1.003err_0.005.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0.4Ly_-0.4/N_80num_si
+m_600cL_0.2iter_500000exp_-1.035err_0.004.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0.8Ly_-0.8/N_80num_si
+m_400cL_0.2iter_500000exp_-1.085err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_1Ly_-1/N_104num_sim_
+375cL_0.2iter_845000exp_-1.19err_0.02.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0.6Ly_-0.6/N_104num_
+sim_250cL_0.2iter_845000exp_-1.037err_0.015.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0Ly_0/N_104num_sim_6
+25cL_0.2iter_845000exp_-0.957err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_1.5Ly_-1.5/N_104num_
+sim_125cL_0.2iter_845000exp_-1.295err_0.049.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0.2Ly_-0.2/N_104num_
+sim_425cL_0.2iter_845000exp_-0.98err_0.005.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0.4Ly_-0.4/N_104num_
+sim_250cL_0.2iter_845000exp_-0.981err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0.8Ly_-0.8/N_104num_
+sim_400cL_0.2iter_845000exp_-1.162err_0.017.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_1Ly_-1/N_128num_sim_
+300cL_0.2iter_1280000exp_-1.162err_0.016.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0.6Ly_-0.6/N_128num_
+sim_260cL_0.2iter_1280000exp_-1.001err_0.007.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_4
+50cL_0.2iter_1280000exp_-0.995err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_1.5Ly_-1.5/N_128num_
+sim_120cL_0.2iter_1280000exp_-1.146err_0.023.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0.2Ly_-0.2/N_128num_
+sim_310cL_0.2iter_1280000exp_-0.968err_0.005.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0.4Ly_-0.4/N_128num_
+sim_240cL_0.2iter_1280000exp_-0.974err_0.015.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0.8Ly_-0.8/N_128num_
+sim_230cL_0.2iter_1280000exp_-1.153err_0.028.txt}
+ [28] [29] [30] [31] [32] [33]
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.2Ly_0.2/N_48num_sim
+_500cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.2Ly_0.2/N_40num_sim
+_700cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.2Ly_0.2/N_104num_s
+im_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.2Ly_0.2/N_64num_sim
+_600cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.2Ly_0.2/N_72num_sim
+_260cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.2Ly_0.2/N_128num_s
+im_375cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.2Ly_0.2/N_80num_sim
+_510cL_0.2iter_500000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_48/dt_0.01/Lx_0.2Ly_0.2/N_48cL_0.2iter_180
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_40/dt_0.01/Lx_0.2Ly_0.2/N_40cL_0.2iter_125
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_104/dt_0.01/Lx_0.2Ly_0.2/N_104cL_0.2iter_8
+45000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_64/dt_0.01/Lx_0.2Ly_0.2/N_64cL_0.2iter_320
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_72/dt_0.01/Lx_0.2Ly_0.2/N_72cL_0.2iter_405
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_128/dt_0.01/Lx_0.2Ly_0.2/N_128cL_0.2iter_1
+280000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_80/dt_0.01/Lx_0.2Ly_0.2/N_80cL_0.2iter_500
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_48/dt_0.01/Lx_0.2Ly_0.2/N_48cL_0.2iter_180
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_40/dt_0.01/Lx_0.2Ly_0.2/N_40cL_0.2iter_125
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_104/dt_0.01/Lx_0.2Ly_0.2/N_104cL_0.2iter_8
+45000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_64/dt_0.01/Lx_0.2Ly_0.2/N_64cL_0.2iter_320
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_72/dt_0.01/Lx_0.2Ly_0.2/N_72cL_0.2iter_405
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_80/dt_0.01/Lx_0.2Ly_0.2/N_80cL_0.2iter_500
+000.txt}
+ [34] [35]
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48num_sim
+_600cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40num_sim
+_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104num_s
+im_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64num_sim
+_1500cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72num_sim
+_500cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.4Ly_0.4/N_128num_s
+im_300cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80num_sim
+_200cL_0.2iter_500000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48cL_0.2iter_180
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40cL_0.2iter_125
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104cL_0.2iter_8
+45000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64cL_0.2iter_320
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72cL_0.2iter_405
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80cL_0.2iter_500
+000.txt}
+PGFPlots: reading {./gL_run_cL_one/N_128/dt_0.01/Lx_0.4Ly_0.4/N_128cL_0.2iter_1
+280000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48cL_0.2iter_180
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40cL_0.2iter_125
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104cL_0.2iter_8
+45000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64cL_0.2iter_320
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72cL_0.2iter_405
+000.txt}
+PGFPlots: reading {./gL_run_cL_two/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80cL_0.2iter_500
+000.txt}
+ [36]
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.6Ly_0.6/N_48num_sim
+_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.6Ly_0.6/N_40num_sim
+_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.6Ly_0.6/N_104num_s
+im_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.6Ly_0.6/N_64num_sim
+_750cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.6Ly_0.6/N_72num_sim
+_160cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.6Ly_0.6/N_128num_s
+im_170cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.6Ly_0.6/N_80num_sim
+_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_0.8Ly_0.8/N_48num_sim
+_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_0.8Ly_0.8/N_40num_sim
+_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_0.8Ly_0.8/N_104num_s
+im_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_0.8Ly_0.8/N_64num_sim
+_350cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_0.8Ly_0.8/N_72num_sim
+_200cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_0.8Ly_0.8/N_128num_s
+im_140cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_0.8Ly_0.8/N_80num_sim
+_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_1.5Ly_1.5/N_48num_sim
+_300cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_1.5Ly_1.5/N_40num_sim
+_300cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_1.5Ly_1.5/N_104num_s
+im_125cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_1.5Ly_1.5/N_64num_sim
+_300cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_1.5Ly_1.5/N_72num_sim
+_300cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_1.5Ly_1.5/N_128num_s
+im_100cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_1.5Ly_1.5/N_80num_sim
+_200cL_0.2iter_500000.txt}
+PGFPlots: reading {../project_code/gL_log/N_48/dt_0.01/Lx_1Ly_1/N_48num_sim_300
+cL_0.2iter_180000.txt}
+PGFPlots: reading {../project_code/gL_log/N_40/dt_0.01/Lx_1Ly_1/N_40num_sim_300
+cL_0.2iter_125000.txt}
+PGFPlots: reading {../project_code/gL_log/N_104/dt_0.01/Lx_1Ly_1/N_104num_sim_1
+25cL_0.2iter_845000.txt}
+PGFPlots: reading {../project_code/gL_log/N_64/dt_0.01/Lx_1Ly_1/N_64num_sim_300
+cL_0.2iter_320000.txt}
+PGFPlots: reading {../project_code/gL_log/N_72/dt_0.01/Lx_1Ly_1/N_72num_sim_200
+cL_0.2iter_405000.txt}
+PGFPlots: reading {../project_code/gL_log/N_128/dt_0.01/Lx_1Ly_1/N_128num_sim_1
+60cL_0.2iter_1280000.txt}
+PGFPlots: reading {../project_code/gL_log/N_80/dt_0.01/Lx_1Ly_1/N_80num_sim_200
+cL_0.2iter_500000.txt}
+ [37]
+[38]
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0.4Ly_0.4/N_40num_sim
+_300cL_0.2iter_125000exp_-0.928err_0.015.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0Ly_0/N_40num_sim_110
+0cL_0.2iter_125000exp_-1.056err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0.6Ly_0.6/N_40num_sim
+_300cL_0.2iter_125000exp_-0.844err_0.013.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0.8Ly_0.8/N_40num_sim
+_300cL_0.2iter_125000exp_-0.816err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_0.2Ly_0.2/N_40num_sim
+_700cL_0.2iter_125000exp_-1.014err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_1Ly_1/N_40num_sim_300
+cL_0.2iter_125000exp_-0.811err_0.013.txt}
+PGFPlots: reading {../project_code/nv_log/N_40/dt_0.01/Lx_1.5Ly_1.5/N_40num_sim
+_300cL_0.2iter_125000exp_-0.587err_0.023.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0.4Ly_0.4/N_48num_sim
+_600cL_0.2iter_180000exp_-0.921err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0Ly_0/N_48num_sim_170
+0cL_0.2iter_180000exp_-1.03err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0.6Ly_0.6/N_48num_sim
+_300cL_0.2iter_180000exp_-0.815err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0.8Ly_0.8/N_48num_sim
+_300cL_0.2iter_180000exp_-0.786err_0.013.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_0.2Ly_0.2/N_48num_sim
+_500cL_0.2iter_180000exp_-1.015err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_1Ly_1/N_48num_sim_300
+cL_0.2iter_180000exp_-0.748err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_48/dt_0.01/Lx_1.5Ly_1.5/N_48num_sim
+_300cL_0.2iter_180000exp_-0.524err_0.021.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0.4Ly_0.4/N_64num_sim
+_1500cL_0.2iter_320000exp_-0.841err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0Ly_0/N_64num_sim_900
+cL_0.2iter_320000exp_-0.999err_0.004.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0.6Ly_0.6/N_64num_sim
+_750cL_0.2iter_320000exp_-0.733err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0.8Ly_0.8/N_64num_sim
+_350cL_0.2iter_320000exp_-0.693err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_0.2Ly_0.2/N_64num_sim
+_600cL_0.2iter_320000exp_-0.936err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_1Ly_1/N_64num_sim_300
+cL_0.2iter_320000exp_-0.696err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_64/dt_0.01/Lx_1.5Ly_1.5/N_64num_sim
+_300cL_0.2iter_320000exp_-0.452err_0.004.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0.4Ly_0.4/N_128num_s
+im_300cL_0.2iter_1280000exp_-0.807err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0Ly_0/N_128num_sim_4
+50cL_0.2iter_1280000exp_-0.995err_0.01.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0.6Ly_0.6/N_128num_s
+im_170cL_0.2iter_1280000exp_-0.563err_0.022.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0.8Ly_0.8/N_128num_s
+im_140cL_0.2iter_1280000exp_-0.509err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_0.2Ly_0.2/N_128num_s
+im_375cL_0.2iter_1280000exp_-0.92err_0.017.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_1Ly_1/N_128num_sim_1
+60cL_0.2iter_1280000exp_-0.524err_0.011.txt}
+PGFPlots: reading {../project_code/nv_log/N_128/dt_0.01/Lx_1.5Ly_1.5/N_128num_s
+im_100cL_0.2iter_1280000exp_-0.509err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0.4Ly_0.4/N_104num_s
+im_125cL_0.2iter_845000exp_-0.758err_0.015.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0Ly_0/N_104num_sim_6
+25cL_0.2iter_845000exp_-0.957err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0.6Ly_0.6/N_104num_s
+im_125cL_0.2iter_845000exp_-0.531err_0.011.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0.8Ly_0.8/N_104num_s
+im_125cL_0.2iter_845000exp_-0.543err_0.009.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_0.2Ly_0.2/N_104num_s
+im_125cL_0.2iter_845000exp_-0.923err_0.018.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_1Ly_1/N_104num_sim_1
+25cL_0.2iter_845000exp_-0.547err_0.007.txt}
+PGFPlots: reading {../project_code/nv_log/N_104/dt_0.01/Lx_1.5Ly_1.5/N_104num_s
+im_125cL_0.2iter_845000exp_-0.523err_0.008.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0.4Ly_0.4/N_72num_sim
+_500cL_0.2iter_405000exp_-0.837err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0Ly_0/N_72num_sim_800
+cL_0.2iter_405000exp_-0.978err_0.005.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0.6Ly_0.6/N_72num_sim
+_160cL_0.2iter_405000exp_-0.696err_0.011.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0.8Ly_0.8/N_72num_sim
+_200cL_0.2iter_405000exp_-0.68err_0.008.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_0.2Ly_0.2/N_72num_sim
+_260cL_0.2iter_405000exp_-0.915err_0.007.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_1Ly_1/N_72num_sim_200
+cL_0.2iter_405000exp_-0.691err_0.011.txt}
+PGFPlots: reading {../project_code/nv_log/N_72/dt_0.01/Lx_1.5Ly_1.5/N_72num_sim
+_300cL_0.2iter_405000exp_-0.464err_0.003.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0.4Ly_0.4/N_80num_sim
+_200cL_0.2iter_500000exp_-0.843err_0.011.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0Ly_0/N_80num_sim_550
+cL_0.2iter_500000exp_-0.991err_0.006.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0.6Ly_0.6/N_80num_sim
+_200cL_0.2iter_500000exp_-0.738err_0.012.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0.8Ly_0.8/N_80num_sim
+_200cL_0.2iter_500000exp_-0.697err_0.013.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_0.2Ly_0.2/N_80num_sim
+_510cL_0.2iter_500000exp_-0.951err_0.008.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_1Ly_1/N_80num_sim_200
+cL_0.2iter_500000exp_-0.693err_0.011.txt}
+PGFPlots: reading {../project_code/nv_log/N_80/dt_0.01/Lx_1.5Ly_1.5/N_80num_sim
+_200cL_0.2iter_500000exp_-0.473err_0.007.txt}
+PGFPlots: reading {../project_code/nv_log/N_512/dt_0.01/Lx_0Ly_0/N_512num_sim_3
+0cL_0.2iter_80000exp_-0.932err_0.004.txt}
+PGFPlots: reading {../project_code/nv_log/N_512/dt_0.01/Lx_2Ly_2/N_512num_sim_4
+0cL_0.2iter_80000exp_-0.01err_0.003.txt}
+PGFPlots: reading {../project_code/nv_log/N_512/dt_0.01/Lx_1Ly_1/N_512num_sim_3
+0cL_0.2iter_80000exp_-0.514err_0.004.txt}
+PGFPlots: reading {../project_code/nv_log/N_512/dt_0.01/Lx_1.5Ly_1.5/N_512num_s
+im_40cL_0.2iter_80000exp_-0.525err_0.003.txt}
+ [39] [40] [41]
+PGFPlots: reading {./correlation_linear_beg.txt}
+ [42]
+PGFPlots: reading {./correlation_linear_end.txt}
+ [43]
+PGFPlots: reading {./correlation_anisotroptic.txt}
+PGFPlots: reading {../project_code/final_correlation/N_64/dt_0.01/Lx_0Ly_0/N_64
+num_sim_900cL_0.2iter_320000time_1424.txt}
+PGFPlots: reading {../project_code/final_correlation/N_64/dt_0.01/Lx_1.5Ly_-1.5
+/N_64num_sim_300cL_0.2iter_320000time_1200.txt}
+) [44] [45
+
+]
+Overfull \hbox (7.59488pt too wide) in paragraph at lines 210--210
+[]\OT1/cmr/m/n/10.95 G. Wach-tel et al. ``Elec-tro-dy-namic du-al-ity and vor-t
+ex un-bind-ing in driven-dissipative
+ []
+
+(./Appendices/AppendixA.tex [46]
+Appendix A.
+------------------------------------------------------------------------------
+ A Source Code
+------------------------------------------------------------------------------
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+(../project_code/system.h
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1.
+
+Overfull \hbox (51.73732pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[47
+
+]
+Overfull \hbox (26.23676pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.93642pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[48]
+Overfull \hbox (41.5371pt too wide) in paragraph at lines 132--133
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [49] (../project_code/system.cc [50]
+Overfull \hbox (112.93867pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/simulation.h
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.13664pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (138.43924pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (128.23901pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/simulation.cc [51]
+Overfull \hbox (133.33913pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (26.23676pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (72.13777pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.93642pt too wide) in paragraph at lines 36--37
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (97.63834pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.73732pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.83743pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[52]) (../project_code/simulation_utility.h)
+(../project_code/simulation_utility.cc [53]
+Overfull \hbox (31.33687pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
+
+) (../project_code/magnetisation.h
+Overfull \hbox (5.8363pt too wide) in paragraph at lines 7--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (97.63834pt too wide) in paragraph at lines 9--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.83743pt too wide) in paragraph at lines 19--20
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+ []
+
+
+Overfull \hbox (82.338pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (220.04105pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+[54]
+Overfull \hbox (16.03653pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (92.53822pt too wide) in paragraph at lines 46--48
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/magnetisation.cc
+Overfull \hbox (51.73732pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[55]
+Overfull \hbox (51.73732pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (92.53822pt too wide) in paragraph at lines 54--55
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (301.64285pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+
+Overfull \hbox (199.6406pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (209.84082pt too wide) in paragraph at lines 66--67
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (250.64172pt too wide) in paragraph at lines 68--69
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (36.43698pt too wide) in paragraph at lines 69--70
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (10.93642pt too wide) in paragraph at lines 76--77
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/vortex_calculation.h
+Overfull \hbox (26.23676pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[56]
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (118.03879pt too wide) in paragraph at lines 36--37
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (204.7407pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/vortex_calculation.cc
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[57]) (../project_code/vortex_location.cc
+Overfull \hbox (92.53822pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[58]
+Overfull \hbox (41.5371pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (118.03879pt too wide) in paragraph at lines 31--32
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (82.338pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.03653pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.93642pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (480.1468pt too wide) in paragraph at lines 43--44
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/mag_analysis.cc
+Overfull \hbox (128.23901pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+
+Overfull \hbox (16.03653pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+[59]
+Overfull \hbox (72.13777pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (61.93755pt too wide) in paragraph at lines 28--30
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+
+Overfull \hbox (148.63947pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (143.53935pt too wide) in paragraph at lines 31--32
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (5.8363pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (5.8363pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/vortex_analysis.cc
+Overfull \hbox (112.93867pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (36.43698pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (5.8363pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (72.13777pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (179.24014pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
+ []
+
+
+Overfull \hbox (41.5371pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/run_simulation_config_file.cc [60]
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (41.5371pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.23788pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (118.03879pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (148.63947pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][] 
+ []
+
+[61]
+Overfull \hbox (67.03766pt too wide) in paragraph at lines 98--99
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (26.23676pt too wide) in paragraph at lines 104--106
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.6372pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (67.03766pt too wide) in paragraph at lines 107--108
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (112.93867pt too wide) in paragraph at lines 109--110
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (36.43698pt too wide) in paragraph at lines 111--112
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (41.5371pt too wide) in paragraph at lines 112--113
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (174.14003pt too wide) in paragraph at lines 113--114
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][] 
+ []
+
+[62]) (../project_code/correlation.cc) (../project_code/updater.h
+Overfull \hbox (204.7407pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[63]
+Overfull \hbox (61.93755pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (61.93755pt too wide) in paragraph at lines 38--40
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/updater.cc
+Overfull \hbox (41.5371pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[64]
+Overfull \hbox (26.23676pt too wide) in paragraph at lines 52--54
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (31.33687pt too wide) in paragraph at lines 95--96
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.73619pt too wide) in paragraph at lines 97--98
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (41.5371pt too wide) in paragraph at lines 98--99
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (220.04105pt too wide) in paragraph at lines 99--100
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (41.5371pt too wide) in paragraph at lines 100--101
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+[65]
+Overfull \hbox (97.63834pt too wide) in paragraph at lines 105--106
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][] 
+ []
+
+
+Overfull \hbox (72.13777pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.6372pt too wide) in paragraph at lines 110--111
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.93642pt too wide) in paragraph at lines 114--115
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (36.43698pt too wide) in paragraph at lines 118--119
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.13664pt too wide) in paragraph at lines 125--127
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[66]) (../project_code/initial_condition.cc)
+(../project_code/initial_condition.h) (../project_code/lattice_io.h [67]
+Overfull \hbox (36.43698pt too wide) in paragraph at lines 25--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.13664pt too wide) in paragraph at lines 28--30
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.93642pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (5.8363pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (61.93755pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (102.73845pt too wide) in paragraph at lines 75--77
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[68]
+Overfull \hbox (112.93867pt too wide) in paragraph at lines 77--79
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.03653pt too wide) in paragraph at lines 79--81
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.73732pt too wide) in paragraph at lines 81--83
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (255.74184pt too wide) in paragraph at lines 83--85
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (281.2424pt too wide) in paragraph at lines 85--87
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (240.4415pt too wide) in paragraph at lines 87--89
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (72.13777pt too wide) in paragraph at lines 92--93
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (148.63947pt too wide) in paragraph at lines 106--108
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (220.04105pt too wide) in paragraph at lines 111--113
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+
+Overfull \hbox (133.33913pt too wide) in paragraph at lines 116--118
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (97.63834pt too wide) in paragraph at lines 118--120
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (../project_code/lattice_io.cc [69] [70] [71]
+Overfull \hbox (46.6372pt too wide) in paragraph at lines 122--123
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (112.93867pt too wide) in paragraph at lines 134--135
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (337.34364pt too wide) in paragraph at lines 157--158
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
+ []
+
+
+Overfull \hbox (21.13664pt too wide) in paragraph at lines 159--160
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.1389pt too wide) in paragraph at lines 168--169
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+[72]
+Overfull \hbox (199.6406pt too wide) in paragraph at lines 177--178
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (179.24014pt too wide) in paragraph at lines 180--181
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (225.14116pt too wide) in paragraph at lines 187--188
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (194.54048pt too wide) in paragraph at lines 190--191
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (189.44037pt too wide) in paragraph at lines 197--198
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (169.03992pt too wide) in paragraph at lines 200--201
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (286.34251pt too wide) in paragraph at lines 208--209
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][] 
+ []
+
+[73]
+Overfull \hbox (51.73732pt too wide) in paragraph at lines 230--231
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.6372pt too wide) in paragraph at lines 236--237
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (245.54161pt too wide) in paragraph at lines 243--244
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (51.73732pt too wide) in paragraph at lines 265--266
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (158.83969pt too wide) in paragraph at lines 274--275
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (240.4415pt too wide) in paragraph at lines 281--282
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (230.24127pt too wide) in paragraph at lines 284--285
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+[74]
+Overfull \hbox (408.74522pt too wide) in paragraph at lines 286--287
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)) [75]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
 (./Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 39047DF7EEF1BE738DA1971D2ED219BD;1803.
+(rerunfilecheck)             Checksum: ECA196418E05AA803F51BE5B4A5592CF;3037.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Thesis
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 167 ({)
+### simple group (level 1) entered at line 165 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 44337 strings out of 493029
- 943288 string characters out of 6136234
- 1380186 words of memory out of 5000000
- 47237 multiletter control sequences out of 15000+600000
- 19197 words of font info for 71 fonts, out of 8000000 for 9000
+ 49019 strings out of 493029
+ 1065798 string characters out of 6136234
+ 2057325 words of memory out of 5000000
+ 49549 multiletter control sequences out of 15000+600000
+ 19225 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,21n,77p,10466b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,23n,83p,10466b,2528s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmex
 tra/cmbsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmext
 ra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
@@ -2562,29 +3784,31 @@ x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (22 pages, 1724109 bytes).
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb>
+Output written on Thesis.pdf (79 pages, 2360623 bytes).
 PDF statistics:
- 934 PDF objects out of 1000 (max. 8388607)
- 662 compressed objects within 7 object streams
- 44 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3274 PDF objects out of 3580 (max. 8388607)
+ 2913 compressed objects within 30 object streams
+ 1704 named destinations out of 1728 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
